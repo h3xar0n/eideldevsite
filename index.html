@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Aron Eidelman, Web Developer</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+
+  <!-- Custom styles for this template go here -->
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <!-- Twitter -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+  <!-- Facebook JS SDK comes top, rather than bottom, of body -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid nav-bar-desktop">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="workName navbar-brand">
+          <a class="navbar-brand" href="#land-sec">
+            <!-- Nav Logo -->
+            <img src="img/devaron.png" class="nav-logo important-elements" alt="A small version of Aron's hexagon logo">
+          </a>
+        </div> <!--end workName -->
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about-sec">About</a></li>
+            <li><a href="#skills-sec">Skills</a></li>
+            <li><a href="#proc-sec">Process</a></li>
+            <li><a href="#work-sec">Work</a></li>
+            <li><a href="#contact-sec">Contact</a></li>
+        </ul>
+      </div> <!-- nav -->
+    </div> <!-- end nav container-->
+  </nav><!-- End Navigation-->
+
+  <!-- Landing -->
+  <div class="container-fluid logo-landing anchor" id="land-sec" >
+    <!-- Mobile Logo -->
+    <div class="logo-title-center">
+      <img src="img/devaron.png" alt="Aron's hexagon logo, which loosely resembles Boba Fett's icon in Star Wars, but replaces the symbols with the initials A E." class="important-elements hidden-sm hidden-md hidden-lg hidden-xl">
+    </div>
+    <div class="center landing-title ">
+      <!-- Titles and Desktop Logo -->
+      <div class="row">  
+        <div class="col-xs-12 col-sm-5"><h1>A<span class="stripe">r</span>on <span class="stripe">E</span>idelman</h1>
+        </div>
+        <div class="col-xs-1 col-sm-2 logo-title-center">
+          <img src="img/devaron.png" alt="Aron's hexagon logo, which loosely resembles Boba Fett's icon in Star Wars, but replaces the symbols with the initials A E." class="important-elements hidden-xs">
+        </div>
+        <div class="col-xs-12 col-sm-5">
+        <h1>We<span class="stripe">b</span> De<span class="stripe">v</span>elo<span class="stripe">p</span>er</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Logo Row --> 
+    <div class="row landing-btns text-center center"> 
+        <div class=" col-sm-12 btm-but">
+          <a class="btn-main" href="#contact-sec">Contact Me</a>
+        </div>
+    </div> <!-- End Logo Row -->  
+  </div><!-- End Landing -->
+    
+
+  <!-- About -->
+  <div class="container about anchor" id="about-sec">
+    
+    <!-- About panel -->
+    <div class="about-desktop">
+      <h1>About</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-sm-offset-1 hex-port">
+          <img src="img/hexaron.png" alt="Small hexagonal portrait of Aron">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1 major-col">
+          <p><span class="stripe">A</span>ron <span class="stripe">E</span>idelman is a web creator with a passion for his beautiful wife, Spinoza's <span class="stripe">E</span>thics, Nutella, Star Wars, and colorblind-friendly design tools.</p>
+          <p>Working closely with developers and data scientists for years, he discovered that he would love to learn how to create his own advanced automated solutions.</p> 
+        </div>
+      </div>
+      <div class="row">
+
+      <div class="center">
+        <!-- Small modal button -->
+        <div class="modal-button">
+          <button class="btn btn-main" data-toggle="modal" data-target=".bs-example-modal-lg">See Résumé</button>
+        </div> <!-- End button -->
+        <!-- Small modal -->
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel1">Aron's Résumé</h4>
+                  <a type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+              </div>
+              <div class="modal-body">
+                  <embed id="modalembed" class="modal-embeds" src="pdf/AdelinaCV.pdf">
+              </div>
+            </div>
+          </div>
+        </div> <!-- End modal -->
+      </div>
+
+      </div>
+    </div><!-- End About panel -->
+    
+  </div><!-- End About -->
+  
+  <!-- History in Space -->
+  <div class="devaron-background hidden-xs">
+    <div class="container history block-center">
+      <h2><span class="stripe">History</span></h2>
+       <div class="left-content">
+          <p><img class="important-elements" src="img/oglethorpe.png"></p>
+          <h3>B.A. in Philosophy</h3>
+          <h3>Edited award-winning humanities curriculum</h3>
+          <p><img class="important-elements" id="sf" src="img/sanfrancisco.png"></p>
+          <h3>Came home to San Francisco</h3>
+          <p><i class="devicon-apple-original important-elements apple-icon"></i></p>
+          <h3>Edited presentations for WWDC 2012</h3>
+          <h3>Made blended-learning schools in HITEC City</h3>
+          <p><img class="important-elements" src="img/montreal.png"></p>
+          <h3>Moved to Montréal, Canada</h3>
+          <p><i class="devicon-apple-original important-elements apple-icon"></i></p>
+          <h3>Back for more editing at WWDC 2013</h3>
+          <h3>Freelance editor for major publishing houses</h3>
+          <p><i class="devicon-apple-original important-elements apple-icon"></i></p>
+          <h3>One last time editing at WWDC 2014</h3>
+          <h3>Market analysis for new HR Tech startup</h3>
+          <p><img class="less-important-elements" src="img/gameplan.png"></p>
+          <h3>Co-founded Gameplan Jobs</h3>
+          <h3>Recruited initial developers for proof of concept and prototype</h3>
+          <p><img class="important-elements" id="moscow" src="img/redstar.png"></p>
+          <h3>Moved to Moscow, Russian Federation</h3>
+          <h3>Closed deal with first clients in UK</h3>
+          <h3>Developed website for wife's makeup service, Glam by Adelina</h3>
+       </div>
+       <div class="right-content">
+          <h2>2011</h2>
+          <p><img class="important-elements" src="img/gurgaon.png"></p>
+          <h3>Moved to Gurgaon, India</h3>
+          <h2>2012</h2>
+          <h3>Developed business plan for data warehousing company</h3>
+          <p><img class="important-elements" src="img/hyderabad.png"></p>
+          <h3>Moved to Hyderabad, India</h3>
+          <h2>2013</h2>
+          <h3>Remote technical writer for DW/BI company</h3>
+          <h2>2014</h2>
+          <p><img class="important-elements" src="img/nyc.png"></p>
+          <h3>Moved to New York City</h3>      
+          <h3>Met love of life</h3>
+          <h2>2015</h2>
+          <h3>Collaborated with data scientist and industrial psychologist to plan product</h3>
+          <h2>2016</h2>
+          <h3>Remotely managed developers in US, Ukraine, and India</h3>
+          <p><img class="important-elements" id="baku" src="img/baku.png"></p>
+          <h3>Married in Baku, Azerbaijan</h3>
+       </div>
+    </div>
+  </div> <!-- End History in Space -->
+
+  <!-- Skills -->
+  <div class="container skills anchor" id="skills-sec">
+    <h1>Skills</h1>
+    <div class="panel-group skills-pan center" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+            Fully Operational</a>
+          </h3>
+        </div>
+        <div id="collapse0" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <!-- HTML -->
+            <div class="col-xs-3" title="HTML 5" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <!-- CSS -->
+            <div class="col-xs-3" title="CSS 3" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-css3-plain colored"></i>
+            </div>
+            <!-- Sass -->
+            <div class="col-xs-3" title="Sass" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-sass-original colored"></i>
+            </div>
+            <!-- Bootstrap -->
+            <div class="col-xs-3" title="Bootstrap" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-bootstrap-plain colored"></i>
+            </div>
+            <!-- Photoshop -->
+            <div class="col-xs-3" title="Photoshop" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-photoshop-plain colored"></i>
+            </div>
+            <!-- Illustrator -->
+            <div class="col-xs-3" title="Illustrator" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-illustrator-plain colored"></i>
+            </div>
+          </div>
+        </div>          
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Powering Up</a>
+          </h3>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <!-- JavaScript  -->
+            <div class="col-xs-3" title="JavaScript" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <!-- jQuery -->
+            <div class="col-xs-3" title="jQuery" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-jquery-plain colored"></i>
+            </div>
+            <!-- Ruby -->
+            <div class="col-xs-3" title="Ruby" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-ruby-plain colored"></i>
+            </div>
+            <!-- Rails -->
+            <div class="col-xs-3" title="Rails" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-rails-plain colored"></i>
+            </div>
+            
+            <!-- GitHub -->
+            <div class="col-xs-3" title="GitHub" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-github-plain"></i>
+            </div>
+            <!-- Python -->
+            <div class="col-xs-3" title="Python" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-python-plain colored"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            Future Targets</a>
+          </h3>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">         
+            <!-- AngularJS -->
+            <div class="col-xs-3" title="AngularJS" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-angularjs-plain colored"></i>
+            </div>
+            <!-- React -->
+            <div class="col-xs-3" title="React" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-react-original colored" ></i>
+            </div>
+            <!-- Node.js -->
+            <div class="col-xs-3" title="Node.js" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <!-- Kraken.js -->
+            <div class="col-xs-3" title="Kraken.js" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-krakenjs-plain colored"></i>
+            </div>
+            <!-- MySQL -->
+            <div class="col-xs-3" title="MySQL" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <!-- Java -->
+            <div class="col-xs-3" title="Java" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <!-- PHP -->
+            <div class="col-xs-3" title="PHP" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-php-plain colored" ></i>
+            </div>
+            <!-- Less -->
+            <div class="col-xs-3" title="Less" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-less-plain-wordmark colored"></i>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Skills -->
+
+  <!-- Dark/Light Interlude -->
+  <div class="dark-light hidden-xs">
+    <div class="container">
+      <h2 class="important-elements">Bringing Balance to the Force</h2>
+      
+        <div class="col-sm-6 text-center">
+          <p><img class="important-elements" src="img/luke-front.png"></p>
+          <p class="important-elements">Front-End</p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <p><img src="img/kylo-back.png"></p>
+          <p class="important-elements">Back-End</p>
+        </div>
+      
+    </div>
+  </div> <!-- End Dark/Light Interlude -->
+
+  <!-- Process -->
+  <div class="container process anchor" id="proc-sec">
+    <h1>Process</h1>
+
+    <div class="process-episodes">
+      <div>
+        <h3>I. Analyze</h3>
+        <p>Gather information about your goals and about how your visitors are expected to experience the site.</p>
+      </div>
+      <div>
+        <h3>II. Plan</h3>
+        <p>Establish what types of pages your site will have, how your content will be prioritized, and how your visitors will navigate.</p>
+      </div>
+      <div>
+        <h3>III. Design</h3>
+        <p>Find inspiration for the general look and feel of the site, then make decisions to give each part of the site its appearance.</p>
+      </div>
+      <div>
+        <h3>IV. Develop</h3>
+        <p>With the visual elements and the plan in place, it is now possible to tie everything together and to make the site actually functional.</p>
+      </div>
+      <div>
+        <h3>V. Test</h3>
+        <p>The crucial final stage is to see whether each aspect of the site actually works for everyone using it. In this stage, any hidden problems can be fixed before the site goes on to the public.</p>
+      </div>
+      <div>
+        <h3>VI. Maintain</h3>
+        <p>Once the site is live, there is still always room to add content and change desired aspects. A well-composed site is necessarily one that is also effeciently maintained.</p>
+      </div>
+    </div>
+  </div> <!-- End Process -->
+  
+  <!-- Work -->
+  <div class="container work anchor" id="work-sec">
+    <h1>Work</h1>
+    <!-- JS Project Display -->
+    <div class="row" id="work">  
+    </div>
+    <!-- Gameplan Demo Video -->
+    <div class="videoWrapper">
+      <iframe src="https://www.youtube.com/embed/f3ZYYMcJG2s" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div> <!-- End Work -->
+
+
+  <!-- Contact -->
+  <div class="container contact anchor" id="contact-sec">
+    <h1>Contact</h1>
+    <div class="col-sm-1"></div>
+    <!-- Info -->
+    <div class="clearfix col-md-3 col-sm-6">
+      <p><span class="glyphicon glyphicon-user"></span> Aron <span class="stripe">E</span>idelman</p>
+      <p class="contact-name"><a href="tel:678-231-3881"><span class="glyphicon glyphicon-phone"></span> 678-231-3881</a></p>
+      <p class="contact-name"><a href="mailto:aron@glambyadelina.com"><span class="glyphicon glyphicon-envelope"></span> aron@eideldev.com</a></p>
+      <p class="contact-name"><a href="skype:aron.gameplan"><i class="fa fa-skype"></i> aron.gameplan</a></p>
+      
+      <div id="map"></div>
+    </div> <!-- End Info -->
+    <!-- Form -->
+    <form name="contact" class="cf col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-1">
+      <h3>Message Me</h3>
+        <div class="half left cf form-group">
+          <label class="sr-only" for="input-name"> Name</label>
+          <input type="text" id="input-name" name="Name" placeholder="Name">
+          <label class="sr-only" for="input-phone"> Phone Number</label>
+          <input type="tel" id="input-phone" name="Phone" placeholder="Phone (Optional)">
+          <label class="sr-only" for="input-email"> Email Address</label>
+          <input type="email" id="input-email" name="Email" placeholder="Email address" required>
+          <label class="sr-only" for="input-subject"> Subject</label>
+          <input type="text" id="input-subject" name="Message" placeholder="Subject (Optional)">
+        </div>
+        <div class="half right cf">
+          <label class="sr-only" for="input-message"> Message</label>
+          <textarea style="resize:none" cols="40" rows="5" name="message" id="input-message" placeholder="Message"></textarea>
+          <p id="char-count"></p>
+          <p id="visible-comment"></p>
+        </div>  
+        <input type="submit" value="Submit" id="input-submit" class="btn-main">
+    </form><!-- End Form-->
+    
+  </div><!-- End Contact -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="foot" id="legal">&copy; A<span class="stripe">r</span>on <span class="stripe">E</span>idelman 2016</div>
+    <!-- Twitter -->
+    <a href="https://twitter.com/TwitterDev" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- Facebook -->
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- ============================= -->
+  <!-- All your JavaScript comes now -->
+  <!-- ============================= -->
+  <!-- Used in scripts.js -->
+  <script src="js/jquery.bgswitcher.js"></script>
+  <script src="js/background.cycle.js"></script>
+  <script src="js/parallax.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src=js/work.js>
+  </script>
+  <!-- Main JS file -->
+  <script src=js/scripts.js>
+  </script>
+  <!-- Must come after scripts.js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-TmAbDhp5UPjP0dbmDniVoMxxI3twi8E&callback=initMap" async defer></script>
+</body>
+</html>
