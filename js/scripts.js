@@ -82,7 +82,7 @@ $(document).ready(function(){
   //Parallax
   $('.devaron-background').parallax({imageSrc: 'http://wallpapercave.com/wp/pEeUsp1.jpg'});
 
-  $('.dark-light').parallax({imageSrc: 'img/hexyback.jpg'});
+  // $('.dark-light').parallax({imageSrc: 'img/hexyback.jpg'});
 
   //Tooltips
   $(function () {
@@ -107,9 +107,9 @@ $(document).ready(function(){
   });
 
   //Contact Form
-  $("#input-message").css("background-color", "gray");
+  $("#input-message").css("background-color", "white");
 
-  $("#input-message").css("color", "white");
+  $("#input-message").css("color", "black");
 
   $("#input-message").on("keyup", function() {
     var charCount = $("#input-message").val().length;
@@ -118,7 +118,7 @@ $(document).ready(function(){
     if(charCount > 50) {
       $("#char-count").css("color", "red"); // need to turn character count red
     } else {
-      $("#char-count").css("color", "black"); // need it to be black
+      $("#char-count").css("color", "white"); // need it to be black
     };
   });
 

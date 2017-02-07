@@ -5,10 +5,10 @@ var works = [
   {title: "Gameplan Jobs",
   	pic: "img/gpdesk.png",
   	url: "http://www.gameplanjobs.com/"}, 
-  // {title: "Coming Soon",
-  // 	pic: "img/macbook.png",
-  // 	url: "#"},
-  // {title:"Coming Soon",
-  // 	pic: "img/macbook.png",
-  // 	url: "#"}
+  {title: "Eidelhaus",
+  	pic: "img/eidelhauscpu.png",
+  	url: "http://www.eidelhaus.com"},
+  {title:"A Squared Accessories",
+  	pic: "img/asqacccpu.png",
+  	url: "https://eidelbikes.herokuapp.com/"}
 ]

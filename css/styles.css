@@ -484,7 +484,7 @@ a:hover, a:focus {
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 5vw;
-  background: #252525;
+  background: black;
 }
 
 .skills h3 {
@@ -530,6 +530,11 @@ a:hover, a:focus {
   color: black;
 }
 
+.dark-light {
+  background: url("../img/hexyback.jpg") no-repeat center center fixed;
+}
+
+
 .dark-light img {
   min-width: 25vw;
 }
@@ -543,7 +548,7 @@ a:hover, a:focus {
 /*Work*/
 
 .work {
-  background-color: #404040;
+  background-color: black;
   min-height: 100vh;
 }
 
@@ -789,19 +794,24 @@ form {
 /*Footer*/
   
 footer {
-  min-height: 10vh;
-  padding: 5% 3%;
+  min-height: 100px;
+  padding-left: 10%;
+  padding-top: 20px;
   background-color: #222222;
   color: white;
   font-family: 'Bariol', monospace;
 }
 
-.foot {
-  display: inline;
+footer i {
+  margin-left: 5%;
 }
 
-#legal {
-  margin-right: 50%;
+footer i:hover {
+  color: white;
+}
+
+.foot {
+  display: inline;
 }
 
 .anchor {
@@ -995,7 +1005,17 @@ form h3 {
 }
 
 #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  color: black;
+}
+
+.btn-center {
+  margin-left:30%;
 }
