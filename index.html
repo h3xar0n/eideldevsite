@@ -58,10 +58,9 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="#work-sec">Work</a></li>
             <li><a href="#about-sec">About</a></li>
             <li><a href="#skills-sec">Skills</a></li>
-            <!-- temp removed <li><a href="#proc-sec">Process</a></li> -->
-            <li><a href="#work-sec">Work</a></li>
             <li><a href="#contact-sec">Contact</a></li>
         </ul>
       </div> <!-- nav -->
@@ -95,6 +94,17 @@
     </div> <!-- End Logo Row -->  
   </div><!-- End Landing -->
     
+  <!-- Work -->
+  <div class="container work anchor" id="work-sec">
+    <h1>Work</h1>
+    <!-- JS Project Display -->
+    <div class="row" id="work">  
+    </div>
+    <!-- Gameplan Demo Video -->
+    <div class="videoWrapper">
+      <iframe src="https://www.youtube.com/embed/f3ZYYMcJG2s" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div> <!-- End Work -->
 
   <!-- About -->
   <div class="container about anchor" id="about-sec">
@@ -205,6 +215,22 @@
         </div>
         <div id="collapse0" class="panel-collapse collapse in">
           <div class="panel-body">
+            <!-- Ruby -->
+            <div class="col-xs-3" title="Ruby" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-ruby-plain colored"></i>
+            </div>
+            <!-- Rails -->
+            <div class="col-xs-3" title="Rails" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-rails-plain colored"></i>
+            </div>
+            <!-- JavaScript  -->
+            <div class="col-xs-3" title="JavaScript" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <!-- jQuery -->
+            <div class="col-xs-3" title="jQuery" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-jquery-plain colored"></i>
+            </div>
             <!-- HTML -->
             <div class="col-xs-3" title="HTML 5" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-html5-plain colored"></i>
@@ -228,6 +254,14 @@
             <!-- Illustrator -->
             <div class="col-xs-3" title="Illustrator" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-illustrator-plain colored"></i>
+            </div>         
+            <!-- Git -->
+            <div class="col-xs-3" title="Git" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <!-- GitHub -->
+            <div class="col-xs-3" title="GitHub" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-github-plain"></i>
             </div>
           </div>
         </div>          
@@ -241,26 +275,33 @@
         </div>
         <div id="collapse2" class="panel-collapse collapse">
           <div class="panel-body">
-            <!-- JavaScript  -->
-            <div class="col-xs-3" title="JavaScript" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-javascript-plain colored"></i>
+            <!-- Heroku -->
+            <div class="col-xs-3" title="Heroku" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-heroku-plain colored"></i>
             </div>
-            <!-- jQuery -->
-            <div class="col-xs-3" title="jQuery" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-jquery-plain colored"></i>
+            <!-- Redis -->
+            <div class="col-xs-3" title="Redis" data-toggle="tooltip" data-placement="bottom">  
+              <i class="devicon-redis-plain colored"></i>
             </div>
-            <!-- Ruby -->
-            <div class="col-xs-3" title="Ruby" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-ruby-plain colored"></i>
+            <!-- CoffeeScript -->
+            <div class="col-xs-3" title="CoffeeScript" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-coffeescript-original colored"></i>
             </div>
-            <!-- Rails -->
-            <div class="col-xs-3" title="Rails" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-rails-plain colored"></i>
+            <!-- PostgreSQL -->
+            <div class="col-xs-3" title="PostgreSQL" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-postgresql-plain colored"></i>
+            </div>          
+            <!-- Vim -->
+            <div class="col-xs-3" title="Vim" data-toggle="tooltip" data-placement="bottom">
+              <i class="devicon-vim-plain colored"></i>
             </div>
-            
-            <!-- GitHub -->
-            <div class="col-xs-3" title="GitHub" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-github-plain"></i>
+            <!-- Grunt -->
+            <div class="col-xs-3" title="Grunt" data-toggle="tooltip" data-placement="bottom">   
+              <i class="devicon-grunt-plain colored"></i>
+            </div>
+            <!-- Gulp -->
+            <div class="col-xs-3" title="Gulp" data-toggle="tooltip" data-placement="bottom"> 
+              <i class="devicon-gulp-plain colored"></i>
             </div>
             <!-- Python -->
             <div class="col-xs-3" title="Python" data-toggle="tooltip" data-placement="bottom">
@@ -333,52 +374,6 @@
     </div>
   </div> <!-- End Dark/Light Interlude -->
 
-  <!-- Process -->
-  <!-- temp removed 
-    <div class="container process anchor" id="proc-sec">
-    <h1>Process</h1>
-
-    <div class="process-episodes">
-      <div>
-        <h3>I. Analyze</h3>
-        <p>Gather information about your goals and about how your visitors are expected to experience the site.</p>
-      </div>
-      <div>
-        <h3>II. Plan</h3>
-        <p>Establish what types of pages your site will have, how your content will be prioritized, and how your visitors will navigate.</p>
-      </div>
-      <div>
-        <h3>III. Design</h3>
-        <p>Find inspiration for the general look and feel of the site, then make decisions to give each part of the site its appearance.</p>
-      </div>
-      <div>
-        <h3>IV. Develop</h3>
-        <p>With the visual elements and the plan in place, it is now possible to tie everything together and to make the site actually functional.</p>
-      </div>
-      <div>
-        <h3>V. Test</h3>
-        <p>The crucial final stage is to see whether each aspect of the site actually works for everyone using it. In this stage, any hidden problems can be fixed before the site goes on to the public.</p>
-      </div>
-      <div>
-        <h3>VI. Maintain</h3>
-        <p>Once the site is live, there is still always room to add content and change desired aspects. A well-composed site is necessarily one that is also effeciently maintained.</p>
-      </div>
-    </div>
-  </div>  --><!-- End Process -->
-  
-  <!-- Work -->
-  <div class="container work anchor" id="work-sec">
-    <h1>Work</h1>
-    <!-- JS Project Display -->
-    <div class="row" id="work">  
-    </div>
-    <!-- Gameplan Demo Video -->
-    <div class="videoWrapper">
-      <iframe src="https://www.youtube.com/embed/f3ZYYMcJG2s" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div> <!-- End Work -->
-
-
   <!-- Contact -->
   <div class="container contact anchor" id="contact-sec">
     <h1>Contact</h1>
@@ -419,13 +414,11 @@
   <!-- Footer -->
   <footer>
     <div class="foot" id="legal">&copy; A<span class="stripe">r</span>on <span class="stripe">E</span>idelman 2016</div>
+    <!-- GitHub -->
     <a href="https://github.com/h3xar0n" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+    <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/aroneidelman
 " target="_blank"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
-    <!-- Twitter -->
-    <!-- <a href="https://twitter.com/TwitterDev" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-    <!-- Facebook -->
-    <!-- <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div> -->
   </footer>
   <!-- End Footer -->
 

@@ -516,12 +516,12 @@ a:hover, a:focus {
 }
 
 .skills-pan i {
-  font-size: 13vw;
+  font-size: 11vw;
   transition: .5s;
 }
 
 .panel-body div {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .skills-pan i:hover {
