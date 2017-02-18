@@ -30,13 +30,13 @@
 
   <!-- Facebook JS SDK comes top, rather than bottom, of body -->
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <!-- <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));</script> -->
 
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -59,7 +59,9 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#work-sec">Work</a></li>
+            <li class="hidden-xs"><a href="#practice-sec">Practice</a></li>
             <li><a href="#about-sec">About</a></li>
+            <li class="hidden-xs"><a href="#history">History</a></li>
             <li><a href="#skills-sec">Skills</a></li>
             <li><a href="#contact-sec">Contact</a></li>
         </ul>
@@ -100,11 +102,25 @@
     <!-- JS Project Display -->
     <div class="row" id="work">  
     </div>
-    <!-- Gameplan Demo Video -->
-    <!-- <div class="videoWrapper">
-      <iframe src="https://www.youtube.com/embed/f3ZYYMcJG2s" frameborder="0" allowfullscreen></iframe>
-    </div> -->
   </div> <!-- End Work -->
+
+  <!-- Practice -->
+  <div class="hidden-xs practice-background" id="practice-sec">
+    <div class="container practice">
+    <h2><span class="stripe">Practice</span></h2>
+    <div class="row text-center">
+    <div class="col-sm-4" title="GitHub" data-toggle="tooltip" data-placement="top">
+      <i class="devicon-github-plain"></i>
+    </div>
+    <div class="col-sm-4" title="Exercism" data-toggle="tooltip" data-placement="top">
+      <img src="img/exercismlogo.png">
+    </div>
+    <div class="col-sm-4" title="Codepen" data-toggle="tooltip" data-placement="top">
+      <img src="img/codepen.png">
+    </div>
+    </div>
+    </div>
+  </div>
 
   <!-- About -->
   <div class="container about anchor" id="about-sec">
@@ -150,7 +166,7 @@
   </div><!-- End About -->
   
   <!-- History in Space -->
-  <div class="devaron-background hidden-xs">
+  <div class="devaron-background hidden-xs" id="history">
     <div class="container history block-center">
       <h2><span class="stripe">History</span></h2>
        <div class="left-content">
@@ -358,7 +374,7 @@
   </div> <!-- End Skills -->
 
   <!-- Dark/Light Interlude -->
-  <div class="hidden-xs dark-light">
+  <!-- <div class="hidden-xs dark-light">
     <div class=" container ">
       <h2 class="important-elements">Bringing Balance to the Force</h2>
       
@@ -370,9 +386,8 @@
           <p><img src="img/kylo-back.png"></p>
           <p class="important-elements">Back-End</p>
         </div>
-      
     </div>
-  </div> <!-- End Dark/Light Interlude -->
+  </div> --> <!-- End Dark/Light Interlude -->
 
   <!-- Contact -->
   <div class="container contact anchor" id="contact-sec">
@@ -385,7 +400,7 @@
       <p class="contact-name"><a href="mailto:aron@glambyadelina.com"><span class="glyphicon glyphicon-envelope"></span> aron@eideldev.com</a></p>
       <p class="contact-name"><a href="skype:aron.gameplan"><i class="fa fa-skype"></i> aron.gameplan</a></p>
       
-      <div id="map"></div>
+      <div class="hidden-xs" id="map"></div>
     </div> <!-- End Info -->
     <!-- Form -->
     <form name="contact" class="cf col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-1">
@@ -405,8 +420,10 @@
           <textarea style="resize:none" cols="40" rows="5" name="message" id="input-message" placeholder="Message"></textarea>
           <p id="char-count"></p>
           <p id="visible-comment"></p>
-        </div>  
-        <input type="submit" value="Submit" id="input-submit" class="btn-main btn-center">
+        </div>
+        <div class="text-center">  
+          <input type="submit" value="Submit" id="input-submit" class="btn-main">
+        </div>
     </form><!-- End Form-->
     
   </div><!-- End Contact -->
