@@ -816,12 +816,17 @@ form {
 /*Footer*/
   
 footer {
-  min-height: 100px;
+  min-height: 80px;
   padding-left: 10%;
+  padding-right: 10%;
   padding-top: 20px;
   background-color: #222222;
   color: white;
   font-family: 'Bariol', monospace;
+}
+
+footer .fa {
+  font-size: 36px;
 }
 
 footer i {
@@ -834,6 +839,7 @@ footer i:hover {
 
 .foot {
   display: inline;
+  margin-top: 10px;
 }
 
 .anchor {
@@ -843,9 +849,6 @@ footer i:hover {
   position: relative;
 }
 
-.twitter-follow-button {
-  margin-top: 5px;
-}
 /*Desktop*/
 
 @media (min-width: 768px) {
@@ -917,6 +920,7 @@ footer i:hover {
   width: 100%;
   } 
   .contact {
+  background-image: none;
   width: 100%;
   }
   .anchor {
@@ -963,7 +967,7 @@ footer i:hover {
   /*Reformat Skills Icons*/
 
   /*.skills-pan i {
-    font-size: 15vh;
+    font-size: 10vw;
   }*/
 
   /*Reformat Process Episodes*/
@@ -998,24 +1002,32 @@ footer i:hover {
     margin-left: 10%;
     margin-right: 10%;
   }
+
 }
 
 /*Mobile*/
 
 @media (max-width: 415px) {
-  /*Reformat Skills Icons*/
-  .skills-pan i {
-    font-size: 12vh;
+
+  footer {
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 12px;
   }
+  /*Reformat Skills Icons*/
+  /*.skills-pan i {
+    font-size: 12vh;
+  }*/
+
 }
 
 /*My Mobile*/
   
 @media (max-width: 320px) {
   /*Reformat Skills Icons*/
-  .skills-pan i {
+  /*.skills-pan i {
     font-size: 8vh;
-  }
+  }*/
 }
 
 form h3 {
@@ -1041,3 +1053,5 @@ input, textarea {
 .btn-center {
   margin: auto;
 }
+
+
