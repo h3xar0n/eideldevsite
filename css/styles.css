@@ -156,7 +156,7 @@ a:hover, a:focus {
 }
 
 .landing-title {
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
 .landing-title h1 {
@@ -372,7 +372,7 @@ a:hover, a:focus {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .practice {
