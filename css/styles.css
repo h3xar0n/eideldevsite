@@ -156,12 +156,17 @@ a:hover, a:focus {
 }
 
 .landing-title {
-  margin-top: 25vh;
+  margin-top: 30vh;
 }
 
 .landing-title h1 {
-  font-size: 3.5vw;
-  padding-top: 1vw;
+  font-size: 3.8vw;
+  padding-top: 1vw;  
+}
+
+.gray-overlay {
+  background: rgba(0, 0, 0, .3);
+  height: 100vh;
 }
 
 /*Fix Heading from Jumping over Logo*/
@@ -390,7 +395,7 @@ a:hover, a:focus {
 
 .practice img {
   width: 15vw;
-  border-radius: 100%;
+  /*border-radius: 100%;*/
   transition: .2s;
 }
 
