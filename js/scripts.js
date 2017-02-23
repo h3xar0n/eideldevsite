@@ -82,8 +82,6 @@ $(document).ready(function(){
   //Parallax
   $('.devaron-background').parallax({imageSrc: 'http://wallpapercave.com/wp/pEeUsp1.jpg'});
 
-  // $('.dark-light').parallax({imageSrc: 'img/hexyback.jpg'});
-
   //Tooltips
   $(function () {
     $('#tooltip1').tooltip();
@@ -95,15 +93,6 @@ $(document).ready(function(){
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  });
-
-  // Process Carousel
-  $('.process-episodes').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
   });
 
   //Contact Form
@@ -122,17 +111,17 @@ $(document).ready(function(){
     };
   });
 
-  $("#input-submit").on('click', function() {
-    var comment = $('#input-message').val(); 
-    console.log(comment);
-    if (comment === "") {
-      $("#input-message").css("border", "6px solid red");
-    } else {
-      $('#visible-comment').html('We have recieved your message: "' + comment + '" We will get back to you shortly. May the Force be with you!');
-      $('#input-message').hide();
-    };
-    return false;
-  }); 
+  // $("#input-submit").on('click', function() {
+  //   var comment = $('#input-message').val(); 
+  //   console.log(comment);
+  //   if (comment === "") {
+  //     $("#input-message").css("border", "6px solid red");
+  //   } else {
+  //     $('#visible-comment').html('We have recieved your message: "' + comment + '" We will get back to you shortly. May the Force be with you!');
+  //     $('#input-message').hide();
+  //   };
+  //   return false;
+  // }); 
 
   // Work: Sample Projects
   var worksIndex = 0;
