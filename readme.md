@@ -2,7 +2,12 @@
 
 www.eideldev.com
 
-## End of February
+## Mid March
+
+### Validation
+* Add alt descriptions
+* Validate, validate, validate
+* SEO test
 
 ### Content
 * Update "History" for past 6 months
