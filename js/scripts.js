@@ -80,7 +80,7 @@ $(document).ready(function(){
   });
 
   //Parallax
-  $('.devaron-background').parallax({imageSrc: 'http://wallpapercave.com/wp/pEeUsp1.jpg'});
+  $('.devaron-background').parallax({imageSrc: 'img/space.jpg'});
 
   //Tooltips
   $(function () {

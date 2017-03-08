@@ -373,7 +373,7 @@ a:hover, a:focus {
 /*Practice*/
 
 .practice-background {
-  background-image: url("../img/remotetraining.jpg");
+  background-image: url("../img/luketraining.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -384,7 +384,7 @@ a:hover, a:focus {
   padding: 2%;
 }
 
-.practice h2 {
+#practice-heading {
   margin-top: 40px;
   color: white;
 }
@@ -760,7 +760,7 @@ a:hover, a:focus {
 /*Contact*/
 
 .contact {
-  background: url("../img/leia.jpg");
+  background: url("../img/leiar2d2.jpg");
   background-attachment: fixed;
   background-position: center;
   min-height: 85vh
@@ -769,6 +769,10 @@ a:hover, a:focus {
 /*Contact Info*/
 .contact-name {
   font-family: 'Exodus', monospace;
+}
+
+.contact h2 {
+  color: white;
 }
 
 .contact p {
@@ -1059,4 +1063,7 @@ input, textarea {
   margin: auto;
 }
 
+textarea {
+  resize: none;
+}
 
