@@ -13,40 +13,7 @@ $(document).ready(function(){
 
   // Smooth Scrolling
   var $root = $('html, body');
-  $('.navbar-nav a').click(function() {
-      var href = $.attr(this, 'href');
-      $root.animate({
-          scrollTop: $(href).offset().top
-      }, 500, function () {
-          window.location.hash = href;
-      });
-      return false;
-  });
-
-  var $root = $('html, body');
-  $('.workName a').click(function() {
-      var href = $.attr(this, 'href');
-      $root.animate({
-          scrollTop: $(href).offset().top
-      }, 500, function () {
-          window.location.hash = href;
-      });
-      return false;
-  }); 
-
-  var $root = $('html, body');
-  $('.top-but a').click(function() {
-    var href = $.attr(this, 'href');
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
-    });
-    return false;
-  });
-
-  var $root = $('html, body');
-  $('.btm-but a').click(function() {
+  $('.navbar-nav a, .workName a, .btm-but a').click(function() {
       var href = $.attr(this, 'href');
       $root.animate({
           scrollTop: $(href).offset().top
@@ -92,7 +59,7 @@ $(document).ready(function(){
   });
 
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
   });
 
   //Contact Form
@@ -108,20 +75,8 @@ $(document).ready(function(){
       $("#char-count").css("color", "red"); // need to turn character count red
     } else {
       $("#char-count").css("color", "white"); // need it to be black
-    };
+    }
   });
-
-  // $("#input-submit").on('click', function() {
-  //   var comment = $('#input-message').val(); 
-  //   console.log(comment);
-  //   if (comment === "") {
-  //     $("#input-message").css("border", "6px solid red");
-  //   } else {
-  //     $('#visible-comment').html('We have recieved your message: "' + comment + '" We will get back to you shortly. May the Force be with you!');
-  //     $('#input-message').hide();
-  //   };
-  //   return false;
-  // }); 
 
   // Work: Sample Projects
   var worksIndex = 0;
@@ -139,9 +94,9 @@ $(document).ready(function(){
       $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px red)", "filter":"drop-shadow(0px 0px 5px red)"});
     } else {
       $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px white)","filter":"drop-shadow(0px 0px 5px white)"});
-    };
+    }
   worksIndex ++;
-  };
+  }
 
   $(".work-img").mouseenter( function() {
   $(".info", this).show();}).mouseleave(function(){
