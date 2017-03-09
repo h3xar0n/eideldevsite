@@ -4,10 +4,6 @@ www.eideldev.com
 
 ## To-Do List
 
-### Refactor JS
-* Refactor JS for scrollspy, dropdown menu; put all in one block, call with different classes
-* Run through JSLint
-
 ### Work Section
 * Write content for "Work" descriptions, add Grad Jobs
 * Create new pages for each project

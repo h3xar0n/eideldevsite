@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //Hero Fading Carousel
   $(".logo-landing").bgswitcher({
-    images: ["http://www.flabber.nl/sites/default/files/attachments/mfa624x.jpg", "http://www.flabber.nl/sites/default/files/attachments/jtjy2of.jpg", "http://www.flabber.nl/sites/default/files/attachments/mddyfhw.jpg"], // Background images
+    images: ["img/sfdestroyer.jpg", "img/forestatat.jpg", "img/bespin.jpg"], // Background images
     effect: "fade", // fade, blind, clip, slide, drop, hide
     interval: 5000, // Interval of switching
     loop: true, // Loop the switching
@@ -27,6 +27,31 @@ $(document).ready(function(){
   $(".navbar-nav li a").click(function(event) {
     if (!$(this).parent().hasClass('dropdown'))
     $(".navbar-collapse").collapse('hide');
+  });
+
+  // Work: Sample Projects
+  var worksIndex = 0;
+  while (worksIndex < works.length) {
+    $("#work").append("\
+      <div class='col-sm-6 clearfix'>\
+        <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
+          <img class='img-responsive' src='" + works[worksIndex].pic + "'>\
+          <span class='info'>" + works[worksIndex].title + "</span>\
+        </a>\
+      </div>\
+    ");
+    // var images = $("#work img");
+    // if (worksIndex % 2 === 0) {
+    //   $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px red)", "filter":"drop-shadow(0px 0px 5px red)"});
+    // } else {
+    //   $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px white)","filter":"drop-shadow(0px 0px 5px white)"});
+    // }
+  worksIndex ++;
+  }
+
+  $(".work-img").mouseenter( function() {
+  $(".info", this).show();}).mouseleave(function(){
+  $(".info", this).hide();
   });
 
   // History Image Slide-In
@@ -78,30 +103,7 @@ $(document).ready(function(){
     }
   });
 
-  // Work: Sample Projects
-  var worksIndex = 0;
-  while (worksIndex < works.length) {
-    $("#work").append("\
-      <div class='col-sm-6 clearfix'>\
-        <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
-          <img class='img-responsive' src='" + works[worksIndex].pic + "'>\
-          <span class='info'>" + works[worksIndex].title + "</span>\
-        </a>\
-      </div>\
-    ");
-    var images = $("#work img");
-    if (worksIndex % 2 === 0) {
-      $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px red)", "filter":"drop-shadow(0px 0px 5px red)"});
-    } else {
-      $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px white)","filter":"drop-shadow(0px 0px 5px white)"});
-    }
-  worksIndex ++;
-  }
-
-  $(".work-img").mouseenter( function() {
-  $(".info", this).show();}).mouseleave(function(){
-  $(".info", this).hide();
-  });
+  
 
 });
 
