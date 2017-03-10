@@ -23,10 +23,8 @@ www.eideldev.com
 * Cleanup Parallax and plugin for flyins
 * Run through JSLint
 
-### jQuery UI Deathstar
-* Add Deathstar blowing up Alderaan at the end of history
-
 ### Skills Update
+* Use React or Angular to generate list of skills
 * Update "Skills" Section, fix icon spacing. Add Bash, Tmux, Scrum, Vue.js
 * Create modal window for each skill, explaining what it is, how I use it, and links to all evidence of use
 
@@ -37,3 +35,6 @@ www.eideldev.com
 * Create a 404 page with Boba Fett
 
 ## Icebox
+
+### jQuery UI Deathstar
+* Add Deathstar blowing up Alderaan at the end of history
