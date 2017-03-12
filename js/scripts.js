@@ -32,6 +32,7 @@ $(document).ready(function(){
   // Work: Sample Projects
   var worksIndex = 0;
   while (worksIndex < works.length) {
+    // If screen size is desktop
     $("#work").append("\
       <div class='col-sm-6 clearfix'>\
         <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
@@ -40,13 +41,19 @@ $(document).ready(function(){
         </a>\
       </div>\
     ");
-    // var images = $("#work img");
-    // if (worksIndex % 2 === 0) {
-    //   $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px red)", "filter":"drop-shadow(0px 0px 5px red)"});
-    // } else {
-    //   $(images[worksIndex]).css({"-webkit-filter":"drop-shadow(0px 0px 5px white)","filter":"drop-shadow(0px 0px 5px white)"});
-    // }
+    // If screen size is mobile 
+    // Use a mobile image instead of desktop image 
+    // Place name of project at bottom rather than relying on hover over
+    // $("#work").append("\
+    //   <div class='col-sm-6 clearfix'>\
+    //     <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
+    //       <img class='img-responsive' src='" + works[worksIndex].pic + "'>\
+    //       <span class='info'>" + works[worksIndex].title + "</span>\
+    //     </a>\
+    //   </div>\
+    // ");
   worksIndex ++;
+  
   }
 
   $(".work-img").mouseenter( function() {
@@ -102,8 +109,6 @@ $(document).ready(function(){
       $("#char-count").css("color", "white"); // need it to be black
     }
   });
-
-  
 
 });
 
