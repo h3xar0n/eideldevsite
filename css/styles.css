@@ -84,8 +84,9 @@ a:hover, a:focus {
   margin-left: 0;
 }
 .work .row {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 70px;
 }
 
 /*Landing*/
@@ -964,10 +965,10 @@ footer i:hover {
     padding-left: 10vw;
     padding-right: 10vw;
   }
-
   .image-responsive {
     min-width: 30vw;
   }
+
   /*Reformat Contact Content*/
   .contact p {
   color: white;
@@ -975,7 +976,6 @@ footer i:hover {
   font-size: 1.3em;
   margin-left: 10%;
   }
-  
   .contact form {
     margin-left: 10%;
     margin-right: 10%;
