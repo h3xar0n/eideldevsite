@@ -1036,3 +1036,15 @@ textarea {
   resize: none;
 }
 
+/*404*/
+
+.error-page {
+  background-image: url("http://2.bp.blogspot.com/_lBWYz29Iw_g/TQHtE7c7j2I/AAAAAAAAFnI/8Xwj-9OqPsg/s1600/rc-star-wars-003.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.error-title {
+  margin-top: 10vh;
+}
