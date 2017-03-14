@@ -10,7 +10,7 @@ var works = [
   	url: "http://www.eidelhaus.com"},
   {title:"Eideldev",
     pic: "img/portfolio/eideldev/EideldevCombo.png",
-    url: "http://www.eideldev.com/"},
+    url: "i-dont-usually-link-to-a-404-but-when-i-do-it-features-boba-fett"},
   {title: "Gameplan Jobs",
     pic: "img/portfolio/gpj/GameplanCombo.png",
     url: "http://www.gameplanjobs.com/"},
