@@ -4,7 +4,7 @@ var works = [
   	url: "http://www.glambyadelina.com/"},
   {title:"A Squared Accessories",
     pic: "img/portfolio/a2/A2Combo.png",
-    url: "https://eidelbikes.herokuapp.com/"},
+    url: "https://a2accessories.herokuapp.com/"},
   {title: "Eidelhaus",
   	pic: "img/portfolio/eidelhaus/EidelhausCombo.png",
   	url: "http://www.eidelhaus.com"},
