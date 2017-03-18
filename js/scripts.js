@@ -32,7 +32,6 @@ $(document).ready(function(){
   // Work: Sample Projects
   var worksIndex = 0;
   while (worksIndex < works.length) {
-    // If screen size is desktop
     $("#work").append("\
       <div class='col-sm-6 clearfix'>\
         <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
@@ -41,19 +40,7 @@ $(document).ready(function(){
         </a>\
       </div>\
     ");
-    // If screen size is mobile 
-    // Use a mobile image instead of desktop image 
-    // Place name of project at bottom rather than relying on hover over
-    // $("#work").append("\
-    //   <div class='col-sm-6 clearfix'>\
-    //     <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
-    //       <img class='img-responsive' src='" + works[worksIndex].pic + "'>\
-    //       <span class='info'>" + works[worksIndex].title + "</span>\
-    //     </a>\
-    //   </div>\
-    // ");
-  worksIndex ++;
-  
+    worksIndex ++;
   }
 
   $(".work-img").mouseenter( function() {
@@ -93,6 +80,19 @@ $(document).ready(function(){
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
+
+  //Skills
+  var skillsIndex = 0;
+  while (skillsIndex < skills.length) {
+    $("#skills-power").append("\
+      <div class='col-xs-4 col-sm-2' title=" + skills[skillsIndex].name + " data-toggle='tooltip' data-placement='bottom'>\
+        <i id=" + skillsIndex + "></i>\
+      </div>\
+    ");
+    var icon = document.getElementById(skillsIndex);
+    icon.className += skills[skillsIndex].icon + skills[skillsIndex].color;
+    skillsIndex ++;
+  }
 
   //Contact Form
   $("#input-message").css("background-color", "white");
