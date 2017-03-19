@@ -95,16 +95,19 @@ $(document).ready(function(){
   }
 
   //Contact Form
-  $("#input-message").css("background-color", "white");
-
-  $("#input-message").css("color", "black");
+  $("#input-message").css({
+    "background-color": "white",
+    "color": "black"
+  });
 
   $("#input-message").on("keyup", function() {
     var charCount = $("#input-message").val().length;
     console.log(charCount); 
     $("#char-count").html(charCount);
-    if(charCount > 50) {
-      $("#char-count").css("color", "red"); // need to turn character count red
+    if(charCount > 200 && charCount < 500) {
+      $("#char-count").css("color", "yellow"); // need to turn character count yellow to indicate it's getting a liiiiiittle long
+    } else if(charCount >= 500) {
+      $("#char-count").css("color", "red"); // too long!
     } else {
       $("#char-count").css("color", "white"); // need it to be black
     }
