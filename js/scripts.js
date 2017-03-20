@@ -68,15 +68,6 @@ $(document).ready(function(){
   //Parallax
   $('.devaron-background').parallax({imageSrc: 'img/space.jpg'});
 
-  //Tooltips
-  $(function () {
-    $('#tooltip1').tooltip();
-  });
-
-  $(function () {
-    $('#tooltip2').tooltip();
-  });
-
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
@@ -109,7 +100,7 @@ $(document).ready(function(){
     } else if(charCount >= 500) {
       $("#char-count").css("color", "red"); // too long!
     } else {
-      $("#char-count").css("color", "white"); // need it to be black
+      $("#char-count").css("color", "white"); // normal
     }
   });
 
