@@ -4,10 +4,10 @@ $(document).ready(function(){
   $(".logo-landing").bgswitcher({
     images: ["img/sfdestroyer.jpg", "img/forestatat.jpg", "img/bespin.jpg"], // Background images
     effect: "fade", // fade, blind, clip, slide, drop, hide
-    interval: 5000, // Interval of switching
+    interval: 4000, // Interval of switching
     loop: true, // Loop the switching
     shuffle: false, // Shuffle the order of an images
-    duration: 5000, // Effect duration
+    duration: 4000, // Effect duration
     easing: "swing" // Effect easing
   });
 
