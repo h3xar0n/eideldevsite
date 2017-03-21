@@ -8,14 +8,11 @@ www.eideldev.com
 * Write content for "Work" descriptions, add Grad Jobs
 * Create new pages for each project
 
-### jQuery Lightsaber Remote
-* Create jQuery controlled remote for "Practice" section that moves back and forth
-
 ### SEO About
 * Update "About" section to have richer SEO links, more relevant description
 
 ### SEO Resume
-* Update "Resume" based on Brians feedback
+* Update "Resume" based on Brian's feedback
 * Run through SkillsEngine, SEO test
 
 ### History Update
@@ -31,10 +28,10 @@ www.eideldev.com
 ### Email Submit
 * Create Email Submission page, link form to Bitballoon
 
-### 404 page
-* Create a 404 page with Boba Fett
-
 ## Icebox
+
+### jQuery Lightsaber Remote
+* Create jQuery controlled remote for "Practice" section that moves back and forth
 
 ### jQuery UI Deathstar
 * Add Deathstar blowing up Alderaan at the end of history

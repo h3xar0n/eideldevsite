@@ -7,7 +7,7 @@ var works = [
     url: "https://a2accessories.herokuapp.com/"},
   {title: "Eidelhaus",
   	pic: "img/portfolio/eidelhaus/EidelhausCombo.png",
-  	url: "http://www.eidelhaus.com"},
+  	url: "http://www.eideldev.com/404.html"},
   {title:"Eideldev",
     pic: "img/portfolio/eideldev/EideldevCombo.png",
     url: "i-dont-usually-link-to-a-404-but-when-i-do-it-features-boba-fett"},
