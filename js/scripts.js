@@ -75,13 +75,13 @@ $(document).ready(function(){
   //Skills
   var skillsIndex = 0;
   while (skillsIndex < skills.length) {
-    $("#skills-power").append("\
+    $("#skills-full").append("\
       <div class='col-xs-4 col-sm-2' title=" + skills[skillsIndex].name + " data-toggle='tooltip' data-placement='bottom'>\
         <i id=" + skillsIndex + "></i>\
       </div>\
     ");
     var icon = document.getElementById(skillsIndex);
-    icon.className += skills[skillsIndex].icon + skills[skillsIndex].color;
+    icon.className = skills[skillsIndex].icon + skills[skillsIndex].color;
     skillsIndex ++;
   }
 
