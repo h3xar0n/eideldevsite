@@ -2,7 +2,7 @@ var works = [
   {title: "Glam by Adelina",
   	pic: "img/portfolio/glam/GlamCombo.png",
   	url: "http://www.glambyadelina.com/"},
-  {title:"A Squared Accessories",
+  {title:"A² Accessories",
     pic: "img/portfolio/a2/A2Combo.png",
     url: "https://a2accessories.herokuapp.com/"},
   {title: "Eidelhaus",
