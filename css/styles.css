@@ -1048,3 +1048,71 @@ textarea {
 .error-title {
   margin-top: 10vh;
 }
+
+/*Work Pages*/
+
+.work-page {
+  padding-top: 60px;
+  background-color: white;
+}
+
+.top-side {
+  padding-top: 70px;
+}
+
+.work-box {
+  padding: 70px;
+  padding-top: 0px;
+}
+
+.work-box p {
+  font-size: 2vw;
+}
+
+@media (max-width: 767px) {
+  .work-box p {
+    font-size: 3vw;
+  }
+}
+
+.work-page-feature {
+  width: 100%;
+}
+
+.work-title {
+  color: #969696;
+  margin-top: 0;
+}
+
+.skills-used {
+  margin: 40px 0;
+}
+
+.skills-used i {
+  font-size: 4vw;
+}
+
+@media (max-width: 767px) {
+  .skills-used i {
+    font-size: 8vw;
+  }
+}
+
+.work-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.light-box {
+  padding-top: 70px;
+  background-color: #969696;
+}
+
+.light-box p {
+  color: black;
+}
+
+.gray-box {
+  padding-top: 70px;
+  background-color: #2e2e2e;
+}
