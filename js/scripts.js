@@ -34,7 +34,7 @@ $(document).ready(function(){
   while (worksIndex < works.length) {
     $("#work").append("\
       <div class='col-sm-6 clearfix'>\
-        <a href=" + works[worksIndex].url + " class='work-img' target='_blank'>\
+        <a href=" + works[worksIndex].url + " class='work-img'>\
           <img class='img-responsive' src='" + works[worksIndex].pic + "'>\
           <span class='info'>" + works[worksIndex].title + "</span>\
         </a>\

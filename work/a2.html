@@ -115,7 +115,18 @@
       </div>
       <div class="col-xs-12 col-sm-6 work-box">
         <h2 class="work-title">A² Accessories</h2>
-        <p>Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum </p>
+        <p>This production-ready app is a wedding accessory store in the same style as the site I made for <a href="glam.html">Glam by Adelina</a>. It is able to process payments and will be used for business once I add a cart and shipping feature.</p>
+        <h3>Features:</h3>
+        <ul>
+          <li>Forms and automatic mailers</li>
+          <li>Authentication and authorization</li>
+          <li>Validation and pagination</li>
+          <li>Sass and CoffeeScript for preprocessing bliss</li>
+          <li>Unit and functional tests using RSpec</li>
+          <li>Caching with AJAX and Redis</li>
+          <li>ActiveJob and ActionCable for streaming and broadcasting of ratings and comments</li>
+        </ul>        
+
         <div class="row"> <!-- Button Row -->
           <div class="col-sm-6 work-button">
             <a class="btn-main" href="https://a2accessories.herokuapp.com/" target="_blank">Link</a>
@@ -126,12 +137,14 @@
         </div> <!-- End Button Row -->
       </div>
     </div>
-    <div class="row">
+    <div class="row bottom-row">
       <div class="col-xs-12 col-sm-6 work-box light-box">
-        <p>Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar</p>
+        <p>Only admin accounts should be able to edit or destroy products, so I used Ruby not only to hide the CRUD interface from non-admins, but to prevent any unauthorized commands through the URL (e.g. "/product/1/edit"). I also tested for extreme cases (such as a user typing in a non-existent product ID) and made sure to "rescue" wayward users by adding redirects to my config file.</p>
+        <p>The RSpec tests I wrote ensured consistent success for user submitted comments, ratings, and the validation and math underlying them. One of the most challenging (and heavily test-dependent) features to develop involved using ActionCable to update the page live every time a new user submits a comment.</p>
+        <p>I used various forms of data storage and retrieval such as PostgreSQL, Memcached, and Redis to make the site run as quickly and securely as possible, but I needed to rely on a third party for credit card payments. This decision was principally for legal and security reasons, namely that I would be too much at risk to hold credit card information on my server. I implemented Stripe and used the full flexibility of their API to match it to our brand and route to a custom email once visitors made a purchase.</p>
       </div>
       <div class="col-xs-12 col-sm-6 work-box gray-box">
-        <p>Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar Lorem ipsum donar</p>
+        <img class="img-responsive" src="../img/ActiveJob.png" alt="A screenshot of the terminal while watching a new comment posted to the local server.">
       </div>      
     </div>
   </div>
@@ -140,7 +153,7 @@
   <footer>
     <div class="row">
       <div class="col-xs-8 foot">
-        <div id="legal">&copy; A<span class="stripe">r</span>on <span class="stripe">E</span>idelman 2017</div>
+        <div id="legal">Aron Eidelman is in no way affiliated with or endorsed by Lucasfilm Limited or any of its subsidiaries, employees, or associates. Aron Eidelman will take all steps necessary to ensure that any usage of trademarked items in no way confuses the audience of this site as to its origin. Aron makes no claim to own Star Wars or any of the copyrights or trademarks related to it. Images that are displayed on this site are copyrighted to Lucasfilm Limited or another partner of Lucas Licensing, or to the creator of the image. The Star Wars titles and associated names are the sole property of Lucasfilm Limited. Aron Eidelman believe that the operation of this website falls under the definition of <a href="https://en.wikipedia.org/wiki/Fair_use" target="_blank"> "fair use" </a>under United States copyright laws.</div>
       </div>
       <div class="col-xs-4 text-right">
         <!-- GitHub -->
