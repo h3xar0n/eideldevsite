@@ -21,11 +21,11 @@
   </div>
   <div class="row more">
     <div class="more-btn-container">
-      <a class="more-btn" href="#">More</a>
-      <ul class="more-menu">
+      <a class="more-btn" ng-click="showMore = !showMore">More</a>
+      <ul class="more-menu" ng-show="showMore">
         <li>Stats</li>
-        <li class="share">Share</li>
-        <li class="share-menu">
+        <li class="share" ng-click="showShare = !showShare">Share</li>
+        <li class="share-menu" ng-show="showShare">
           <span>Facebook</span>
           <span>Google+</span>
           <span>Twitter</span>

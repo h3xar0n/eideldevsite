@@ -105,6 +105,7 @@ li:hover {
 }
 
 /* More row */
+
 .more {
   position: relative;
 }
@@ -115,7 +116,6 @@ li:hover {
 }
 
 .more-menu {
-  display: none;
   margin: 0;
   padding: 0;
 }
@@ -135,10 +135,6 @@ li:hover {
   text-align: right;
   top: 12px;
   width: 8%;
-}
-
-li.share-menu {
-  display: none;
 }
 
 .share-menu span {
