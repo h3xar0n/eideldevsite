@@ -13,6 +13,10 @@ body {
   max-width: 980px;
 }
 
+.col-sm-4 {
+  min-height: 260px;
+}
+
 .container .row .col-sm-4 {
   margin: 0 0 30px;
 }
@@ -42,7 +46,7 @@ li:hover {
 /* Header */
 .header {
   background: #000;
-  margin: 0 0 40px;
+  margin: 0 0 60px;
 }
 
 .header h1 {

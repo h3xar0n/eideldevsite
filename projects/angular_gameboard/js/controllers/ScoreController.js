@@ -84,5 +84,6 @@ app.controller('ScoreController', ['$scope', function($scope) {
       visitor_score: 13,
       home_score: 26
     }    
-  ]  
+  ] 
+
 }]);

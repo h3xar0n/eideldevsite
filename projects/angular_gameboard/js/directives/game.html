@@ -32,8 +32,8 @@
         </li>
       </ul>
     </div>
-    <div class="bell">
-      <span class="notification glyphicon glyphicon-bell"></span>
+    <div class="bell" ng-click="toggleClass = !toggleClass">
+      <span class="notification glyphicon glyphicon-bell" ng-class="{'active': toggleClass}"></span>
     </div>
   </div>
 </div>

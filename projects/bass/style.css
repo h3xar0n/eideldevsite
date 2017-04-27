@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header .btn-default {
+  border: 0px;
+  border-radius: 0;
+  padding: 8px 30px;
+  background-color: #ff003d;
+}
+
+.jumbotron {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/bass/bg.jpg");
+}
+
+.supporting-4 {
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/bass/feature.jpg")
+}
