@@ -1,1 +1,1 @@
-var app = angular.module('ReaderApp', []);
+var app = angular.module('ReaderApp', ['ngRoute']);
