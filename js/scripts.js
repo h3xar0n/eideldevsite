@@ -1,26 +1,15 @@
 $(document).ready(function(){
 
-  //Hero Fading Carousel
-  $(".logo-landing").bgswitcher({
-    images: ["img/sfdestroyer.jpg", "img/forestatat.jpg", "img/bespin.jpg"], // Background images
-    effect: "fade", // fade, blind, clip, slide, drop, hide
-    interval: 4000, // Interval of switching
-    loop: true, // Loop the switching
-    shuffle: false, // Shuffle the order of an images
-    duration: 4000, // Effect duration
-    easing: "swing" // Effect easing
-  });
-
   // Smooth Scrolling
   var $root = $('html, body');
   $('.navbar-nav a, .workName a, .btm-but a').click(function() {
-      var href = $.attr(this, 'href');
-      $root.animate({
-          scrollTop: $(href).offset().top
-      }, 500, function () {
-          window.location.hash = href;
-      });
-      return false;
+    var href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
   });
     
   // Navbar Drop Down
@@ -29,23 +18,40 @@ $(document).ready(function(){
     $(".navbar-collapse").collapse('hide');
   });
 
-  // Work: Sample Projects
-  var worksIndex = 0;
-  while (worksIndex < works.length) {
-    $("#work").append("\
-      <div class='col-sm-6 clearfix'>\
-        <a href=" + works[worksIndex].url + " class='work-img'>\
-          <img class='img-responsive' src='" + works[worksIndex].pic + "'>\
-          <span class='info'>" + works[worksIndex].title + "</span>\
-        </a>\
-      </div>\
-    ");
-    worksIndex ++;
-  }
+  // Work: Portfolio Effect
 
-  $(".work-img").mouseenter( function() {
-  $(".info", this).show();}).mouseleave(function(){
-  $(".info", this).hide();
+  $('#skills-used i').mouseenter(function() {
+    var skill = $(this).attr('class')
+    if (skill == 'devicon-ruby-plain colored') {
+      $('.sample-title').html('Ruby');
+      $('.portfolio-sample').addClass('shadow-sample');
+      $('.ruby-sample').addClass('select-sample');
+    } else if (skill == 'devicon-rails-plain colored') {
+      $('.sample-title').html('Rails');
+      $('.portfolio-sample').addClass('shadow-sample');
+      $('.rails-sample').addClass('select-sample');
+    } else if (skill == 'devicon-javascript-plain colored') {
+      $('.sample-title').html('JavaScript');
+      $('.portfolio-sample').addClass('shadow-sample');
+      $('.javascript-sample').addClass('select-sample');
+    } else if (skill == 'devicon-jquery-plain colored') {
+      $('.sample-title').html('jQuery');
+      $('.portfolio-sample').addClass('shadow-sample');
+      $('.jquery-sample').addClass('select-sample');
+    } else if (skill == 'devicon-angularjs-plain colored') {
+      $('.sample-title').html('Angular');
+      $('.portfolio-sample').addClass('shadow-sample');
+      $('.angular-sample').addClass('select-sample');
+    } else if (skill == 'devicon-bootstrap-plain colored') {
+      $('.sample-title').html('Bootstrap');
+      $('.portfolio-sample').addClass('shadow-sample');
+      $('.bootstrap-sample').addClass('select-sample');
+    }
+  });
+  $('#skills-used i').mouseleave(function() {
+    $('.portfolio-sample').removeClass('shadow-sample');
+    $('.portfolio-sample').removeClass('select-sample');
+    $('.sample-title').html('Work');
   });
 
   // History Image Slide-In
@@ -66,7 +72,7 @@ $(document).ready(function(){
   });
 
   //Parallax
-  $('.devaron-background').parallax({imageSrc: 'img/space.jpg'});
+  $('.devaron-background').parallax({imageSrc: 'img/Grid2.jpg'});
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();

@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -44,12 +43,12 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#work-sec">Work</a></li>
-            <li class="hidden-xs"><a href="#practice-sec">Practice</a></li>
-            <li><a href="#about-sec">About</a></li>
-            <li class="hidden-xs"><a href="#history">History</a></li>
-            <li><a href="#skills-sec">Skills</a></li>
-            <li><a href="#contact-sec">Contact</a></li>
+          <li><a href="#work-sec">Work</a></li>
+          <!-- <li class="hidden-xs"><a href="#practice-sec">Practice</a></li> -->
+          <li><a href="#about-sec">About</a></li>
+          <li class="hidden-xs"><a href="#history">History</a></li>
+          <li><a href="#skills-sec">Skills</a></li>
+          <li><a href="#contact-sec">Contact</a></li>
         </ul>
       </div> <!-- nav -->
     </div> <!-- end nav container-->
@@ -80,23 +79,110 @@
       </div>
       <!-- Logo Row --> 
       <div class="row landing-btns text-center center"> 
-          <div class=" col-sm-12 btm-but">
-            <a class="btn-main" href="#contact-sec">Contact Me</a>
-          </div>
+        <div class=" col-sm-12 btm-but">
+          <a class="btn-main" href="#contact-sec">Contact Me</a>
+        </div>
       </div> <!-- End Logo Row -->
     </div> <!-- End Overlay -->  
   </div><!-- End Landing -->
-    
+
   <!-- Work -->
   <div class="container work anchor" id="work-sec">
-    <h2>Work</h2>
+    <h2 class="sample-title">Work</h2>
     <!-- JS Project Display -->
-    <div class="row" id="work">  
+    <!-- <div class="row" id="work">  
+    </div> -->
+    <!-- Heading will change to skill selected -->
+    <div id="portfolio">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="work/glam.html">
+            <img class="img-responsive portfolio-sample javascript-sample jquery-sample
+            bootstrap-sample" src="img/portfolio/glam/GlamSmall.png" alt="A
+            small screenshot of the landing page for Glam by Adelina">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="work/a2.html">
+            <img class="img-responsive portfolio-sample ruby-sample rails-sample javascript-sample
+            bootstrap-sample" src="img/portfolio/a2/A2Small.png"
+            alt="A small screenshot of the landing page for A2 Accessories">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="work/gameplan.html"> 
+            <img class="img-responsive portfolio-sample ruby-sample rails-sample javascript-sample
+            angular-sample bootstrap-sample" src="img/portfolio/gpj/GameplanSmall.png">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"> 
+          <a href="http://listeasy.bitballoon.com/">
+            <img class="img-responsive portfolio-sample javascript-sample jquery-sample" src="img/List.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="http://eideldev.com/404"> 
+            <img class="img-responsive portfolio-sample ruby-sample" src="img/RubyCLI.png">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="projects/angular_gameboard/index.html">
+            <img class="img-responsive portfolio-sample javascript-sample angular-sample" src="img/GameSmall.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill selector -->
+    <div id="skills-used" class="hidden-xs">
+      <h3>Select Skill Used:</h3>
+      <div class="row">
+        <div class="col-sm-2 ruby-select">
+          <i class="devicon-ruby-plain colored"></i>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-rails-plain colored"></i>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-angularjs-plain colored"></i>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-jquery-plain colored"></i>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-bootstrap-plain colored"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <i class=""></i>
+        </div>
+        <div class="col-sm-2">
+          <i class=""></i>
+        </div>
+        <div class="col-sm-2">
+          <i class=""></i>
+        </div>
+        <div class="col-sm-2">
+          <i class=""></i>
+        </div>
+        <div class="col-sm-2">
+          <i class=""></i>
+        </div>
+        <div class="col-sm-2">
+          <i class=""></i>
+        </div>
+      </div>
     </div>
   </div> <!-- End Work -->
 
   <!-- Practice -->
-  <div class="hidden-xs practice-background" id="practice-sec">
+  <!-- <div class="hidden-xs practice-background" id="practice-sec">
     <div class="container practice">
     <h2 id="practice-heading">Practice</h2>
     <div class="row text-center">
@@ -111,7 +197,7 @@
     </div>
     </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- About -->
   <div class="container about anchor" id="about-sec">
@@ -152,8 +238,7 @@
       </div>
 
       </div>
-    </div><!-- End About panel -->
-    
+    </div><!-- End About panel -->   
   </div><!-- End About -->
   
   <!-- History in Space -->
@@ -340,7 +425,6 @@
             <div class="col-xs-4 col-sm-2" title="Apache" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-apache-plain colored"></i>
             </div>
-            
             <!-- Less -->
             <div class="col-xs-4 col-sm-2" title="Less" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-less-plain-wordmark colored"></i>
@@ -388,8 +472,7 @@
       <div class="text-center">  
         <input type="submit" value="Send" id="input-submit" class="btn-main">
       </div>
-    </form><!-- End Form-->
-    
+    </form><!-- End Form-->  
   </div><!-- End Contact -->
 
   <!-- Footer -->

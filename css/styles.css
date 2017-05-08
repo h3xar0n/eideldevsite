@@ -27,6 +27,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+.navbar-inverse {
+  background: rgba(240, 240, 240, 0.9);
+}
 .navbar-brand {
   padding: .2em .7em;
 }
@@ -36,6 +39,9 @@
 .nav-logo {
   width: 2em;
   height: 2em;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: black;
 }
 
 /*Site Wide Font*/
@@ -63,7 +69,7 @@ h1 {
 h2 {
   color: white;
 }
-h1, h2, h3, h4, .nav li {
+h1, h2, .nav li {
   text-transform: uppercase;
   text-align: center;
 }
@@ -86,14 +92,16 @@ a:hover, a:focus {
   margin-right: 0;
   margin-left: 0;
 }
-.work .row {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 70px;
-}
 
 /*Landing*/
 
+.logo-landing {
+  background-image: url("../img/gridscape_white.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
 .logo-landing {
   min-height: 100vh;
 }
@@ -130,11 +138,9 @@ a:hover, a:focus {
 .landing-title {
   margin-top: 15vh;
 }
-
 .landing-title h1 {
   font-size: 3.1vw;  
 }
-
 .gray-overlay {
   background: rgba(0, 0, 0, .3);
   height: 100vh;
@@ -147,15 +153,12 @@ a:hover, a:focus {
     padding-top: 2.5vw;
   }
 }
-
 .logo-landing img {
   max-width: 40vw;
 }
-
 .landing-btns {
   margin-top: 35vh;
 }
-
 .btn-main {
   background-color: #f2c193;
   color: black;
@@ -169,7 +172,6 @@ a:hover, a:focus {
   border-radius: 10px;
   font-family: 'Agane-45', monospace;
 }
-
 .btn-main:hover{
   background-color: black;
   color: white;
@@ -187,19 +189,57 @@ a:hover, a:focus {
 /*Work*/
 
 .work {
-  background-color: black;
+  background-color: #f2f2f2;
   min-height: 100vh;
 }
 
-.center-video {
-  text-align: center;
-  margin-bottom: 10vh;
-  border-radius: 15px;
+.work h2 {
+  color: #555;
 }
 
-.center-video iframe {
-  max-width: 70vw;
-  height: 100%;
+#portfolio {
+  text-align: center;
+  max-width: 150vh;
+  margin: 0 auto;
+}
+
+#portfolio .row .col-sm-4 {
+  padding: 0;
+}
+
+.portfolio-sample {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.portfolio-sample:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.shadow-sample {
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.select-sample {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#skills-used {
+  text-align: center;
+  max-width: 150vh;
+  margin: 0 auto;
+}
+
+#skills-used .col-sm-2 {
+  text-align: center;
+}
+
+#skills-used i {
+  text-align: center;
+  font-size: 13vh;
 }
 
 /*CF Project*/
@@ -445,7 +485,7 @@ a:hover, a:focus {
 }
 
 .about {
-  background-color: black;
+  background-color: #B3B3B3;
 }
 
 .about-desktop p {
@@ -944,6 +984,14 @@ footer i:hover {
 
   .btn-main {
     padding: 8px 20px;
+  }
+
+  /*Reformat Work*/
+
+  #portfolio {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   /*Reformat Skills Icons*/
