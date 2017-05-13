@@ -47,7 +47,7 @@
 /*Site Wide Font*/
 
 body {
-  background-color: black;
+  background-color: #B3B3B3;
 }
 * {
   font-family: 'Agane-45', monospace;
@@ -140,10 +140,6 @@ a:hover, a:focus {
 }
 .landing-title h1 {
   font-size: 3.1vw;  
-}
-.gray-overlay {
-  background: rgba(0, 0, 0, .3);
-  height: 100vh;
 }
 
 /*Fix Heading from Jumping over Logo*/
@@ -421,6 +417,7 @@ a:hover, a:focus {
 
 .panel-group .panel {
   border-radius: 10px;
+  margin: 0 10vw;
 }
 
 .panel-title {
@@ -780,6 +777,10 @@ a:hover, a:focus {
   min-height: 85vh
 }
 
+.contact-col {
+  margin-left: 5vw;
+}
+
 /*Contact Info*/
 .contact-name {
   font-family: 'Exodus', monospace;
@@ -866,7 +867,7 @@ footer i:hover {
 }
 
 .anchor {
-  padding-top: 51px;
+  padding: 51px 0;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -942,7 +943,6 @@ footer i:hover {
   width: 100%;
   } 
   .contact {
-  background-image: none;
   width: 100%;
   }
   .anchor {
