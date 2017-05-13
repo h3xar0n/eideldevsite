@@ -109,7 +109,6 @@ $(document).ready(function(){
       $("#char-count").css("color", "white"); // normal
     }
   });
-
 });
 
 // Google Maps

@@ -700,7 +700,7 @@ a:hover, a:focus {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vw;
-  background: black;
+  background: #B3B3B3;
 }
 
 .skills h3 {
@@ -713,10 +713,10 @@ a:hover, a:focus {
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
   color: white;
-  background: #252525;
+  background: #595959;
   transition: background .5s; 
   border-radius: 15px;
-  border-color: #252525;
+  border-color: #595959;
 }
 
 .skills-pan>.panel-default>.panel-heading:hover {
@@ -774,7 +774,7 @@ a:hover, a:focus {
 /*Contact*/
 
 .contact {
-  background: url("../img/leiar2d2.jpg");
+  background: url("../img/gridscape_end.png");
   background-attachment: fixed;
   background-position: center;
   min-height: 85vh
