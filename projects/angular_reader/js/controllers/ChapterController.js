@@ -1,5 +1,7 @@
 app.controller('ChapterController', ['$scope', 'books', '$routeParams', function($scope, books, $routeParams) {
   books.success(function(data) {
+    $scope.book = data[$routeParams.book];
+    $scope.chapter = $scope.book.chapters[$routeParams.chapterId];
 
     // If there no more chapters left, go back to the bookshelf view
     if($routeParams.chapterId >= $scope.book.chapters.length - 1) {
@@ -8,7 +10,7 @@ app.controller('ChapterController', ['$scope', 'books', '$routeParams', function
   });
 
   // Using these properties to create the URLs in line 1 and line 11 of view/chapter.html
-  $scope.currentBookIndex = parseInt($routeParams.bookId);
+  $scope.currentBookIndex = parseInt($routeParams.book);
   $scope.currentChapterIndex = parseInt($routeParams.chapterId);
   $scope.nextChapterIndex = $scope.currentChapterIndex + 1;
 }]);
