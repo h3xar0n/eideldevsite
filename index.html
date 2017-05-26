@@ -78,8 +78,8 @@
         </div>
       </div>
       <!-- Logo Row --> 
-      <div class="row landing-btns text-center center"> 
-        <div class=" col-sm-12 btm-but">
+      <div class="row landing-btns text-center center">
+        <div class="col-sm-12 btm-but">
           <a class="btn-main" href="#contact-sec">Contact Me</a>
         </div>
       </div> <!-- End Logo Row -->
@@ -89,12 +89,12 @@
   <!-- Work -->
   <div class="container work anchor" id="work-sec">
     <h2 class="sample-title">Work</h2>
-    <!-- JS Project Display -->
-    <!-- <div class="row" id="work">  
-    </div> -->
-    <!-- Heading will change to skill selected -->
     <div id="portfolio">
-      <div class="row">
+      <div class="row" id="work-samples">
+        <div class="col-sm-4" v-for="sample in samples">
+          <img class="img-responsive" v-bind:src="sample.image">
+          {{ sample.message }}
+        </div>        
         <div class="col-sm-4">
           <a href="work/glam.html">
             <img class="img-responsive portfolio-sample javascript-sample jquery-sample
@@ -180,24 +180,6 @@
       </div>
     </div>
   </div> <!-- End Work -->
-
-  <!-- Practice -->
-  <!-- <div class="hidden-xs practice-background" id="practice-sec">
-    <div class="container practice">
-    <h2 id="practice-heading">Practice</h2>
-    <div class="row text-center">
-    <div class="col-sm-4" title="GitHub" data-toggle="tooltip" data-placement="top">
-      <a href="https://github.com/h3xar0n" target="_blank"><i class="devicon-github-plain"></i></a>
-    </div>
-    <div class="col-sm-4" title="Exercism" data-toggle="tooltip" data-placement="top">
-      <a href="https://exercism.io/h3xar0n" target="_blank"><img src="img/exercismlogo.png" alt="Logo for Exercism"></a>
-    </div>
-    <div class="col-sm-4" title="Codecademy" data-toggle="tooltip" data-placement="top">
-      <a href="https://www.codecademy.com/h3xar0n" target="_blank"><img src="img/codecademy.png" alt="Logo for Codecademy"></a>
-    </div>
-    </div>
-    </div>
-  </div> -->
 
   <!-- About -->
   <div class="container about anchor" id="about-sec">
@@ -494,6 +476,8 @@
   <!-- ============================= -->
   <!-- All your JavaScript comes now -->
   <!-- ============================= -->
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue"></script>
   <!-- Used in scripts.js -->
   <script src="js/jquery.bgswitcher.js"></script>
   <script src="js/background.cycle.js"></script>

@@ -1,3 +1,15 @@
+//Vue
+var example1 = new Vue({
+  el: '#work-samples',
+  data: {
+    samples: [
+      { message: 'Foo', 
+        image: 'img/portfolio/glam/GlamSmall.png'},
+      { message: 'Bar' }
+    ]
+  }
+})
+
 $(document).ready(function(){
 
   // Smooth Scrolling

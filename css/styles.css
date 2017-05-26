@@ -372,7 +372,7 @@ a:hover, a:focus {
 /*Practice*/
 
 .practice-background {
-  background-image: url("../img/luketraining.jpg");
+  background: white;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
