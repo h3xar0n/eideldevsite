@@ -90,11 +90,20 @@
   <div class="container work anchor" id="work-sec">
     <h2 class="sample-title">Work</h2>
     <div id="portfolio">
+    
+      <!-- Vue Row (Work in Progress)
       <div class="row" id="work-samples">
-        <div class="col-sm-4" v-for="sample in samples">
-          <img class="img-responsive" v-bind:src="sample.image">
-          {{ sample.message }}
-        </div>        
+        <div v-for="sample in samples">
+          <div class="col-sm-4" >
+            <a v-bind:href="sample.link">  
+              <img class="img-responsive portfolio-sample" v-bind:src="sample.image">
+            </a>
+          </div>
+        </div>
+      </div> -->
+    
+
+      <div class="row">
         <div class="col-sm-4">
           <a href="work/glam.html">
             <img class="img-responsive portfolio-sample javascript-sample jquery-sample
@@ -115,26 +124,27 @@
             angular-sample bootstrap-sample" src="img/portfolio/gpj/GameplanSmall.png">
           </a>
         </div>
-      </div>
-      <div class="row">
         <div class="col-sm-4"> 
-          <a href="http://listeasy.bitballoon.com/">
-            <img class="img-responsive portfolio-sample javascript-sample jquery-sample" src="img/List.png">
+          <a href="http://eideldev.com/404">
+            <img class="img-responsive portfolio-sample javascript-sample jquery-sample"
+            src="img/portfolio/eideldev/EideldevSmall.png">
           </a>
         </div>
         <div class="col-sm-4">
-          <a href="http://eideldev.com/404"> 
-            <img class="img-responsive portfolio-sample ruby-sample" src="img/RubyCLI.png">
+          <a href="https://tvitzar.herokuapp.com/"> 
+            <img class="img-responsive portfolio-sample ruby-sample rails-sample bootstrap-sample"
+            src="img/portfolio/tvitzar/TvitzarSmall.png">
           </a>
         </div>
         <div class="col-sm-4">
-          <a href="projects/angular_gameboard/index.html">
-            <img class="img-responsive portfolio-sample javascript-sample angular-sample" src="img/GameSmall.png">
+          <a href="http://nearme.bitballoon.com/#/">
+            <img class="img-responsive portfolio-sample javascript-sample angular-sample"
+            src="img/portfolio/nearme/NearMeSmall.png">
           </a>
         </div>
       </div>
-    </div>
 
+    </div>
     <!-- Skill selector -->
     <div id="skills-used" class="hidden-xs">
       <h3>Select Skill Used:</h3>

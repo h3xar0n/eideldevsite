@@ -1094,8 +1094,12 @@ textarea {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
+  min-height: 100vh;
 }
 
+.error-page .container {
+  min-height: 100vh;
+}
 .error-title {
   margin-top: 10vh;
 }

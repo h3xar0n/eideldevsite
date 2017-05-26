@@ -3,9 +3,24 @@ var example1 = new Vue({
   el: '#work-samples',
   data: {
     samples: [
-      { message: 'Foo', 
+      { id:    1,
+        link:  'work/glam.html',
         image: 'img/portfolio/glam/GlamSmall.png'},
-      { message: 'Bar' }
+      { id:    2,
+        link:  'work/a2.html',
+        image: 'img/portfolio/a2/A2Small.png'},
+      { id:    3,
+        link:  'work/gameplan.html',
+        image: 'img/portfolio/gpj/GameplanSmall.png'},
+      { id:    4,
+        link:  'http://eideldev.com/404',
+        image: 'img/portfolio/eideldev/EideldevSmall.png'},
+      { id:    5,
+        link:  'http://eideldev.com/404',
+        image: 'img/RubyCLI.png'},
+      { id:    6,
+        link:  'projects/angular_gameboard/index.html',
+        image: 'img/GameSmall.png'}
     ]
   }
 })
