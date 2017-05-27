@@ -90,102 +90,27 @@
   <div class="container work anchor" id="work-sec">
     <h2 class="sample-title">Work</h2>
     <div id="portfolio">
-    
-      <!-- Vue Row (Work in Progress)
+      <!-- Vue Row  -->
       <div class="row" id="work-samples">
         <div v-for="sample in samples">
-          <div class="col-sm-4" >
+          <div class="col-sm-4">
             <a v-bind:href="sample.link">  
-              <img class="img-responsive portfolio-sample" v-bind:src="sample.image">
+              <img class="img-responsive portfolio-sample" v-bind:class="sample.class"
+              v-bind:src="sample.image"
+              v-bind:alt="sample.alt">
             </a>
           </div>
         </div>
-      </div> -->
-    
-
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="work/glam.html">
-            <img class="img-responsive portfolio-sample javascript-sample jquery-sample
-            bootstrap-sample" src="img/portfolio/glam/GlamSmall.png" alt="A
-            small screenshot of the landing page for Glam by Adelina">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="work/a2.html">
-            <img class="img-responsive portfolio-sample ruby-sample rails-sample javascript-sample
-            bootstrap-sample" src="img/portfolio/a2/A2Small.png"
-            alt="A small screenshot of the landing page for A2 Accessories">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="work/gameplan.html"> 
-            <img class="img-responsive portfolio-sample ruby-sample rails-sample javascript-sample
-            angular-sample bootstrap-sample" src="img/portfolio/gpj/GameplanSmall.png">
-          </a>
-        </div>
-        <div class="col-sm-4"> 
-          <a href="http://eideldev.com/404">
-            <img class="img-responsive portfolio-sample javascript-sample jquery-sample"
-            src="img/portfolio/eideldev/EideldevSmall.png">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="https://tvitzar.herokuapp.com/"> 
-            <img class="img-responsive portfolio-sample ruby-sample rails-sample bootstrap-sample"
-            src="img/portfolio/tvitzar/TvitzarSmall.png">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="http://nearme.bitballoon.com/#/">
-            <img class="img-responsive portfolio-sample javascript-sample angular-sample"
-            src="img/portfolio/nearme/NearMeSmall.png">
-          </a>
-        </div>
       </div>
-
     </div>
-    <!-- Skill selector -->
+    <!-- Vue Skill Selector -->
     <div id="skills-used" class="hidden-xs">
       <h3>Select Skill Used:</h3>
-      <div class="row">
-        <div class="col-sm-2 ruby-select">
-          <i class="devicon-ruby-plain colored"></i>
-        </div>
-        <div class="col-sm-2">
-          <i class="devicon-rails-plain colored"></i>
-        </div>
-        <div class="col-sm-2">
-          <i class="devicon-javascript-plain colored"></i>
-        </div>
-        <div class="col-sm-2">
-          <i class="devicon-angularjs-plain colored"></i>
-        </div>
-        <div class="col-sm-2">
-          <i class="devicon-jquery-plain colored"></i>
-        </div>
-        <div class="col-sm-2">
-          <i class="devicon-bootstrap-plain colored"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <i class=""></i>
-        </div>
-        <div class="col-sm-2">
-          <i class=""></i>
-        </div>
-        <div class="col-sm-2">
-          <i class=""></i>
-        </div>
-        <div class="col-sm-2">
-          <i class=""></i>
-        </div>
-        <div class="col-sm-2">
-          <i class=""></i>
-        </div>
-        <div class="col-sm-2">
-          <i class=""></i>
+      <div class="row" id="skill-list">
+        <div v-for="skill in skills">
+          <div class="col-sm-2">
+            <i v-bind:class="skill.class"></i>
+          </div>
         </div>
       </div>
     </div>

@@ -1,26 +1,73 @@
-//Vue
-var example1 = new Vue({
+// Vue
+
+// Work Samples
+
+var workSampleList = new Vue({
   el: '#work-samples',
   data: {
     samples: [
-      { id:    1,
+      { 
+        alt:   'A small screenshot of the landing page for Glam by Adelina',
         link:  'work/glam.html',
-        image: 'img/portfolio/glam/GlamSmall.png'},
-      { id:    2,
+        image: 'img/portfolio/glam/GlamSmall.png',
+        class: 'javascript-sample jquery-sample bootstrap-sample'
+      },
+      { 
+        alt:   'A small screenshot of the landing page for A2 Accessories',
         link:  'work/a2.html',
-        image: 'img/portfolio/a2/A2Small.png'},
-      { id:    3,
+        image: 'img/portfolio/a2/A2Small.png',
+        class: 'ruby-sample rails-sample javascript-sample bootstrap-sample'
+      },
+      { 
+        alt:   'A small screenshot of the site for Gameplan Jobs',
         link:  'work/gameplan.html',
-        image: 'img/portfolio/gpj/GameplanSmall.png'},
-      { id:    4,
+        image: 'img/portfolio/gpj/GameplanSmall.png',
+        class: 'ruby-sample rails-sample javascript-sample angular-sample bootstrap-sample'
+      },
+      { 
+        alt:   'A small screenshot of Eideldev, this site',
         link:  'http://eideldev.com/404',
-        image: 'img/portfolio/eideldev/EideldevSmall.png'},
-      { id:    5,
-        link:  'http://eideldev.com/404',
-        image: 'img/RubyCLI.png'},
-      { id:    6,
-        link:  'projects/angular_gameboard/index.html',
-        image: 'img/GameSmall.png'}
+        image: 'img/portfolio/eideldev/EideldevSmall.png',
+        class: 'javascript-sample jquery-sample bootstrap-sample'
+      },
+      { 
+        alt:   'A small screenshot of Tvitzar on a user\'s profile page',
+        link:  'https://tvitzar.herokuapp.com/',
+        image: 'img/portfolio/tvitzar/TvitzarSmall.png',
+        class: 'ruby-sample rails-sample bootstrap-sample'
+      },
+      { 
+        alt:   'A small screenshot of NearMe, an Angular app',
+        link:  'http://nearme.bitballoon.com/#/',
+        image: 'img/portfolio/nearme/NearMeSmall.png',
+        class: 'javascript-sample angular-sample'
+      }
+    ]
+  }
+})
+
+var skillList = new Vue({
+  el: '#skill-list',
+  data: {
+    skills: [
+      {
+        class: 'devicon-ruby-plain colored'
+      },
+      {
+        class: 'devicon-rails-plain colored'
+      },
+      {
+        class: 'devicon-javascript-plain colored'
+      },
+      {
+        class: 'devicon-angularjs-plain colored'
+      },
+      {
+        class: 'devicon-jquery-plain colored'
+      },
+      {
+        class: 'devicon-bootstrap-plain colored'
+      }
     ]
   }
 })
