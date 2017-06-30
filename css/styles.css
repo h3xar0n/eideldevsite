@@ -8,18 +8,6 @@
   font-family: 'Agane-45';
   src: url('fonts/agane/Aganè 45 (light).ttf');
 }
-@font-face{
-  font-family:  'Exodus';
-  src: url('fonts/exodus/Exodus-PersonalUse-Regular.otf');
-}
-@font-face{
-  font-family: 'Exodus-Sharp';
-  src: url('fonts/exodus/Exodus-PersonalUse-Sharpen.otf');
-}
-@font-face{
-  font-family: 'Exodus-Stripe';
-  src: url('fonts/exodus/Exodus-PersonalUse-Striped.otf');
-}
 
 /*Navigation and Site-Wide*/
 
@@ -63,14 +51,13 @@ h1 {
   color: #f0f0f0;
   text-shadow: 0 0 10px white;
   padding-bottom: 20px;
-  font-weight: bold;
-  font-family: 'Exodus-Stripe';
+  font-family: 'Agane-45';
 }
 h2 {
   color: white;
 }
 h1, h2, .nav li {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-align: center;
 }
 a {
@@ -80,7 +67,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 .stripe {
-  font-family: 'Exodus-Stripe', monospace;
+  font-family: 'Agane-45', monospace;
 }
 .title {
   text-align: center;
@@ -632,7 +619,7 @@ canvas {
   text-align: left;
 }
 .right-content p:nth-child(1), .right-content p:nth-child(4), .right-content p:nth-child(8), .right-content p:nth-child(10)  {
-  font-family: 'Exodus', monospace;
+  font-family: 'Agane-45', monospace;
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -729,7 +716,7 @@ canvas {
 }
 
 .skills h3 a {
-  font-family: 'Exodus', monospace;
+  font-family: 'Agane-45', monospace;
 }
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
@@ -789,7 +776,7 @@ canvas {
 .dark-light h2, .dark-light p {
   color: white;
   padding: 20px;
-  font-family: 'Exodus-Stripe', monospace;
+  font-family: 'Agane-45', monospace;
 }
 
 /*Contact*/
@@ -807,7 +794,7 @@ canvas {
 
 /*Contact Info*/
 .contact-name {
-  font-family: 'Exodus', monospace;
+  font-family: 'Agane-45', monospace;
 }
 
 .contact h2 {
