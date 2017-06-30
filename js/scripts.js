@@ -6,37 +6,37 @@ var workSampleList = new Vue({
   el: '#work-samples',
   data: {
     samples: [
-      { 
+      {
         alt:   'A small screenshot of the landing page for Glam by Adelina',
         link:  'work/glam.html',
         image: 'img/portfolio/glam/GlamSmall.png',
         class: 'javascript-sample jquery-sample bootstrap-sample'
       },
-      { 
+      {
         alt:   'A small screenshot of the landing page for A2 Accessories',
         link:  'work/a2.html',
         image: 'img/portfolio/a2/A2Small.png',
         class: 'ruby-sample rails-sample javascript-sample bootstrap-sample'
       },
-      { 
+      {
         alt:   'A small screenshot of the site for Gameplan Jobs',
         link:  'work/gameplan.html',
         image: 'img/portfolio/gpj/GameplanSmall.png',
         class: 'ruby-sample rails-sample javascript-sample angular-sample bootstrap-sample'
       },
-      { 
+      {
         alt:   'A small screenshot of Eideldev, this site',
         link:  'http://eideldev.com/404',
         image: 'img/portfolio/eideldev/EideldevSmall.png',
         class: 'javascript-sample jquery-sample bootstrap-sample'
       },
-      { 
+      {
         alt:   'A small screenshot of Tvitzar on a user\'s profile page',
         link:  'https://tvitzar.herokuapp.com/',
         image: 'img/portfolio/tvitzar/TvitzarSmall.png',
         class: 'ruby-sample rails-sample bootstrap-sample'
       },
-      { 
+      {
         alt:   'A small screenshot of NearMe, an Angular app',
         link:  'http://nearme.bitballoon.com/#/',
         image: 'img/portfolio/nearme/NearMeSmall.png',
@@ -85,7 +85,7 @@ $(document).ready(function(){
     });
     return false;
   });
-    
+
   // Navbar Drop Down
   $(".navbar-nav li a").click(function(event) {
     if (!$(this).parent().hasClass('dropdown'))
@@ -129,7 +129,7 @@ $(document).ready(function(){
   });
 
   // History Image Slide-In
-  $(window).scroll(function(){         
+  $(window).scroll(function(){
     $('.container p').each(function(){
         var scrollTop     = $(window).scrollTop(),
             elementOffset = $(this).offset().top,
@@ -138,9 +138,9 @@ $(document).ready(function(){
             breakPoint    = windowHeight*0.9;
 
         if(distance > breakPoint) {
-          $(this).addClass("more-padding"); 
+          $(this).addClass("more-padding");
         }  if(distance < breakPoint) {
-          $(this).removeClass("more-padding");  
+          $(this).removeClass("more-padding");
         }
     });
   });
@@ -173,7 +173,7 @@ $(document).ready(function(){
 
   $("#input-message").on("keyup", function() {
     var charCount = $("#input-message").val().length;
-    console.log(charCount); 
+    console.log(charCount);
     $("#char-count").html(charCount);
     if(charCount > 200 && charCount < 500) {
       $("#char-count").css("color", "yellow"); // need to turn character count yellow to indicate it's getting a liiiiiittle long
@@ -189,7 +189,7 @@ $(document).ready(function(){
 // Must be outside the $(document).ready function in order to load before Maps API; see HTML.
 var map;
 
-var myLatLng = {lat: 33.768205, lng: -84.4004911};
+var myLatLng = {lat: 37.7813636, lng: -122.3914047};
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -200,6 +200,6 @@ function initMap() {
 var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'You Can Find Me in the A'
+    title: 'You Can Find Me in the Bay'
   });
 }
