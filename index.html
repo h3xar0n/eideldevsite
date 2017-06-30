@@ -56,14 +56,15 @@
 
   <!-- Landing -->
   <div class="container-fluid logo-landing anchor" id="land-sec" >
-    <div class="container-fluid"> 
+    <div id="particles-js"></div>
+    <div class="container-fluid" id="over-particles">
       <!-- Mobile Logo -->
       <div class="logo-title-center">
         <img src="img/devaron.png" alt="Aron's hexagon logo, which loosely resembles Boba Fett's icon in Star Wars, but replaces the symbols with the initials A E." class="important-elements hidden-sm hidden-md hidden-lg hidden-xl">
       </div>
       <div class="center landing-title ">
         <!-- Titles and Desktop Logo -->
-        <div class="row">  
+        <div class="row">
           <div class="hidden-xs col-sm-1"></div>
           <div class="col-xs-12 col-sm-4">
             <h1>Aron Eidelman</h1>
@@ -77,13 +78,14 @@
           <div class="hidden-xs col-sm-1"></div>
         </div>
       </div>
-      <!-- Logo Row --> 
+      <!-- Logo Row -->
       <div class="row landing-btns text-center center">
         <div class="col-sm-12 btm-but">
           <a class="btn-main" href="#contact-sec">Contact Me</a>
         </div>
       </div> <!-- End Logo Row -->
-    </div> <!-- End Overlay -->  
+    </div> <!-- End Overlay -->
+
   </div><!-- End Landing -->
 
   <!-- Work -->
@@ -118,7 +120,7 @@
 
   <!-- About -->
   <div class="container about anchor" id="about-sec">
-    
+
     <!-- About panel -->
     <div class="about-desktop">
       <h2 class="about-title">About</h2>
@@ -128,7 +130,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-offset-1 major-col">
           <p class="about-para">Aron Eidelman is a web developer with a passion for his beautiful wife, Spinoza's Ethics, Nutella, Star Wars, and colorblind-friendly design tools.</p>
-          <p class="about-para">After working closely with developers and data scientists for years, he discovered that he would love to learn how to create his own elegant sites and apps.</p> 
+          <p class="about-para">After working closely with developers and data scientists for years, he discovered that he would love to learn how to create his own elegant sites and apps.</p>
         </div>
       </div>
       <div class="row">
@@ -155,9 +157,9 @@
       </div>
 
       </div>
-    </div><!-- End About panel -->   
+    </div><!-- End About panel -->
   </div><!-- End About -->
-  
+
   <!-- History in Space -->
   <div class="devaron-background hidden-xs" id="history">
     <div class="container history block-center">
@@ -199,7 +201,7 @@
           <h3>Remote technical writer for DW/BI company</h3>
           <h2>2014</h2>
           <p><img class="important-elements" src="img/nyc.png" alt="logo of New York City"></p>
-          <h3>Moved to New York City</h3>      
+          <h3>Moved to New York City</h3>
           <h3>Met love of life</h3>
           <h2>2015</h2>
           <h3>Collaborated with data scientist and industrial psychologist to plan product</h3>
@@ -226,7 +228,7 @@
           <div class="panel-body" id="skills-full">
             <!-- JavaScript loads the icons, see skills.js -->
           </div>
-        </div>          
+        </div>
       </div>
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -242,7 +244,7 @@
               <i class="devicon-heroku-plain colored"></i>
             </div>
             <!-- Redis -->
-            <div class="col-xs-4 col-sm-2" title="Redis" data-toggle="tooltip" data-placement="bottom">  
+            <div class="col-xs-4 col-sm-2" title="Redis" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-redis-plain colored"></i>
             </div>
             <!-- CoffeeScript -->
@@ -252,7 +254,7 @@
             <!-- PostgreSQL -->
             <div class="col-xs-4 col-sm-2" title="PostgreSQL" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-postgresql-plain colored"></i>
-            </div>  
+            </div>
             <!-- AngularJS -->
             <div class="col-xs-4 col-sm-2" title="AngularJS" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-angularjs-plain colored"></i>
@@ -260,12 +262,12 @@
             <!-- React -->
             <div class="col-xs-4 col-sm-2" title="React" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-react-original colored" ></i>
-            </div>        
+            </div>
             <!-- Vim -->
             <div class="col-xs-4 col-sm-2" title="Vim" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-vim-plain colored"></i>
             </div>
-            
+
             <!-- MySQL -->
             <div class="col-xs-4 col-sm-2" title="MySQL" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-mysql-plain colored"></i>
@@ -285,7 +287,7 @@
             <!-- AWS -->
             <div class="col-xs-4 col-sm-2" title="AWS" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-amazonwebservices-original colored"></i>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -299,13 +301,13 @@
         <div id="collapse3" class="panel-collapse collapse">
           <div class="panel-body">
             <!-- Grunt -->
-            <div class="col-xs-4 col-sm-2" title="Grunt" data-toggle="tooltip" data-placement="bottom">   
+            <div class="col-xs-4 col-sm-2" title="Grunt" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-grunt-plain colored"></i>
             </div>
             <!-- Gulp -->
-            <div class="col-xs-4 col-sm-2" title="Gulp" data-toggle="tooltip" data-placement="bottom"> 
+            <div class="col-xs-4 col-sm-2" title="Gulp" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-gulp-plain colored"></i>
-            </div>         
+            </div>
             <!-- Java -->
             <div class="col-xs-4 col-sm-2" title="Java" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-java-plain colored"></i>
@@ -345,8 +347,8 @@
             <!-- Less -->
             <div class="col-xs-4 col-sm-2" title="Less" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-less-plain-wordmark colored"></i>
-            </div> 
-            
+            </div>
+
           </div>
         </div>
       </div>
@@ -362,7 +364,7 @@
       <p class="contact-name"><a href="tel:678-231-3881"><span class="glyphicon glyphicon-phone"></span> 678-231-3881</a></p>
       <p class="contact-name"><a href="mailto:aron@glambyadelina.com"><span class="glyphicon glyphicon-envelope"></span> aron@eideldev.com</a></p>
       <p class="contact-name"><a href="skype:aron.gameplan"><i class="fa fa-skype"></i> aron.gameplan</a></p>
-      
+
       <div class="hidden-xs" id="map"></div>
     </div> <!-- End Info -->
     <!-- Form -->
@@ -385,10 +387,10 @@
         <p id="char-count"></p>
         <p id="visible-comment"></p>
       </div>
-      <div class="text-center">  
+      <div class="text-center">
         <input type="submit" value="Send" id="input-submit" class="btn-main">
       </div>
-    </form><!-- End Form-->  
+    </form><!-- End Form-->
   </div><!-- End Contact -->
 
   <!-- Footer -->
@@ -414,6 +416,7 @@
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
   <!-- Used in scripts.js -->
+  <script src="js/particles.min.js"></script>
   <script src="js/jquery.bgswitcher.js"></script>
   <script src="js/background.cycle.js"></script>
   <script src="js/parallax.js"></script>
