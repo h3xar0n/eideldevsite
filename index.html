@@ -3,26 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="google-site-verification" content="gFlSLeooDPw4eRPPjZuEYr3E8ZVONOjp0RmWJZ2CEbk" />
+  <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1">
+  <meta name="google-site-verification"
+        content="gFlSLeooDPw4eRPPjZuEYr3E8ZVONOjp0RmWJZ2CEbk" />
   <title>Aron Eidelman, Web Developer</title>
-  <meta name="description" content="Aron Eidelman's portfolio site, showcasing the sites and apps he has created as a full-stack developer, as well as the languages and tools in which he is proficient.">
+  <meta name="description"
+        content="Aron Eidelman's portfolio site, showcasing the sites and apps
+                he has created as a full-stack developer, as well as the
+                languages and tools in which he is proficient.">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="hexaron.ico" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+        rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
-
-  <!-- Custom styles for this template go here -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 </head>
-
 <body data-spy="scroll" data-target=".navbar-collapse">
-
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid nav-bar-desktop">
@@ -37,7 +42,9 @@
         <div class="workName navbar-brand">
           <a class="navbar-brand" href="#land-sec">
             <!-- Nav Logo -->
-            <img src="img/devaron.png" class="nav-logo important-elements" alt="A small version of Aron's hexagon logo">
+            <img src="img/devaron.png"
+                 class="nav-logo important-elements"
+                 alt="A small version of Aron's hexagon logo">
           </a>
         </div> <!--end workName -->
       </div>
@@ -60,7 +67,10 @@
     <div class="container-fluid" id="over-particles">
       <!-- Mobile Logo -->
       <div class="logo-title-center">
-        <img src="img/devaron.png" alt="Aron's hexagon logo, which loosely resembles Boba Fett's icon in Star Wars, but replaces the symbols with the initials A E." class="important-elements hidden-sm hidden-md hidden-lg hidden-xl">
+        <img src="img/devaron.png"
+             alt="Aron's hexagon logo, which loosely resembles Boba Fett's icon
+                 in Star Wars, but replaces the symbols with the initials A E."
+             class="important-elements hidden-sm hidden-md hidden-lg hidden-xl">
       </div>
       <div class="center landing-title ">
         <!-- Titles and Desktop Logo -->
@@ -70,7 +80,11 @@
             <h1>Aron Eidelman</h1>
           </div>
           <div class="col-xs-1 col-sm-2 logo-title-center">
-            <img src="img/devaron.png" alt="Aron's hexagon logo, which loosely resembles Boba Fett's icon in Star Wars, but replaces the symbols with the initials A E." class="important-elements hidden-xs">
+            <img src="img/devaron.png"
+                 alt="Aron's hexagon logo, which loosely resembles Boba Fett's
+                     icon in Star Wars, but replaces the symbols with the
+                     initials A E."
+                 class="important-elements hidden-xs">
           </div>
           <div class="col-xs-12 col-sm-4">
             <h1>Web Developer</h1>
@@ -85,7 +99,6 @@
         </div>
       </div> <!-- End Logo Row -->
     </div> <!-- End Overlay -->
-
   </div><!-- End Landing -->
 
   <!-- Work -->
@@ -97,9 +110,10 @@
         <div v-for="sample in samples">
           <div class="col-sm-4">
             <a v-bind:href="sample.link">
-              <img class="img-responsive portfolio-sample" v-bind:class="sample.class"
-              v-bind:src="sample.image"
-              v-bind:alt="sample.alt">
+              <img class="img-responsive portfolio-sample"
+                   v-bind:class="sample.class"
+                   v-bind:src="sample.image"
+                   v-bind:alt="sample.alt">
             </a>
           </div>
         </div>
@@ -129,33 +143,43 @@
           <img src="img/hexaron.png" alt="Small hexagonal portrait of Aron">
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-offset-1 major-col">
-          <p class="about-para">Aron Eidelman is a web developer with a passion for his beautiful wife, Spinoza's Ethics, Nutella, Star Wars, and colorblind-friendly design tools.</p>
-          <p class="about-para">After working closely with developers and data scientists for years, he discovered that he would love to learn how to create his own elegant sites and apps.</p>
+          <p class="about-para">Aron Eidelman is a web developer with a passion
+            for his beautiful wife, Spinoza's Ethics, Nutella, Star Wars, and
+            colorblind-friendly design tools.
+          </p>
+          <p class="about-para">
+            After working closely with developers and data scientists for years,
+            he discovered that he would love to learn how to create his own
+            elegant sites and apps.
+          </p>
         </div>
       </div>
       <div class="row">
-
-      <div class="center">
-        <!-- Small modal button -->
-        <div class="modal-button">
-          <button class="btn btn-main" data-toggle="modal" data-target=".bs-example-modal-lg">See Résumé</button>
-        </div> <!-- End button -->
-        <!-- Small modal -->
-        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel1">Aron's Résumé</h4>
-                  <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-              </div>
-              <div class="modal-body">
-                  <embed id="modalembed" class="modal-embeds" src="pdf/Aron_Eidelman_Dev_Resume_July_2017.pdf">
+        <div class="center">
+          <!-- Small modal button -->
+          <div class="modal-button">
+            <button
+              class="btn btn-main"
+              data-toggle="modal"
+              data-target=".bs-example-modal-lg">
+                See Résumé
+            </button>
+          </div> <!-- End button -->
+          <!-- Small modal -->
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Aron's Résumé</h4>
+                    <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                </div>
+                <div class="modal-body">
+                    <embed id="modalembed" class="modal-embeds" src="pdf/Aron_Eidelman_Dev_Resume_July_2017.pdf">
+                </div>
               </div>
             </div>
-          </div>
-        </div> <!-- End modal -->
-      </div>
-
+          </div> <!-- End modal -->
+        </div>
       </div>
     </div><!-- End About panel -->
   </div><!-- End About -->
