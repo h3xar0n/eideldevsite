@@ -3,7 +3,6 @@
 www.eideldev.com
 
 ## To-Do List
-
 Priority:
 1) Work
 2) About
