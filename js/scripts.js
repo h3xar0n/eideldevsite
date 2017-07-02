@@ -313,7 +313,7 @@ var myLatLng = {lat: 37.7813636, lng: -122.3914047};
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    zoom: 8
+    zoom: 11
   });
 
 var marker = new google.maps.Marker({
