@@ -794,6 +794,10 @@ canvas {
   background: #EDEAEA;
 }
 
+.skills h2 {
+  color: rgb(85, 85, 85);
+}
+
 .skills h3 {
   text-align: center;
 }
