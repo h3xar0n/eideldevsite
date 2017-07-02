@@ -250,11 +250,6 @@ $(document).ready(function(){
         }
     });
   });
-  //Parallax
-  $('.devaron-background').parallax({imageSrc: 'img/Grid2.jpg'});
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
   //Skills
   var skillsIndex = 0;
   while (skillsIndex < skills.length) {
