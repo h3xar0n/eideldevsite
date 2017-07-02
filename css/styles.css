@@ -33,8 +33,15 @@
 }
 .navbar-inverse .navbar-nav>li>a:hover {
   background-color: #f2c193;
+  transition: 0.3s;
 }
-
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: #424242;
+  transition: 0.3s;
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #424242;
+}
 /*Site Wide Font*/
 
 body {
@@ -47,13 +54,11 @@ body {
   border-radius: 15px;
 }
 p, a {
-  font-family: 'Agane-45', sans-serif;
   color: #969696;
 }
 h1 {
   color: #f0f0f0;
   padding-bottom: 20px;
-  font-family: 'Agane-45';
 }
 h2 {
   color: white;
@@ -67,9 +72,6 @@ a {
 }
 a:hover, a:focus {
   text-decoration: none;
-}
-.stripe {
-  font-family: 'Agane-45', sans-serif;
 }
 .title {
   text-align: center;
@@ -179,7 +181,6 @@ canvas {
   text-transform: uppercase;
   transition: background .5s;
   border-radius: 10px;
-  font-family: 'Agane-45', sans-serif;
 }
 .btn-main:hover{
   background-color: black;
@@ -288,7 +289,6 @@ canvas {
   font-size: 1em;
   margin-bottom: 5%;
   text-transform: uppercase;
-  font-family: 'Agane-45', sans-serif;
   min-width: 2.6em;
   max-height: 2em;
 }
@@ -337,50 +337,6 @@ canvas {
 .carousel-control.left, .carousel-control.right {
   background-image: none
 }
-
-/*Practice*/
-
-.practice-background {
-  background: white;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  min-height: 100vh;
-}
-
-.practice {
-  padding: 2%;
-}
-
-#practice-heading {
-  margin-top: 40px;
-  color: white;
-}
-
-.practice .row {
-  margin-top: 40vh;
-}
-
-.practice img {
-  width: 15vw;
-  /*border-radius: 100%;*/
-  transition: .2s;
-}
-
-.practice img:hover {
-  -webkit-filter: drop-shadow(0px 0px 7px #a2bedd);
-}
-
-.practice i {
-  font-size: 15vw;
-  color: white;
-  transition: .2s;
-}
-
-.practice i:hover {
-  text-shadow: 0 0 40px #a2bedd;
-}
-/*About*/
 
 /*Mobile*/
 
@@ -553,7 +509,6 @@ canvas {
 }
 
 .history h3 {
-  font-family: 'Agane-45', sans-serif;
   text-transform: none;
 }
 
@@ -660,7 +615,6 @@ canvas {
   text-align: left;
 }
 .right-content p:nth-child(1), .right-content p:nth-child(4), .right-content p:nth-child(8), .right-content p:nth-child(10)  {
-  font-family: 'Agane-45', sans-serif;
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -760,10 +714,6 @@ canvas {
   text-align: center;
 }
 
-.skills h3 a {
-  font-family: 'Agane-45', sans-serif;
-}
-
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
   color: white;
   background: #424242;
@@ -821,15 +771,12 @@ canvas {
 .dark-light h2, .dark-light p {
   color: white;
   padding: 20px;
-  font-family: 'Agane-45', sans-serif;
 }
 
 /*Contact*/
 
 .contact {
-  background: url("../img/gridscape_end.png");
-  background-attachment: fixed;
-  background-position: center;
+  background-color: #969494;
   min-height: 85vh
 }
 
@@ -892,7 +839,6 @@ canvas {
 .contact form input, .contact form textarea {
   border-radius: 5px;
   width: 100%;
-  font-family: 'Agane-45', sans-serif;
   font-size: 1em;
   margin-top: 1em;
 }
@@ -924,7 +870,6 @@ footer {
   padding-top: 20px;
   background-color: #424242;
   color: white;
-  font-family: 'Agane-45', sans-serif;
 }
 
 footer .fa {
@@ -1132,10 +1077,6 @@ footer i:hover {
   /*.skills-pan i {
     font-size: 8vh;
   }*/
-}
-
-.modal-title {
-  font-family: 'Agane-45', sans-serif;
 }
 
 #owl-demo .item img{
