@@ -1,3 +1,4 @@
+// Landing Section
 // Particles
 particlesJS("particles-js", {
   "particles": {
@@ -110,8 +111,33 @@ particlesJS("particles-js", {
   "retina_detect": false
 });
 
-// Vue
-
+// Work Section
+// Work Skills Used
+var skillList = new Vue({
+  el: '#skill-list',
+  data: {
+    skills: [
+      {
+        class: 'devicon-javascript-plain colored'
+      },
+      {
+        class: 'devicon-vuejs-plain colored'
+      },
+      {
+        class: 'devicon-angularjs-plain colored'
+      },
+      {
+        class: 'devicon-jquery-plain colored'
+      },
+      {
+        class: 'devicon-bootstrap-plain colored'
+      },
+      {
+        class: 'devicon-rails-plain colored'
+      }
+    ]
+  }
+})
 // Work Samples
 var workSampleList = new Vue({
   el: '#work-samples',
@@ -121,31 +147,31 @@ var workSampleList = new Vue({
         alt:   'A small screenshot of the landing page for Glam by Adelina',
         link:  'work/glam.html',
         image: 'img/portfolio/glam/GlamSmall.png',
-        class: 'javascript-sample jquery-sample bootstrap-sample'
+        class: 'vue-sample javascript-sample jquery-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the landing page for A2 Accessories',
         link:  'work/a2.html',
         image: 'img/portfolio/a2/A2Small.png',
-        class: 'ruby-sample rails-sample javascript-sample bootstrap-sample'
+        class: 'rails-sample javascript-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the site for Gameplan Jobs',
         link:  'work/gameplan.html',
         image: 'img/portfolio/gpj/GameplanSmall.png',
-        class: 'ruby-sample rails-sample javascript-sample angular-sample bootstrap-sample'
+        class: 'vue-sample rails-sample javascript-sample angular-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of Eideldev, this site',
         link:  'http://eideldev.com/404',
         image: 'img/portfolio/eideldev/EideldevSmall.png',
-        class: 'javascript-sample jquery-sample bootstrap-sample'
+        class: 'vue-sample javascript-sample jquery-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of Tvitzar on a user\'s profile page',
         link:  'https://tvitzar.herokuapp.com/',
         image: 'img/portfolio/tvitzar/TvitzarSmall.png',
-        class: 'ruby-sample rails-sample bootstrap-sample'
+        class: 'rails-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of NearMe, an Angular app',
@@ -156,32 +182,8 @@ var workSampleList = new Vue({
     ]
   }
 })
-var skillList = new Vue({
-  el: '#skill-list',
-  data: {
-    skills: [
-      {
-        class: 'devicon-ruby-plain colored'
-      },
-      {
-        class: 'devicon-rails-plain colored'
-      },
-      {
-        class: 'devicon-javascript-plain colored'
-      },
-      {
-        class: 'devicon-angularjs-plain colored'
-      },
-      {
-        class: 'devicon-jquery-plain colored'
-      },
-      {
-        class: 'devicon-bootstrap-plain colored'
-      }
-    ]
-  }
-})
 
+// jQuery
 $(document).ready(function(){
   // Smooth Scrolling
   var $root = $('html, body');
@@ -202,10 +204,10 @@ $(document).ready(function(){
   // Work: Portfolio Effect
   $('#skills-used i').mouseenter(function() {
     var skill = $(this).attr('class')
-    if (skill == 'devicon-ruby-plain colored') {
-      $('.sample-title').html('Ruby');
+    if (skill == 'devicon-vuejs-plain colored') {
+      $('.sample-title').html('Vue');
       $('.portfolio-sample').addClass('shadow-sample');
-      $('.ruby-sample').addClass('select-sample');
+      $('.vue-sample').addClass('select-sample');
     } else if (skill == 'devicon-rails-plain colored') {
       $('.sample-title').html('Rails');
       $('.portfolio-sample').addClass('shadow-sample');
