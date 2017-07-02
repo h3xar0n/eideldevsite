@@ -33,6 +33,6 @@ Priority:
 * Add Webpacket, Atom, Vue; remove anything extraneous
 
 ### Contact
-* Switch Message and Contact Info so that map will appear on bottom for mobile
+* Reformat text and alignment; get rid of back glow in contact info
 * Add schedule link as a calendar icon
 * Correct color and legal description in footer
