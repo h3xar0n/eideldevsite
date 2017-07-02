@@ -837,12 +837,15 @@ canvas {
 }
 
 #info-list {
-  margin-top: 24px;
+  margin-top: 15px;
+}
+
+#info-list p {
+  font-size: 17px;
 }
 
 .contact-name {
   color: white;
-  font-size: 1.5em;
 }
 
 .contact a {
@@ -850,15 +853,19 @@ canvas {
   text-decoration: none;
 }
 
-.contact a:hover {
+.contact-link:hover {
   color: #f2c193;
   transition-duration: 0.5s;
 }
 
+#contact-link-coop:hover {
+  color: black;
+}
+
 #map {
   height: 40vh;
-  min-width: 200px;
-  margin-top: 25px;
+  /*min-width: 200px;*/
+  margin-top: 15px;
   margin-bottom: 4vw;
 }
 
@@ -888,6 +895,17 @@ form {
 }
 #input-submit {
   max-width: 10em;
+}
+
+.schedule {
+  text-align: center;
+}
+
+.setmore {
+  color: white;
+  display: inline-block;
+  font-size: 10vw;
+  padding-bottom: 10px;
 }
 
 /*Footer*/
@@ -1013,28 +1031,23 @@ footer i:hover {
     margin-right: 0;
     margin-left: 0;
   }
-
   .landing-title h1 {
     font-size: 20px;
     height: 20px;
   }
-
   .landing-title {
     margin-top: 0;
   }
-
   .landing-btns {
     margin-top: 25px;
   }
   .btm-but {
     margin-top: 1vh;
   }
-
   .btm-but a {
     padding-right: 26px;
     padding-left: 26px;
   }
-
   .btn-main {
     padding: 8px 20px;
   }
@@ -1058,7 +1071,6 @@ footer i:hover {
   .process-episodes div h3{
     font-size: 1.4em;
   }
-
   .process-episodes div p{
     font-size: 1.3em;
   }
@@ -1077,13 +1089,14 @@ footer i:hover {
   .contact p {
   color: white;
   font-size: 1.3em;
-  margin-left: 10%;
   }
   .contact form {
     margin-left: 10%;
     margin-right: 10%;
   }
-
+  .setmore {
+    font-size: 15vw;
+  }
 }
 
 /*Mobile*/

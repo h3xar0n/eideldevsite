@@ -33,6 +33,4 @@ Priority:
 * Add Webpacket, Atom, Vue; remove anything extraneous
 
 ### Contact
-* Reformat text and alignment
-* Add schedule link as a calendar icon
 * Correct color and legal description in footer
