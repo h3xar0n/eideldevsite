@@ -49,7 +49,6 @@ p, a {
 }
 h1 {
   color: #f0f0f0;
-  text-shadow: 0 0 10px white;
   padding-bottom: 20px;
   font-family: 'Agane-45';
 }
@@ -842,7 +841,6 @@ canvas {
 
 .contact p {
   color: white;
-  text-shadow: 0 0 5px white;
   font-size: 1.5em;
 }
 
@@ -852,7 +850,6 @@ canvas {
 }
 
 .contact a:hover {
-  text-shadow: 0 0 10px #f2c193;
   color: #f2c193;
   transition-duration: 0.5s;
 }
@@ -865,8 +862,13 @@ canvas {
 }
 
 /*Contact Form*/
+.contact-heading {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
 .contact form h2 {
-  text-shadow: 0 0 5px white;
   font-size: 1.9em;
   color: white;
   margin-top: 0px;
@@ -1073,7 +1075,6 @@ footer i:hover {
   /*Reformat Contact Content*/
   .contact p {
   color: white;
-  text-shadow: 0 0 5px white;
   font-size: 1.3em;
   margin-left: 10%;
   }
@@ -1107,10 +1108,6 @@ footer i:hover {
   /*.skills-pan i {
     font-size: 8vh;
   }*/
-}
-
-form h3 {
-  color: white;
 }
 
 .modal-title {
