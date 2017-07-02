@@ -26,7 +26,3 @@ Priority:
 ### History
 * Remove and contract overly personal things
 * Add some stuff for 2017
-
-### Skills
-* Refactor with Vue
-* Add Webpacket, Atom, Vue; remove anything extraneous

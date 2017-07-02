@@ -117,24 +117,12 @@ var skillList = new Vue({
   el: '#skill-list',
   data: {
     skills: [
-      {
-        class: 'devicon-javascript-plain colored'
-      },
-      {
-        class: 'devicon-vuejs-plain colored'
-      },
-      {
-        class: 'devicon-angularjs-plain colored'
-      },
-      {
-        class: 'devicon-jquery-plain colored'
-      },
-      {
-        class: 'devicon-bootstrap-plain colored'
-      },
-      {
-        class: 'devicon-rails-plain colored'
-      }
+      {class: 'devicon-javascript-plain colored'},
+      {class: 'devicon-vuejs-plain colored'},
+      {class: 'devicon-angularjs-plain colored'},
+      {class: 'devicon-jquery-plain colored'},
+      {class: 'devicon-bootstrap-plain colored'},
+      {class: 'devicon-rails-plain colored'}
     ]
   }
 })
@@ -179,6 +167,53 @@ var workSampleList = new Vue({
         image: 'img/portfolio/nearme/NearMeSmall.png',
         class: 'javascript-sample angular-sample'
       }
+    ]
+  }
+})
+
+// Skills Section
+var frontEnd = new Vue({
+  el: '#front-end-skills',
+  data: {
+    skills: [
+      {class: 'devicon-javascript-plain colored'},
+      {class: 'devicon-vuejs-plain colored'},
+      {class: 'devicon-angularjs-plain colored'},
+      {class: 'devicon-react-plain colored'},
+      {class: 'devicon-jquery-plain colored'},
+      {class: 'devicon-coffeescript-plain colored'},
+      {class: 'devicon-html5-plain colored'},
+      {class: 'devicon-css3-plain colored'},
+      {class: 'devicon-sass-plain colored'},
+      {class: 'devicon-bootstrap-plain colored'},
+      {class: 'devicon-photoshop-plain colored'},
+      {class: 'devicon-illustrator-plain colored'}
+    ]
+  }
+})
+var backEnd = new Vue({
+  el: '#back-end-skills',
+  data: {
+    skills: [
+      {class: 'devicon-ruby-plain colored'},
+      {class: 'devicon-rails-plain colored'},
+      {class: 'devicon-redis-plain colored'},
+      {class: 'devicon-postgresql-plain colored'},
+      {class: 'devicon-mysql-plain colored'},
+      {class: 'devicon-heroku-plain colored'}
+    ]
+  }
+})
+var workFlow = new Vue({
+  el: '#workflow-skills',
+  data: {
+    skills: [
+      {class: 'devicon-webpack-plain colored'},
+      {class: 'devicon-vim-plain colored'},
+      {class: 'devicon-atom-plain atom-colored'},
+      {class: 'devicon-git-plain colored'},
+      {class: 'devicon-github-plain white'},
+      {class: 'devicon-slack-plain colored'}
     ]
   }
 })
@@ -250,18 +285,7 @@ $(document).ready(function(){
         }
     });
   });
-  //Skills
-  var skillsIndex = 0;
-  while (skillsIndex < skills.length) {
-    $("#skills-full").append("\
-      <div class='col-xs-4 col-sm-2' title=" + skills[skillsIndex].name + " data-toggle='tooltip' data-placement='bottom'>\
-        <i id=" + skillsIndex + "></i>\
-      </div>\
-    ");
-    var icon = document.getElementById(skillsIndex);
-    icon.className = skills[skillsIndex].icon + skills[skillsIndex].color;
-    skillsIndex ++;
-  }
+
   //Contact Form
   $("#input-message").css({
     "background-color": "white",

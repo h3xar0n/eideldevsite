@@ -134,7 +134,6 @@
 
   <!-- About -->
   <div class="container about anchor" id="about-sec">
-
     <!-- About panel -->
     <div class="about-desktop">
       <h2 class="about-title">About</h2>
@@ -197,7 +196,7 @@
     </div><!-- End About panel -->
   </div><!-- End About -->
 
-  <!-- History in Space -->
+  <!-- History -->
   <div class="devaron-background hidden-xs" id="history">
     <div class="container history block-center">
       <div id='stars'></div>
@@ -262,12 +261,19 @@
         <div class="panel-heading">
           <h3 class="panel-title text-center">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
-            Fully Operational</a>
+            Front-End</a>
           </h3>
         </div>
         <div id="collapse0" class="panel-collapse collapse in">
-          <div class="panel-body" id="skills-full">
-            <!-- JavaScript loads the icons, see skills.js -->
+          <!-- Vue Skill Selector -->
+          <div class="panel-body">
+            <div class="row" id="front-end-skills">
+              <div v-for="skill in skills">
+                <div class="col-sm-2 col-xs-4">
+                  <i v-bind:class="skill.class"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,58 +281,18 @@
         <div class="panel-heading">
           <h3 class="panel-title text-center">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-            Powering Up</a>
+            Back-End</a>
           </h3>
         </div>
         <div id="collapse2" class="panel-collapse collapse">
-          <div class="panel-body" id="skills-power">
-            <!-- Heroku -->
-            <div class="col-xs-4 col-sm-2" title="Heroku" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-heroku-plain colored"></i>
-            </div>
-            <!-- Redis -->
-            <div class="col-xs-4 col-sm-2" title="Redis" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-redis-plain colored"></i>
-            </div>
-            <!-- CoffeeScript -->
-            <div class="col-xs-4 col-sm-2" title="CoffeeScript" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-coffeescript-original colored"></i>
-            </div>
-            <!-- PostgreSQL -->
-            <div class="col-xs-4 col-sm-2" title="PostgreSQL" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-postgresql-plain colored"></i>
-            </div>
-            <!-- AngularJS -->
-            <div class="col-xs-4 col-sm-2" title="AngularJS" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-angularjs-plain colored"></i>
-            </div>
-            <!-- React -->
-            <div class="col-xs-4 col-sm-2" title="React" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-react-original colored" ></i>
-            </div>
-            <!-- Vim -->
-            <div class="col-xs-4 col-sm-2" title="Vim" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-vim-plain colored"></i>
-            </div>
-            <!-- MySQL -->
-            <div class="col-xs-4 col-sm-2" title="MySQL" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-mysql-plain colored"></i>
-            </div>
-            <!-- Wordpress -->
-            <div class="col-xs-4 col-sm-2" title="Wordpress" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-wordpress-plain"></i>
-            </div>
-            <!-- Drupal -->
-            <div class="col-xs-4 col-sm-2" title="Drupal" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-drupal-plain colored"></i>
-            </div>
-            <!-- PHP -->
-            <div class="col-xs-4 col-sm-2" title="PHP" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-php-plain colored" ></i>
-            </div>
-            <!-- AWS -->
-            <div class="col-xs-4 col-sm-2" title="AWS" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-amazonwebservices-original colored"></i>
+          <!-- Vue Skill Selector -->
+          <div class="panel-body">
+            <div class="row" id="back-end-skills">
+              <div v-for="skill in skills">
+                <div class="col-sm-2 col-xs-4">
+                  <i v-bind:class="skill.class"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -335,60 +301,19 @@
         <div class="panel-heading">
           <h3 class="panel-title text-center">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-            Future Targets</a>
+            Workflow</a>
           </h3>
         </div>
         <div id="collapse3" class="panel-collapse collapse">
+          <!-- Vue Skill Selector -->
           <div class="panel-body">
-            <!-- Grunt -->
-            <div class="col-xs-4 col-sm-2" title="Grunt" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-grunt-plain colored"></i>
+            <div class="row" id="workflow-skills">
+              <div v-for="skill in skills">
+                <div class="col-sm-2 col-xs-4">
+                  <i v-bind:class="skill.class"></i>
+                </div>
+              </div>
             </div>
-            <!-- Gulp -->
-            <div class="col-xs-4 col-sm-2" title="Gulp" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-gulp-plain colored"></i>
-            </div>
-            <!-- Java -->
-            <div class="col-xs-4 col-sm-2" title="Java" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-java-plain colored"></i>
-            </div>
-            <!-- Python -->
-            <div class="col-xs-4 col-sm-2" title="Python" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-python-plain colored"></i>
-            </div>
-            <!-- C# -->
-            <div class="col-xs-4 col-sm-2" title="C Sharp" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-csharp-plain colored"></i>
-            </div>
-            <!-- Android -->
-            <div class="col-xs-4 col-sm-2" title="Android" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-android-plain colored"></i>
-            </div>
-            <!-- MongoDB -->
-            <div class="col-xs-4 col-sm-2" title="Mongo DB" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-mongodb-plain colored"></i>
-            </div>
-            <!-- Node.js -->
-            <div class="col-xs-4 col-sm-2" title="Node.js" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-nodejs-plain colored"></i>
-            </div>
-            <!-- Kraken.js -->
-            <div class="col-xs-4 col-sm-2" title="Kraken.js" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-krakenjs-plain colored"></i>
-            </div>
-            <!-- Ubuntu -->
-            <div class="col-xs-4 col-sm-2" title="Ubuntu" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-ubuntu-plain colored"></i>
-            </div>
-            <!-- Apache -->
-            <div class="col-xs-4 col-sm-2" title="Apache" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-apache-plain colored"></i>
-            </div>
-            <!-- Less -->
-            <div class="col-xs-4 col-sm-2" title="Less" data-toggle="tooltip" data-placement="bottom">
-              <i class="devicon-less-plain-wordmark colored"></i>
-            </div>
-
           </div>
         </div>
       </div>
