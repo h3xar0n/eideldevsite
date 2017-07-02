@@ -196,7 +196,7 @@ canvas {
 /*Work*/
 
 .work {
-  background-color: #f2f2f2;
+  background-color: #edeaea;
   min-height: 100vh;
 }
 
@@ -493,7 +493,7 @@ canvas {
 }
 
 .about {
-  background-color: #B3B3B3;
+  background-color: #969494;
 }
 
 .about-desktop p {
@@ -791,7 +791,7 @@ canvas {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vw;
-  background: #B3B3B3;
+  background: #EDEAEA;
 }
 
 .skills h3 {
