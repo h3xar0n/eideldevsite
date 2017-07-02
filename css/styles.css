@@ -28,8 +28,11 @@
   width: 2em;
   height: 2em;
 }
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a {
   color: black;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #f2c193;
 }
 
 /*Site Wide Font*/
@@ -38,18 +41,17 @@ body {
   background-color: #424242;
 }
 * {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 .box-element{
   border-radius: 15px;
 }
 p, a {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   color: #969696;
 }
 h1 {
   color: #f0f0f0;
-  text-shadow: 0 0 10px white;
   padding-bottom: 20px;
   font-family: 'Agane-45';
 }
@@ -67,7 +69,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 .stripe {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 .title {
   text-align: center;
@@ -177,7 +179,7 @@ canvas {
   text-transform: uppercase;
   transition: background .5s;
   border-radius: 10px;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 .btn-main:hover{
   background-color: black;
@@ -282,7 +284,7 @@ canvas {
   font-size: 1em;
   margin-bottom: 5%;
   text-transform: uppercase;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   min-width: 2.6em;
   max-height: 2em;
 }
@@ -547,7 +549,7 @@ canvas {
 }
 
 .history h3 {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   text-transform: none;
 }
 
@@ -654,7 +656,7 @@ canvas {
   text-align: left;
 }
 .right-content p:nth-child(1), .right-content p:nth-child(4), .right-content p:nth-child(8), .right-content p:nth-child(10)  {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -755,7 +757,7 @@ canvas {
 }
 
 .skills h3 a {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
@@ -815,7 +817,7 @@ canvas {
 .dark-light h2, .dark-light p {
   color: white;
   padding: 20px;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 /*Contact*/
@@ -832,18 +834,21 @@ canvas {
 }
 
 /*Contact Info*/
-.contact-name {
-  font-family: 'Agane-45', monospace;
-}
 
 .contact h2 {
   color: white;
 }
 
-.contact p {
+#info-list {
+  margin-top: 15px;
+}
+
+#info-list p {
+  font-size: 17px;
+}
+
+.contact-name {
   color: white;
-  text-shadow: 0 0 5px white;
-  font-size: 1.5em;
 }
 
 .contact a {
@@ -851,22 +856,30 @@ canvas {
   text-decoration: none;
 }
 
-.contact a:hover {
-  text-shadow: 0 0 10px #f2c193;
+.contact-link:hover {
   color: #f2c193;
   transition-duration: 0.5s;
 }
 
+#contact-link-coop:hover {
+  color: black;
+}
+
 #map {
   height: 40vh;
-  min-width: 200px;
-  margin-top: 4vw;
+  /*min-width: 200px;*/
+  margin-top: 15px;
   margin-bottom: 4vw;
 }
 
 /*Contact Form*/
+.contact-heading {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
 .contact form h2 {
-  text-shadow: 0 0 5px white;
   font-size: 1.9em;
   color: white;
   margin-top: 0px;
@@ -875,7 +888,7 @@ canvas {
 .contact form input, .contact form textarea {
   border-radius: 5px;
   width: 100%;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   font-size: 1em;
   margin-top: 1em;
 }
@@ -887,6 +900,17 @@ form {
   max-width: 10em;
 }
 
+.schedule {
+  text-align: center;
+}
+
+.setmore {
+  color: white;
+  display: inline-block;
+  font-size: 10vw;
+  padding-bottom: 10px;
+}
+
 /*Footer*/
 
 footer {
@@ -894,21 +918,24 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
-  background-color: #222222;
+  background-color: #424242;
   color: white;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 footer .fa {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 footer i {
+  color: white;
   margin-left: 5%;
+  transition: 0.3s;
 }
 
 footer i:hover {
-  color: white;
+  color: #f2c193;
+  transition: 0.3s;
 }
 
 .foot {
@@ -1010,28 +1037,23 @@ footer i:hover {
     margin-right: 0;
     margin-left: 0;
   }
-
   .landing-title h1 {
     font-size: 20px;
     height: 20px;
   }
-
   .landing-title {
     margin-top: 0;
   }
-
   .landing-btns {
     margin-top: 25px;
   }
   .btm-but {
     margin-top: 1vh;
   }
-
   .btm-but a {
     padding-right: 26px;
     padding-left: 26px;
   }
-
   .btn-main {
     padding: 8px 20px;
   }
@@ -1055,7 +1077,6 @@ footer i:hover {
   .process-episodes div h3{
     font-size: 1.4em;
   }
-
   .process-episodes div p{
     font-size: 1.3em;
   }
@@ -1073,15 +1094,15 @@ footer i:hover {
   /*Reformat Contact Content*/
   .contact p {
   color: white;
-  text-shadow: 0 0 5px white;
   font-size: 1.3em;
-  margin-left: 10%;
   }
   .contact form {
     margin-left: 10%;
     margin-right: 10%;
   }
-
+  .setmore {
+    font-size: 15vw;
+  }
 }
 
 /*Mobile*/
@@ -1109,12 +1130,8 @@ footer i:hover {
   }*/
 }
 
-form h3 {
-  color: white;
-}
-
 .modal-title {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 #owl-demo .item img{
@@ -1246,6 +1263,6 @@ textarea {
 }
 
 #legal {
-  font-size: 8px;
+  font-size: 12px;
   margin-bottom: 20px;
 }

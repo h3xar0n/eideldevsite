@@ -250,11 +250,6 @@ $(document).ready(function(){
         }
     });
   });
-  //Parallax
-  $('.devaron-background').parallax({imageSrc: 'img/Grid2.jpg'});
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
   //Skills
   var skillsIndex = 0;
   while (skillsIndex < skills.length) {
@@ -287,8 +282,8 @@ $(document).ready(function(){
   });
 });
 
-// Google Maps
-// Must be outside the $(document).ready function in order to load before Maps API; see HTML.
+// Google Maps must be outside the $(document).ready function in order
+// to load before Maps API; see HTML.
 var map;
 
 var myLatLng = {lat: 37.7813636, lng: -122.3914047};

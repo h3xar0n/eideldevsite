@@ -398,38 +398,12 @@
   <!-- Contact -->
   <div class="container contact anchor" id="contact-sec">
     <h2>Contact</h2>
-    <!-- Info -->
-    <div class="clearfix contact-col col-sm-5">
-      <p>
-        <span class="glyphicon glyphicon-user"></span>
-        Aron Eidelman
-      </p>
-      <p class="contact-name">
-        <a href="tel:678-231-3881">
-          <span class="glyphicon glyphicon-phone"></span>
-          678-231-3881
-        </a>
-      </p>
-      <p class="contact-name">
-        <a href="mailto:aron@glambyadelina.com">
-          <span class="glyphicon glyphicon-envelope"></span>
-          aron@eideldev.com
-        </a>
-      </p>
-      <p class="contact-name">
-        <a href="skype:aron.gameplan">
-          <i class="fa fa-skype"></i>
-          aron.gameplan
-        </a>
-      </p>
-      <div class="hidden-xs" id="map"></div>
-    </div> <!-- End Info -->
     <!-- Form -->
     <form action="https://formspree.io/aron@eideldev.com"
           method="POST"
           name="contact"
           class="cf contact-col col-sm-5">
-      <h3>Message Me</h3>
+      <h3 class="contact-heading">Message Me</h3>
       <div class="half left cf form-group">
         <label class="sr-only" for="input-name">Name</label>
         <input type="text" id="input-name" name="Name" placeholder="Name">
@@ -459,6 +433,45 @@
         <input type="submit" value="Send" id="input-submit" class="btn-main">
       </div>
     </form><!-- End Form-->
+    <!-- Info -->
+    <div class="contact-col col-sm-5">
+      <h3 class="contact-heading">How to Reach Me</h3>
+        <div id="info-list">
+          <div class="col-xs-8">
+          <p class="contact-name">
+            <a class="contact-link" href="#about-sec">
+              <span class="glyphicon glyphicon-user"></span>
+              Aron Eidelman
+            </a>
+          </p>
+          <p class="contact-name">
+            <a class="contact-link" href="tel:678-231-3881">
+              <span class="glyphicon glyphicon-phone"></span>
+              678-231-3881
+            </a>
+          </p>
+          <p class="contact-name">
+            <a class="contact-link" href="mailto:aron@glambyadelina.com">
+              <span class="glyphicon glyphicon-envelope"></span>
+              aron@eideldev.com
+            </a>
+          </p>
+          <p class="contact-name">
+            <a class="contact-link" href="skype:aron.gameplan">
+              <i class="fa fa-skype"></i>
+              aron.gameplan
+            </a>
+          </p>
+        </div>
+        <div class="col-xs-4 schedule contact-name">
+          <a href="https://eideldev.setmore.com/" target="_blank">
+            <i class="fa fa-calendar setmore contact-link"></i>
+          </a>
+          <p class="contact-name">Schedule</p>
+        </div>
+      </div>
+      <div class="col-sm-12 hidden-xs" id="map"></div>
+    </div> <!-- End Info -->
   </div><!-- End Contact -->
 
   <!-- Footer -->
@@ -484,25 +497,14 @@
 
   <!-- End Footer -->
 
-  <!-- ============================= -->
-  <!-- All your JavaScript comes now -->
-  <!-- ============================= -->
+  <!-- JavaScript Files -->
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
   <!-- Used in scripts.js -->
   <script src="js/particles.min.js"></script>
-  <script src="js/jquery.bgswitcher.js"></script>
-  <script src="js/background.cycle.js"></script>
-  <script src="js/parallax.js"></script>
-  <script src=js/work.js>
-  </script>
-  <script src=js/skills.js>
-  </script>
-  <script src=js/skills2.js>
-  </script>
+  <script src=js/skills.js></script>
   <!-- Main JS file -->
-  <script src=js/scripts.js>
-  </script>
+  <script src=js/scripts.js></script>
   <!-- Must come after scripts.js -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-TmAbDhp5UPjP0dbmDniVoMxxI3twi8E&callback=initMap"
           async defer>
