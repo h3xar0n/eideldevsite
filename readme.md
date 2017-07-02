@@ -3,12 +3,10 @@
 www.eideldev.com
 
 ## To-Do List
-
 Priority:
-1) Skills
-2) Work
-3) About
-4) History
+1) Work
+2) About
+3) History
 
 ### Work
 * Add UCSF, 1 more Angular, and 1 more React
@@ -26,7 +24,3 @@ Priority:
 ### History
 * Remove and contract overly personal things
 * Add some stuff for 2017
-
-### Skills
-* Refactor with Vue
-* Add Webpacket, Atom, Vue; remove anything extraneous

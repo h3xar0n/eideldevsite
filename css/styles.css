@@ -236,6 +236,10 @@ canvas {
   transition: 0.5s;
 }
 
+.atom-colored {
+  color: #f2c193;
+}
+
 #skill-list {
   margin: 2.5vh 0;
 }
@@ -762,7 +766,7 @@ canvas {
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
   color: white;
-  background: #595959;
+  background: #424242;
   transition: background .5s;
   border-radius: 15px;
   border-color: #595959;
