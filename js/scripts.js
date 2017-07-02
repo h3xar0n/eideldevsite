@@ -112,7 +112,6 @@ particlesJS("particles-js", {
 });
 
 // Work Section
-// Work Skills Used
 var skillList = new Vue({
   el: '#skill-list',
   data: {
@@ -126,7 +125,6 @@ var skillList = new Vue({
     ]
   }
 })
-// Work Samples
 var workSampleList = new Vue({
   el: '#work-samples',
   data: {

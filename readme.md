@@ -3,10 +3,6 @@
 www.eideldev.com
 
 ## To-Do List
-Priority:
-1) Work
-2) About
-3) History
 
 ### Work
 * Add UCSF, 1 more Angular, and 1 more React
@@ -24,3 +20,8 @@ Priority:
 ### History
 * Remove and contract overly personal things
 * Add some stuff for 2017
+
+### Icebox
+* Change Zoom level for map
+* Fix placement of schedule button
+* Style map to match color theme
