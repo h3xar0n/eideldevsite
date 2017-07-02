@@ -104,6 +104,16 @@
   <!-- Work -->
   <div class="container work anchor" id="work-sec">
     <h2 class="sample-title">Work</h2>
+    <!-- Vue Skill Selector -->
+    <div id="skills-used" class="hidden-xs">
+      <div class="row" id="skill-list">
+        <div v-for="skill in skills">
+          <div class="col-sm-2">
+            <i v-bind:class="skill.class"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="portfolio">
       <!-- Vue Row  -->
       <div class="row" id="work-samples">
@@ -119,17 +129,7 @@
         </div>
       </div>
     </div>
-    <!-- Vue Skill Selector -->
-    <div id="skills-used" class="hidden-xs">
-      <h3>Select Skill Used:</h3>
-      <div class="row" id="skill-list">
-        <div v-for="skill in skills">
-          <div class="col-sm-2">
-            <i v-bind:class="skill.class"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div> <!-- End Work -->
 
   <!-- About -->
