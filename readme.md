@@ -5,11 +5,10 @@ www.eideldev.com
 ## To-Do List
 
 Priority:
-1) Contact
-2) Skills
-3) Work
-4) About
-5) History
+1) Skills
+2) Work
+3) About
+4) History
 
 ### Work
 * Add UCSF, 1 more Angular, and 1 more React
@@ -31,6 +30,3 @@ Priority:
 ### Skills
 * Refactor with Vue
 * Add Webpacket, Atom, Vue; remove anything extraneous
-
-### Contact
-* Correct color and legal description in footer

@@ -28,8 +28,11 @@
   width: 2em;
   height: 2em;
 }
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a {
   color: black;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #f2c193;
 }
 
 /*Site Wide Font*/
@@ -38,13 +41,13 @@ body {
   background-color: #424242;
 }
 * {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 .box-element{
   border-radius: 15px;
 }
 p, a {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   color: #969696;
 }
 h1 {
@@ -66,7 +69,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 .stripe {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 .title {
   text-align: center;
@@ -176,7 +179,7 @@ canvas {
   text-transform: uppercase;
   transition: background .5s;
   border-radius: 10px;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 .btn-main:hover{
   background-color: black;
@@ -281,7 +284,7 @@ canvas {
   font-size: 1em;
   margin-bottom: 5%;
   text-transform: uppercase;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   min-width: 2.6em;
   max-height: 2em;
 }
@@ -546,7 +549,7 @@ canvas {
 }
 
 .history h3 {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   text-transform: none;
 }
 
@@ -653,7 +656,7 @@ canvas {
   text-align: left;
 }
 .right-content p:nth-child(1), .right-content p:nth-child(4), .right-content p:nth-child(8), .right-content p:nth-child(10)  {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -754,7 +757,7 @@ canvas {
 }
 
 .skills h3 a {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
@@ -814,7 +817,7 @@ canvas {
 .dark-light h2, .dark-light p {
   color: white;
   padding: 20px;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 /*Contact*/
@@ -885,7 +888,7 @@ canvas {
 .contact form input, .contact form textarea {
   border-radius: 5px;
   width: 100%;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
   font-size: 1em;
   margin-top: 1em;
 }
@@ -915,21 +918,24 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
-  background-color: #222222;
+  background-color: #424242;
   color: white;
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 footer .fa {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 footer i {
+  color: white;
   margin-left: 5%;
+  transition: 0.3s;
 }
 
 footer i:hover {
-  color: white;
+  color: #f2c193;
+  transition: 0.3s;
 }
 
 .foot {
@@ -1125,7 +1131,7 @@ footer i:hover {
 }
 
 .modal-title {
-  font-family: 'Agane-45', monospace;
+  font-family: 'Agane-45', sans-serif;
 }
 
 #owl-demo .item img{
@@ -1257,6 +1263,6 @@ textarea {
 }
 
 #legal {
-  font-size: 8px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
