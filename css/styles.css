@@ -831,15 +831,16 @@ canvas {
 }
 
 /*Contact Info*/
-.contact-name {
-  font-family: 'Agane-45', monospace;
-}
 
 .contact h2 {
   color: white;
 }
 
-.contact p {
+#info-list {
+  margin-top: 24px;
+}
+
+.contact-name {
   color: white;
   font-size: 1.5em;
 }
@@ -857,7 +858,7 @@ canvas {
 #map {
   height: 40vh;
   min-width: 200px;
-  margin-top: 4vw;
+  margin-top: 25px;
   margin-bottom: 4vw;
 }
 
