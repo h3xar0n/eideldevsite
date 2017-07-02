@@ -185,7 +185,9 @@
                     </a>
                 </div>
                 <div class="modal-body">
-                    <embed id="modalembed" class="modal-embeds" src="pdf/Aron_Eidelman_Dev_Resume_July_2017.pdf">
+                    <embed id="modalembed"
+                           class="modal-embeds"
+                           src="pdf/Aron_Eidelman_Dev_Resume_July_2017.pdf">
                 </div>
               </div>
             </div>
@@ -306,7 +308,6 @@
             <div class="col-xs-4 col-sm-2" title="Vim" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-vim-plain colored"></i>
             </div>
-
             <!-- MySQL -->
             <div class="col-xs-4 col-sm-2" title="MySQL" data-toggle="tooltip" data-placement="bottom">
               <i class="devicon-mysql-plain colored"></i>
@@ -399,30 +400,58 @@
     <h2>Contact</h2>
     <!-- Info -->
     <div class="clearfix contact-col col-sm-5">
-      <p><span class="glyphicon glyphicon-user"></span> Aron Eidelman</p>
-      <p class="contact-name"><a href="tel:678-231-3881"><span class="glyphicon glyphicon-phone"></span> 678-231-3881</a></p>
-      <p class="contact-name"><a href="mailto:aron@glambyadelina.com"><span class="glyphicon glyphicon-envelope"></span> aron@eideldev.com</a></p>
-      <p class="contact-name"><a href="skype:aron.gameplan"><i class="fa fa-skype"></i> aron.gameplan</a></p>
-
+      <p>
+        <span class="glyphicon glyphicon-user"></span>
+        Aron Eidelman
+      </p>
+      <p class="contact-name">
+        <a href="tel:678-231-3881">
+          <span class="glyphicon glyphicon-phone"></span>
+          678-231-3881
+        </a>
+      </p>
+      <p class="contact-name">
+        <a href="mailto:aron@glambyadelina.com">
+          <span class="glyphicon glyphicon-envelope"></span>
+          aron@eideldev.com
+        </a>
+      </p>
+      <p class="contact-name">
+        <a href="skype:aron.gameplan">
+          <i class="fa fa-skype"></i>
+          aron.gameplan
+        </a>
+      </p>
       <div class="hidden-xs" id="map"></div>
     </div> <!-- End Info -->
     <!-- Form -->
     <form action="https://formspree.io/aron@eideldev.com"
-      method="POST" name="contact" class="cf contact-col col-sm-5">
+          method="POST"
+          name="contact"
+          class="cf contact-col col-sm-5">
       <h3>Message Me</h3>
       <div class="half left cf form-group">
-        <label class="sr-only" for="input-name"> Name</label>
+        <label class="sr-only" for="input-name">Name</label>
         <input type="text" id="input-name" name="Name" placeholder="Name">
-        <label class="sr-only" for="input-phone"> Phone Number</label>
-        <input type="tel" id="input-phone" name="Phone" placeholder="Phone (Optional)">
-        <label class="sr-only" for="input-email"> Email Address</label>
-        <input type="email" id="input-email" name="_replyto" placeholder="Email address" required>
-        <label class="sr-only" for="input-subject"> Subject</label>
-        <input type="text" id="input-subject" name="Message" placeholder="Subject (Optional)">
+        <label class="sr-only" for="input-phone">Phone Number</label>
+        <input type="tel"
+               id="input-phone"
+               name="Phone"
+               placeholder="Phone (Optional)">
+        <label class="sr-only" for="input-email">Email Address</label>
+        <input type="email"
+               id="input-email"
+               name="_replyto"
+               placeholder="Email Address">
       </div>
       <div class="half right cf">
         <label class="sr-only" for="input-message"> Message</label>
-        <textarea cols="40" rows="5" name="message" id="input-message" placeholder="Message"></textarea>
+        <textarea cols="40"
+                  rows="5"
+                  name="message"
+                  id="input-message"
+                  placeholder="Message">
+        </textarea>
         <p id="char-count"></p>
         <p id="visible-comment"></p>
       </div>
@@ -440,9 +469,15 @@
       </div>
       <div class="col-xs-4 text-right">
         <!-- GitHub -->
-        <a href="https://github.com/h3xar0n" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://github.com/h3xar0n"
+           target="_blank">
+           <i class="fa fa-github"></i>
+         </a>
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/aroneidelman" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/aroneidelman"
+           target="_blank">
+           <i class="fa fa-linkedin"></i>
+        </a>
       </div>
     </div>
   </footer>
@@ -469,6 +504,8 @@
   <script src=js/scripts.js>
   </script>
   <!-- Must come after scripts.js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-TmAbDhp5UPjP0dbmDniVoMxxI3twi8E&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-TmAbDhp5UPjP0dbmDniVoMxxI3twi8E&callback=initMap"
+          async defer>
+  </script>
 </body>
 </html>
