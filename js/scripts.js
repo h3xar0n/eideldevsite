@@ -282,8 +282,8 @@ $(document).ready(function(){
   });
 });
 
-// Google Maps
-// Must be outside the $(document).ready function in order to load before Maps API; see HTML.
+// Google Maps must be outside the $(document).ready function in order
+// to load before Maps API; see HTML.
 var map;
 
 var myLatLng = {lat: 37.7813636, lng: -122.3914047};
