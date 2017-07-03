@@ -404,7 +404,7 @@ $(document).ready(function(){
 // to load before Maps API; see HTML.
 var map;
 
-var myLatLng = {lat: 37.7813636, lng: -122.3914047};
+var myLatLng = {lat: 37.7612791, lng: -122.4888527};
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
