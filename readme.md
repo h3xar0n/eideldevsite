@@ -21,7 +21,8 @@ www.eideldev.com
 * Remove and contract overly personal things
 * Add some stuff for 2017
 
+### Contact
+* Divide into three sections, with Schedule as iFrame
+
 ### Icebox
-* Change Zoom level for map
-* Fix placement of schedule button
 * Style map to match color theme
