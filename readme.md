@@ -4,17 +4,9 @@ www.eideldev.com
 
 ## To-Do List
 
-### Work
-* Replace JavaScript with React, jQuery with Sass
-* Add 3 box/buttons with:
-1) Link to Skills, says "See more skills" or "Skills"
-2) Link to GitHub, says "Review the code" or "Code"
-3) Link to SetMore, says "Interview me" or "Interview"
-
 ### About
-* Add two boxes with:
-1) Human-oriented resume
-2) Machine-oriented resume
+* Make picture flip to show icon
+* Add a third column with GitHub and LinkedIn
 
 ### History
 * Remove and contract overly personal things
