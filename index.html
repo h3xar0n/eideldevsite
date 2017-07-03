@@ -109,7 +109,9 @@
       <div class="row" id="skill-list">
         <div v-for="skill in skills">
           <div class="col-sm-2">
-            <i v-bind:class="skill.class"></i>
+            <a href="#skills-sec">
+              <i v-bind:class="skill.class"></i>
+            </a>
           </div>
         </div>
       </div>
