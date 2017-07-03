@@ -60,7 +60,6 @@
       </div> <!-- nav -->
     </div> <!-- end nav container-->
   </nav><!-- End Navigation-->
-
   <!-- Landing -->
   <div class="container-fluid logo-landing anchor" id="land-sec" >
     <div id="particles-js"></div>
@@ -100,7 +99,6 @@
       </div> <!-- End Logo Row -->
     </div> <!-- End Overlay -->
   </div><!-- End Landing -->
-
   <!-- Work -->
   <div class="container work anchor" id="work-sec">
     <h2 class="sample-title">Work</h2>
@@ -133,7 +131,6 @@
     </div>
 
   </div> <!-- End Work -->
-
   <!-- About -->
   <div class="container about anchor" id="about-sec">
     <!-- About panel -->
@@ -155,19 +152,32 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="center">
-          <!-- Small modal button -->
+      <div class="row about-action">
+        <div class="col-sm-4">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
           <div class="modal-button">
-            <button
-              class="btn btn-main"
-              data-toggle="modal"
-              data-target=".bs-example-modal-lg">
-                See Résumé
-            </button>
-          </div> <!-- End button -->
-          <!-- Small modal -->
-          <div class="modal fade bs-example-modal-lg"
+            <a class="btn btn-main"
+               href="https://www.linkedin.com/in/aroneidelman/"
+               target="_blank">
+              View Profile
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+          <div class="center">
+            <!-- Small modal button -->
+            <div class="modal-button">
+              <button
+                class="btn btn-main"
+                data-toggle="modal"
+                data-target=".bs-example-modal-lg">
+                  Read Résumé
+              </button>
+            </div> <!-- End button -->
+            <!-- Small modal for Resume-->
+            <div class="modal fade bs-example-modal-lg"
                tabindex="-1"
                role="dialog"
                aria-labelledby="myModalLabel1"
@@ -193,11 +203,22 @@
               </div>
             </div>
           </div> <!-- End modal -->
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <div class="modal-button">
+            <a class="btn btn-main"
+               href="https://github.com/h3xar0n"
+               target="_blank">
+              Review Code
+            </a>
+          </div>
         </div>
       </div>
     </div><!-- End About panel -->
   </div><!-- End About -->
-
   <!-- History -->
   <div class="devaron-background hidden-xs" id="history">
     <div class="container history block-center">
@@ -206,16 +227,31 @@
       <div id='stars3'></div>
       <h2>History</h2>
       <div class="left-content">
-        <p><img class="important-elements" src="img/oglethorpe.png" alt="Emblem of Oglethorpe University"></p>
+        <p>
+          <img class="important-elements"
+              src="img/oglethorpe.png"
+              alt="Emblem of Oglethorpe University">
+        </p>
         <h3>B.A. in Philosophy</h3>
         <h3>Edited award-winning humanities curriculum</h3>
-        <p><img class="important-elements" id="sf" src="img/sanfrancisco.png" alt="Golden Gate Bridge"></p>
+        <p>
+          <img class="important-elements"
+               id="sf"
+               src="img/sanfrancisco.png"
+               alt="Golden Gate Bridge">
+        </p>
         <h3>Came home to San Francisco</h3>
-        <p><i class="devicon-ruby-plain important-elements history-icon"></i></p>
+        <p>
+          <i class="devicon-ruby-plain important-elements history-icon"
+             id="ruby"></i>
+        </p>
         <h3>Created first program in Ruby</h3>
         <h3>Made blended-learning schools in HITEC City</h3>
-        <p><span class="history-icon important-elements"></span></p>
-        <h3>Moved to Montréal, Canada</h3>
+        <p>
+          <i class="fa fa-database history-icon important-elements"
+             aria-hidden="true"></i>
+        </p>
+        <h3>Created product overviews for DW/BI company</h3>
         <p><i class="fa fa-terminal important-elements history-icon" aria-hidden="true"></i></p>
         <h3>Wrote documentation for Command Line tools</h3>
         <h3>Freelance editor for major publishing houses</h3>
@@ -225,36 +261,42 @@
         <p><img class="less-important-elements" src="img/gameplan.png" alt="Logo for Gameplan Jobs"></p>
         <h3>Co-founded Gameplan Jobs</h3>
         <h3>Recruited initial developers for proof of concept and prototype</h3>
-        <p><img class="important-elements" id="moscow" src="img/redstar.png" alt="Soviet Star"></p>
+        <p>
+          <i class="fa fa-snowflake-o important-elements" id="moscow" aria-hidden="true"></i>
+        </p>
         <h3>Moved to Moscow, Russian Federation</h3>
         <h3>Closed deal with first clients in UK</h3>
-        <h3>Developed website for wife's makeup service, Glam by Adelina</h3>
+        <h3>Developed website for Glam by Adelina</h3>
       </div>
       <div class="right-content">
           <h2>2011</h2>
           <p><img class="important-elements" src="img/gurgaon.png" alt="Gurgaon written in Hindi"></p>
           <h3>Moved to Gurgaon, India</h3>
           <h2>2012</h2>
-          <h3>Developed business plan for data warehousing company</h3>
+          <h3>Developed business plan for DW/BI company</h3>
           <p><img class="important-elements" src="img/hyderabad.png" alt="Hyderabad written in Telegu"></p>
           <h3>Moved to Hyderabad, India</h3>
           <h2>2013</h2>
-          <h3>Remote technical writer for DW/BI company</h3>
+          <h3>Remote technical editor for QA testing company</h3>
           <h2>2014</h2>
-          <p><img class="important-elements" src="img/nyc.png" alt="logo of New York City"></p>
+          <p>
+            <img class="important-elements"
+                 id="nyc"
+                 src="img/nyc.png"
+                 alt="logo of New York City">
+          </p>
           <h3>Moved to New York City</h3>
           <h3>Met love of life</h3>
           <h2>2015</h2>
           <h3>Collaborated with data scientist and industrial psychologist to plan product</h3>
           <h2>2016</h2>
           <h3>Remotely managed developers in US, Ukraine, and India</h3>
-          <p><img class="important-elements" id="baku" src="img/baku.png" alt="Emblem of Baku, Azerbaijan"></p>
           <h3>Married in Baku, Azerbaijan</h3>
+          <h2>2017</h2>
         </div>
       <div class="stars2"></div>
     </div>
   </div> <!-- End History in Space -->
-
   <!-- Skills -->
   <div class="container skills anchor" id="skills-sec">
     <h2>Skills</h2>
