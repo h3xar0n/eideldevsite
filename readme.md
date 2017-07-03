@@ -10,7 +10,7 @@ www.eideldev.com
 * Add 3 box/buttons with:
 1) Link to Skills, says "See more skills" or "Skills"
 2) Link to GitHub, says "Review the code" or "Code"
-3) Link to Contact, says "Work with me" or "Interview"
+3) Link to SetMore, says "Interview me" or "Interview"
 
 ### About
 * Add two boxes with:

@@ -299,12 +299,12 @@ var workFlow = new Vue({
         name:  'Git'
       },
       {
-        class: 'devicon-github-plain white',
+        class: 'devicon-github-plain github-colored',
         link:  'https://en.wikipedia.org/wiki/GitHub',
         name:  'GitHub'
       },
       {
-        class: 'devicon-slack-plain colored',
+        class: 'devicon-slack-plain slack-colored',
         link:  'https://en.wikipedia.org/wiki/Slack_(software)',
         name:  'Slack'
       }

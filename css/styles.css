@@ -241,6 +241,14 @@ canvas {
   color: #F2C193;
 }
 
+.slack-colored {
+  color: #4B6BC6;
+}
+
+.github-colored {
+  color: white;
+}
+
 #skill-list {
   margin: 2.5vh 0;
 }
