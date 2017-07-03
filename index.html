@@ -267,11 +267,12 @@
         <div id="collapse0" class="panel-collapse collapse in">
           <!-- Vue Skill Selector -->
           <div class="panel-body">
-            <div class="row" id="front-end-skills">
-              <div v-for="skill in skills">
-                <div class="col-sm-2 col-xs-4">
+            <div class="row" id="front-end-skills" >
+              <div class="col-sm-2 col-xs-4 single-skill" v-for="skill in skills">
+                <a v-bind:href="skill.link" target="_blank">
                   <i v-bind:class="skill.class"></i>
-                </div>
+                  <p>{{ skill.name }}</p>
+                </a>
               </div>
             </div>
           </div>
@@ -288,10 +289,11 @@
           <!-- Vue Skill Selector -->
           <div class="panel-body">
             <div class="row" id="back-end-skills">
-              <div v-for="skill in skills">
-                <div class="col-sm-2 col-xs-4">
+              <div class="col-sm-2 col-xs-4 single-skill" v-for="skill in skills">
+                <a v-bind:href="skill.link" target="_blank">
                   <i v-bind:class="skill.class"></i>
-                </div>
+                  <p>{{ skill.name }}</p>
+                </a>
               </div>
             </div>
           </div>
@@ -308,10 +310,11 @@
           <!-- Vue Skill Selector -->
           <div class="panel-body">
             <div class="row" id="workflow-skills">
-              <div v-for="skill in skills">
-                <div class="col-sm-2 col-xs-4">
+              <div class="col-sm-2 col-xs-4 single-skill" v-for="skill in skills">
+                <a v-bind:href="skill.link" target="_blank">
                   <i v-bind:class="skill.class"></i>
-                </div>
+                  <p>{{ skill.name }}</p>
+                </a>
               </div>
             </div>
           </div>
@@ -348,9 +351,8 @@
                   rows="5"
                   name="message"
                   id="input-message"
-                  placeholder="Message">
-        </textarea>
-        <p id="char-count"></p>
+                  placeholder="Message"></textarea>
+        <p id="char-count">0</p>
         <p id="visible-comment"></p>
       </div>
       <div class="text-center">
@@ -389,7 +391,7 @@
         </div>
         <div class="col-xs-4 schedule contact-name">
           <a href="https://eideldev.setmore.com/" target="_blank">
-            <i class="fa fa-calendar setmore contact-link"></i>
+            <i class="fa fa-calendar setmore"></i>
           </a>
           <p class="contact-name">Schedule</p>
         </div>

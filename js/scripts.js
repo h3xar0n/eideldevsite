@@ -174,18 +174,66 @@ var frontEnd = new Vue({
   el: '#front-end-skills',
   data: {
     skills: [
-      {class: 'devicon-javascript-plain colored'},
-      {class: 'devicon-vuejs-plain colored'},
-      {class: 'devicon-angularjs-plain colored'},
-      {class: 'devicon-react-plain colored'},
-      {class: 'devicon-jquery-plain colored'},
-      {class: 'devicon-coffeescript-plain colored'},
-      {class: 'devicon-html5-plain colored'},
-      {class: 'devicon-css3-plain colored'},
-      {class: 'devicon-sass-plain colored'},
-      {class: 'devicon-bootstrap-plain colored'},
-      {class: 'devicon-photoshop-plain colored'},
-      {class: 'devicon-illustrator-plain colored'}
+      {
+        class: 'devicon-javascript-plain colored',
+        link:  'https://en.wikipedia.org/wiki/JavaScript',
+        name:  'JavaScript'
+      },
+      {
+        class: 'devicon-vuejs-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Vue.js',
+        name:  'Vue'
+      },
+      {
+        class: 'devicon-angularjs-plain colored',
+        link:  'https://en.wikipedia.org/wiki/AngularJS',
+        name:  'Angular'
+      },
+      {
+        class: 'devicon-react-plain colored',
+        link:  'https://en.wikipedia.org/wiki/React_(JavaScript_library)',
+        name:  'React'
+      },
+      {
+        class: 'devicon-jquery-plain colored',
+        link:  'https://en.wikipedia.org/wiki/JQuery',
+        name:  'jQuery'
+      },
+      {
+        class: 'devicon-coffeescript-plain colored',
+        link:  'https://en.wikipedia.org/wiki/CoffeeScript',
+        name:  'CoffeeScript'
+      },
+      {
+        class: 'devicon-html5-plain colored',
+        link:  'https://en.wikipedia.org/wiki/HTML5',
+        name:  'HTML5'
+      },
+      {
+        class: 'devicon-css3-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Cascading_Style_Sheets',
+        name:  'CSS3'
+      },
+      {
+        class: 'devicon-sass-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Sass_(stylesheet_language)',
+        name:  'Sass'
+      },
+      {
+        class: 'devicon-bootstrap-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)',
+        name:  'Bootstrap'
+      },
+      {
+        class: 'devicon-photoshop-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Adobe_Photoshop',
+        name:  'Photoshop'
+      },
+      {
+        class: 'devicon-illustrator-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Adobe_Illustrator',
+        name:  'Illustrator'
+      }
     ]
   }
 })
@@ -193,12 +241,36 @@ var backEnd = new Vue({
   el: '#back-end-skills',
   data: {
     skills: [
-      {class: 'devicon-ruby-plain colored'},
-      {class: 'devicon-rails-plain colored'},
-      {class: 'devicon-redis-plain colored'},
-      {class: 'devicon-postgresql-plain colored'},
-      {class: 'devicon-mysql-plain colored'},
-      {class: 'devicon-heroku-plain colored'}
+      {
+        class: 'devicon-ruby-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Ruby_(programming_language)',
+        name:  'Ruby'
+      },
+      {
+        class: 'devicon-rails-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Ruby_on_Rails',
+        name:  'Rails'
+      },
+      {
+        class: 'devicon-redis-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Redis',
+        name:  'Redis'
+      },
+      {
+        class: 'devicon-postgresql-plain colored',
+        link:  'https://en.wikipedia.org/wiki/PostgreSQL',
+        name:  'PostgreSQL'
+      },
+      {
+        class: 'devicon-mysql-plain colored',
+        link:  'https://en.wikipedia.org/wiki/MySQL',
+        name:  'MySQL'
+      },
+      {
+        class: 'devicon-heroku-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Heroku',
+        name:  'Heroku'
+      }
     ]
   }
 })
@@ -206,12 +278,36 @@ var workFlow = new Vue({
   el: '#workflow-skills',
   data: {
     skills: [
-      {class: 'devicon-webpack-plain colored'},
-      {class: 'devicon-vim-plain colored'},
-      {class: 'devicon-atom-plain atom-colored'},
-      {class: 'devicon-git-plain colored'},
-      {class: 'devicon-github-plain white'},
-      {class: 'devicon-slack-plain colored'}
+      {
+        class: 'devicon-webpack-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Webpack',
+        name:  'Webpack'
+      },
+      {
+        class: 'devicon-vim-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Vim_(text_editor)',
+        name:  'Vim'
+      },
+      {
+        class: 'devicon-atom-plain atom-colored',
+        link:  'https://en.wikipedia.org/wiki/Atom_(text_editor)',
+        name:  'Atom'
+      },
+      {
+        class: 'devicon-git-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Git',
+        name:  'Git'
+      },
+      {
+        class: 'devicon-github-plain white',
+        link:  'https://en.wikipedia.org/wiki/GitHub',
+        name:  'GitHub'
+      },
+      {
+        class: 'devicon-slack-plain colored',
+        link:  'https://en.wikipedia.org/wiki/Slack_(software)',
+        name:  'Slack'
+      }
     ]
   }
 })
