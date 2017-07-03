@@ -164,6 +164,18 @@ var workSampleList = new Vue({
         link:  'http://nearme.bitballoon.com/#/',
         image: 'img/portfolio/nearme/NearMeSmall.png',
         class: 'javascript-sample angular-sample'
+      },
+      {
+        alt: 'A small screenshot of UCSF Sirota Lab website',
+        link: 'http://sirotalab-test.bitballoon.com/',
+        image: 'img/portfolio/sirota/SirotaSmall.png',
+        class: 'vue-sample bootstrap-sample jquery-sample'
+      },
+      {
+        alt: 'A small screenshot of the Random Color Picker, a React app',
+        link: 'projects/random-color-generator-react/index.html',
+        image: 'img/portfolio/color/PickerSmall.png',
+        class: 'react-sample sass-sample'
       }
     ]
   }
