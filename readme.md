@@ -4,9 +4,6 @@ www.eideldev.com
 
 ## To-Do List
 
-### About
-* Add a third column with GitHub and LinkedIn
-
 ### History
 * Remove and contract overly personal things
 * Add some stuff for 2017
