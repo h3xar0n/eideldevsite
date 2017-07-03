@@ -116,10 +116,10 @@ var skillList = new Vue({
   el: '#skill-list',
   data: {
     skills: [
-      {class: 'devicon-javascript-plain colored'},
       {class: 'devicon-vuejs-plain colored'},
       {class: 'devicon-angularjs-plain colored'},
-      {class: 'devicon-jquery-plain colored'},
+      {class: 'devicon-react-plain colored'},
+      {class: 'devicon-sass-plain colored'},
       {class: 'devicon-bootstrap-plain colored'},
       {class: 'devicon-rails-plain colored'}
     ]
@@ -133,43 +133,43 @@ var workSampleList = new Vue({
         alt:   'A small screenshot of the landing page for Glam by Adelina',
         link:  'work/glam.html',
         image: 'img/portfolio/glam/GlamSmall.png',
-        class: 'vue-sample javascript-sample jquery-sample bootstrap-sample'
+        class: 'vue-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the landing page for A2 Accessories',
         link:  'work/a2.html',
         image: 'img/portfolio/a2/A2Small.png',
-        class: 'rails-sample javascript-sample bootstrap-sample'
+        class: 'rails-sample sass-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the site for Gameplan Jobs',
         link:  'work/gameplan.html',
         image: 'img/portfolio/gpj/GameplanSmall.png',
-        class: 'rails-sample javascript-sample angular-sample bootstrap-sample'
+        class: 'rails-sample react-sample angular-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of Eideldev, this site',
         link:  'http://eideldev.com/404',
         image: 'img/portfolio/eideldev/EideldevSmall.png',
-        class: 'vue-sample javascript-sample jquery-sample bootstrap-sample'
+        class: 'vue-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of Tvitzar on a user\'s profile page',
         link:  'https://tvitzar.herokuapp.com/',
         image: 'img/portfolio/tvitzar/TvitzarSmall.png',
-        class: 'rails-sample bootstrap-sample'
+        class: 'rails-sample sass-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of NearMe, an Angular app',
         link:  'http://nearme.bitballoon.com/#/',
         image: 'img/portfolio/nearme/NearMeSmall.png',
-        class: 'javascript-sample angular-sample'
+        class: 'angular-sample'
       },
       {
         alt: 'A small screenshot of UCSF Sirota Lab website',
         link: 'http://sirotalab-test.bitballoon.com/',
         image: 'img/portfolio/sirota/SirotaSmall.png',
-        class: 'vue-sample bootstrap-sample jquery-sample'
+        class: 'vue-sample bootstrap-sample'
       },
       {
         alt: 'A small screenshot of the Random Color Picker, a React app',
@@ -353,14 +353,14 @@ $(document).ready(function(){
       $('.sample-title').html('Rails');
       $('.portfolio-sample').addClass('shadow-sample');
       $('.rails-sample').addClass('select-sample');
-    } else if (skill == 'devicon-javascript-plain colored') {
-      $('.sample-title').html('JavaScript');
+    } else if (skill == 'devicon-react-plain colored') {
+      $('.sample-title').html('React');
       $('.portfolio-sample').addClass('shadow-sample');
-      $('.javascript-sample').addClass('select-sample');
-    } else if (skill == 'devicon-jquery-plain colored') {
-      $('.sample-title').html('jQuery');
+      $('.react-sample').addClass('select-sample');
+    } else if (skill == 'devicon-sass-plain colored') {
+      $('.sample-title').html('Sass');
       $('.portfolio-sample').addClass('shadow-sample');
-      $('.jquery-sample').addClass('select-sample');
+      $('.sass-sample').addClass('select-sample');
     } else if (skill == 'devicon-angularjs-plain colored') {
       $('.sample-title').html('Angular');
       $('.portfolio-sample').addClass('shadow-sample');
