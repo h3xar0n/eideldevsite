@@ -145,7 +145,7 @@ var workSampleList = new Vue({
         alt:   'A small screenshot of the site for Gameplan Jobs',
         link:  'work/gameplan.html',
         image: 'img/portfolio/gpj/GameplanSmall.png',
-        class: 'vue-sample rails-sample javascript-sample angular-sample bootstrap-sample'
+        class: 'rails-sample javascript-sample angular-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of Eideldev, this site',

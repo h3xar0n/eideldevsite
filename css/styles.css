@@ -209,11 +209,11 @@ canvas {
 
 #portfolio {
   text-align: center;
-  max-width: 150vh;
-  margin: 0 auto;
+  max-width: 180vh;
+  margin: 5vh auto 0 auto;
 }
 
-#portfolio .row .col-sm-4 {
+#portfolio .row .col-sm-3 {
   padding: 0;
 }
 

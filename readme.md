@@ -5,7 +5,6 @@ www.eideldev.com
 ## To-Do List
 
 ### Work
-* Add UCSF, 1 more Angular, and 1 more React
 * Replace JavaScript with React, jQuery with Sass
 * Add 3 box/buttons with:
 1) Link to Skills, says "See more skills" or "Skills"
