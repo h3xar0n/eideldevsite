@@ -131,7 +131,7 @@ var workSampleList = new Vue({
     samples: [
       {
         alt:   'A small screenshot of the landing page for Glam by Adelina',
-        link:  'work/glam.html',
+        link:  'http://glambyadelina.com/',
         image: 'img/portfolio/glam/GlamSmall.png',
         class: 'vue-sample bootstrap-sample'
       },
