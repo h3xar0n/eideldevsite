@@ -138,13 +138,13 @@ var workSampleList = new Vue({
       {
         alt:   'A small screenshot of the landing page for A2 Accessories',
         link:  'work/a2.html',
-        image: 'img/portfolio/a2/A2Small.png',
+        image: 'https://a2accessories.herokuapp.com/',
         class: 'rails-sample sass-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the site for Gameplan Jobs',
         link:  'work/gameplan.html',
-        image: 'img/portfolio/gpj/GameplanSmall.png',
+        image: 'http://gameplanjobs.com/',
         class: 'rails-sample react-sample angular-sample bootstrap-sample'
       },
       {
