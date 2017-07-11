@@ -1,5 +1,4 @@
 /*Custom Fonts*/
-
 @font-face{
   font-family: 'Agane-Extra-Bold-Sign';
   src: url('fonts/agane/Aganè 75 (Extra Bold) sign');
@@ -8,9 +7,7 @@
   font-family: 'Agane-45';
   src: url('fonts/agane/Aganè 45 (light).ttf');
 }
-
 /*Navigation and Site-Wide*/
-
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -43,7 +40,6 @@
   background-color: #2b3137;
 }
 /*Site Wide Font*/
-
 body {
   background-color: #2b3137;
 }
@@ -64,8 +60,10 @@ h2 {
   color: white;
 }
 h1, h2, .nav li {
-  /*text-transform: uppercase;*/
   text-align: center;
+}
+.nav li {
+ text-transform: uppercase;
 }
 a {
   text-decoration: none;
@@ -83,14 +81,8 @@ a:hover, a:focus {
   margin-right: 0;
   margin-left: 0;
 }
-
 /*Landing*/
-
 .logo-landing {
-  /*background-image: url("../img/gridscape_white.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;*/
   min-height: 100vh;
 }
 .logo-landing {
@@ -119,16 +111,13 @@ a:hover, a:focus {
   -webkit-filter: drop-shadow(0px 0px 1px white);
   filter: drop-shadow(0px 0px 1px white);
 }
-
 /*Particles*/
-
 canvas {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
 }
-
 #particles-js {
   position: absolute;
   width: 100%;
@@ -139,13 +128,10 @@ canvas {
   background-size: cover;
   background-position: 50% 50%;
 }
-
 #over-particles {
   z-index: 1;
 }
-
 /*Landing Logo and Buttons*/
-
 .center {
   margin: 0 auto;
   width: 100%;
@@ -156,9 +142,7 @@ canvas {
 .landing-title h1 {
   font-size: 4vw;
 }
-
 /*Fix Heading from Jumping over Logo*/
-
 @media (min-width: 900px) {
   .landing-title h1 {
     padding-top: 2.5vw;
@@ -179,7 +163,7 @@ canvas {
   padding: 16px 40px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background .5s;
+  transition: .5s;
   border-radius: 10px;
 }
 .btn-main:hover{
@@ -187,88 +171,70 @@ canvas {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  transition: background .1s;
+  transition: .1s;
   -webkit-filter: drop-shadow(0px 0px 2px white);
   filter: drop-shadow(0px 0px 2px white);
 }
-
 .btn-main:visited {
   text-decoration: none;
 }
-
 /*Work*/
-
 .work {
-  background-color: #dddbdb;
+  background-color: #ffffff;
   min-height: 100vh;
 }
-
 .work h2 {
   color: #555;
 }
-
 #portfolio {
   text-align: center;
   max-width: 180vh;
   margin: 5vh auto 0 auto;
 }
-
 #portfolio .row .col-sm-3 {
   padding: 0;
 }
-
 .portfolio-sample {
   opacity: 0.7;
   transition: 0.5s;
 }
-
 .portfolio-sample:hover {
   opacity: 1;
   transition: 0.5s;
 }
-
 .shadow-sample {
   opacity: 0.1;
   transition: 0.5s;
 }
-
 .select-sample {
   opacity: 0.7;
   transition: 0.5s;
 }
-
 .atom-colored {
   color: #F2C193;
 }
-
 .slack-colored {
   color: #4B6BC6;
 }
-
 .github-colored {
   color: white;
 }
-
 #skill-list {
   margin: 2.5vh 0;
 }
-
 #skill-list i {
   transition: 0.5s;
 }
-
 #skill-list i:hover {
-  text-shadow: black 5px 5px 10px;
-  color: white;
+  text-shadow: gray 2px 2px 10px;
+  color: #2b3137;
   transition: 0.5s;
 }
-
 #skills-used {
   text-align: center;
   max-width: 150vh;
   margin: 0 auto;
 }
-
 #skills-used .col-sm-2 {
   text-align: center;
 }
@@ -396,11 +362,15 @@ canvas {
 }
 
 .about {
-  background-color: #828080;
+  background-color: #ffffff;
+}
+
+.about h2 {
+  color: #555;
 }
 
 .about-desktop p {
-  color: #f0f0f0;
+  color: #555;
   font-size: 1em;
 }
 
@@ -678,11 +648,11 @@ canvas {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vw;
-  background: #dddbdb;
+  background: #ffffff;
 }
 
 .skills h2 {
-  color: rgb(85, 85, 85);
+  color: #555;
 }
 
 .skills h3 {
@@ -761,7 +731,7 @@ canvas {
 /*Contact*/
 
 .contact {
-  background-color: #828080;
+  background-color: #2b3137;
   min-height: 85vh
 }
 
@@ -860,8 +830,8 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
-  background-color: #2b3137;
-  color: white;
+  background-color: #ffffff;
+  color: #555;
 }
 
 footer .fa {
@@ -869,7 +839,7 @@ footer .fa {
 }
 
 footer i {
-  color: white;
+  color: #555;
   margin-left: 5%;
   transition: 0.3s;
 }
@@ -966,14 +936,11 @@ footer i:hover {
   .anchor {
     min-height: 100vh;
   }
-
   .container-fluid>.navbar-header {
     margin-right: 0;
     margin-left: 0;
   }
-
   /*Reformat Landing Elements*/
-
   .landing-title .row {
     margin-right: 0;
     margin-left: 0;
@@ -998,32 +965,13 @@ footer i:hover {
   .btn-main {
     padding: 8px 20px;
   }
-
   /*Reformat Work*/
-
   #portfolio {
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
   }
-
-  /*Reformat Skills Icons*/
-
-  /*.skills-pan i {
-    font-size: 10vw;
-  }*/
-
-  /*Reformat Process Episodes*/
-
-  .process-episodes div h3{
-    font-size: 1.4em;
-  }
-  .process-episodes div p{
-    font-size: 1.3em;
-  }
-
   /*Reformat Work Samples*/
-
   .work .row {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -1031,7 +979,6 @@ footer i:hover {
   .image-responsive {
     min-width: 30vw;
   }
-
   /*Reformat Contact Content*/
   .contact p {
   color: white;
