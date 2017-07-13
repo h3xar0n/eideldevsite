@@ -110,7 +110,6 @@ particlesJS("particles-js", {
   },
   "retina_detect": false
 });
-
 // Work Section
 var skillList = new Vue({
   el: '#skill-list',
@@ -338,9 +337,9 @@ $(document).ready(function(){
     return false;
   });
   // Navbar Drop Down
-  $(".navbar-nav li a").click(function(event) {
+  $('.navbar-nav li a').click(function(event) {
     if (!$(this).parent().hasClass('dropdown'))
-    $(".navbar-collapse").collapse('hide');
+    $('.navbar-collapse').collapse('hide');
   });
   // Work: Portfolio Effect
   $('#skills-used i').mouseenter(function() {
