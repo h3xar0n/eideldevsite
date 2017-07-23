@@ -110,6 +110,7 @@ particlesJS("particles-js", {
   },
   "retina_detect": false
 });
+
 // Work Section
 var skillList = new Vue({
   el: '#skill-list',
