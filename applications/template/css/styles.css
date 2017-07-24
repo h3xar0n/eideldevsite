@@ -278,6 +278,33 @@ input {
   color: rgb(127, 127, 127);
   margin-left: 20px;
 }
+
+/*Experience*/
+
+#metz {
+  color: white;
+}
+.work-image {
+  height: 25vw;
+}
+.feature1 {
+  color: white;
+  display: flex;
+  padding: 5vw;
+}
+.feature2 {
+  background-color: #FFFFFF;
+  color: black;
+  display: flex;
+  padding: 5vw;
+}
+.work-sample {
+  flex: 1;
+  text-align: center;
+}
+.work-description {
+  flex: 2;
+}
 /*Work*/
 
 .btm-btnz {
@@ -528,9 +555,14 @@ input {
 .quote {
   width: 46vw;
   margin: 0 auto;
+  text-align: center;
 }
 #wittgenstein {
   margin-bottom: 20px;
+  width: 50vw;
+}
+#gp-description {
+  padding-left: 5vw;
 }
 /*Footer*/
 
