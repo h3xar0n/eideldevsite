@@ -280,86 +280,6 @@ input {
 }
 /*Work*/
 
-.work {
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-
-.work h2 {
-  color: #555;
-}
-
-#portfolio {
-  text-align: center;
-  max-width: 180vh;
-  margin: 5vh auto 0 auto;
-}
-
-#portfolio .row .col-sm-3 {
-  padding: 0;
-}
-
-.portfolio-sample {
-  opacity: 0.7;
-  transition: 0.5s;
-}
-
-.portfolio-sample:hover {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.shadow-sample {
-  opacity: 0.1;
-  transition: 0.5s;
-}
-
-.select-sample {
-  opacity: 0.7;
-  transition: 0.5s;
-}
-
-.atom-colored {
-  color: #F2C193;
-}
-
-.slack-colored {
-  color: #4B6BC6;
-}
-
-.github-colored {
-  color: white;
-}
-
-#skill-list {
-  margin: 2.5vh 0;
-}
-
-#skill-list i {
-  transition: 0.5s;
-}
-
-#skill-list i:hover {
-  text-shadow: black 5px 5px 10px;
-  color: white;
-  transition: 0.5s;
-}
-
-#skills-used {
-  text-align: center;
-  max-width: 150vh;
-  margin: 0 auto;
-}
-
-#skills-used .col-sm-2 {
-  text-align: center;
-}
-
-#skills-used i {
-  text-align: center;
-  font-size: 13vh;
-}
-
 .btm-btnz {
    text-align:center;
 }
@@ -508,31 +428,32 @@ input {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vw;
-  background: #ffffff;
 }
 
 .skills h2 {
-  color: rgb(85, 85, 85);
+  color: white;
 }
 
 .skills h3 {
+  color: white;
   text-align: center;
 }
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
   color: white;
-  background: #2B3137;
+  background: #24292e;
   transition: background .5s;
   border-radius: 15px;
   border-color: #595959;
 }
 
 .skills-pan>.panel-default>.panel-heading:hover {
-  color: black;
-  background: white;
-  text-shadow: 0 0 10px white;
+  background-color: white;
 }
 
+.skills-pan>.panel a {
+  color: gray;
+}
 /*Skill Icons*/
 
 .skills-pan div {
@@ -570,46 +491,43 @@ input {
 }
 
 .single-skill:hover {
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 3px white;
   transition: .3s;
-}
-
-.dark-light {
-  background: url("../img/hexyback.jpg") no-repeat center center fixed;
-}
-
-.dark-light img {
-  min-width: 25vw;
-}
-
-.dark-light h2, .dark-light p {
-  color: white;
-  padding: 20px;
 }
 
 /*Contact*/
 
-.contact {
-  background-color: #828080;
-  min-height: 85vh
-}
-
-.contact-col {
-  margin-left: 5vw;
-}
-
-/*Contact Info*/
-
-.pull-request {
+#connect {
   background-color: #FFFFFF;
+  color: black;
+  min-height: 85vh;
+  padding-bottom: 0;
 }
-
-.pull-shot {
-  width: 80vw;
-  max-width: 1000px;
-  margin: 0 10vw 0 10vw ;
+#connect>h2 {
+  color: black;
 }
-
+.details {
+  display: flex;
+}
+.setmore{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info {
+  flex: 1;
+}
+.embedded-stuff {
+  width: 50vw;
+  height: 50vw;
+}
 /*Footer*/
 
 footer {
@@ -900,17 +818,6 @@ textarea {
   padding-top: 70px;
   background-color: #2e2e2e;
   min-height: 100%;
-}
-
-.video-box {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%;
-}
-
-.video-box iframe{
-  position: absolute;
 }
 
 .about-title {

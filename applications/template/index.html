@@ -61,7 +61,6 @@
           <li><a href="#readme">Readme</a></li>
           <li><a href="#culture">Culture</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#traits">Traits</a></li>
           <li><a href="#connect">Connect</a></li>
         </ul>
       </div> <!-- nav -->
@@ -178,7 +177,7 @@
     </h3>
     <section id="culture-content">
       <section id="personal-values">
-        <h4>I value evidence over opinion</h4>
+        <h4>Value evidence over opinion</h4>
         <p>Being considered 'right' is not as important as eventually getting it
           right. Through years of experience in a variety of roles, I have found
           that I work much better in an open, collaborative environment than in
@@ -186,6 +185,19 @@
           decision-making. I work well with people who are reasonably
           open-minded and who value group success over their egos, because a
           great idea can come from anyone.
+        </p>
+        <br />
+        <h4>Passion for learning new things</h4>
+        <p>In past roles, I hit a relatively broad base of skillsets in my work.
+          Fortunately, my love for learning new skills and putting them into
+          practice led me to discover web development, and I have learned a new
+          framework, library, or language every single month since starting.
+          I am always ready to learn, and ideally I'll be able to teach you
+          things as well.
+        </p>
+        <br />
+        <h4>Genuine Enthusiasm for the Problem You're Solving</h4>
+        <p>Life is too short to do anything else.
         </p>
       </section>
       <section id="glassdoor-list">
@@ -207,7 +219,10 @@
               </span>
               <span class="author-info">{{ review.employee }} in {{ review.city }}</span>
               <article>
-
+                <br />
+                <p>{{ review.intro }}</p>
+                <p><strong>Pros</strong></p>
+                <p>{{ review.pros }}</p>
               </article>
             </div>
             <br class="seperator" />
@@ -216,48 +231,14 @@
       </section>
     </section>
   </div>
-  <!-- Work -->
-  <div class="container work anchor" id="work-sec">
-    <h2 class="sample-title">Work</h2>
-    <p class="text-center col-sm-10 col-sm-offset-1">
-      <br/>
-      As an experienced product manager and developer, I can empathize with both
-      sides of the equation and draw from a diverse set of competencies.
-      <br/>
-      <br/>
-    </p>
-    <!-- Vue Skill Selector -->
-    <div id="skills-used" class="hidden-xs">
-      <div class="row" id="skill-list">
-        <div v-for="skill in skills">
-          <div class="col-sm-2">
-            <a href="#skills-sec">
-              <i v-bind:class="skill.class"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="portfolio">
-      <!-- Vue Row  -->
-      <div class="row" id="work-samples">
-        <div v-for="sample in samples">
-          <div class="col-sm-3">
-            <a v-bind:href="sample.link">
-              <img class="../../img-responsive portfolio-sample"
-                   v-bind:class="sample.class"
-                   v-bind:src="sample.image"
-                   v-bind:alt="sample.alt">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div> <!-- End Work -->
   <!-- Skills -->
-  <div class="container skills anchor" id="skills-sec">
+  <div class="container skills anchor" id="skills">
     <h2>Skills</h2>
+    <h3>
+      "The limits of my language mean the limits
+      <br/>
+      of my world." - Wittgenstein
+    </h3>
     <div class="panel-group skills-pan center" id="accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -334,10 +315,17 @@
     </div>
   </div> <!-- End Skills -->
   <!-- Contact -->
-  <div class="container pull-request anchor" id="pull-request">
-    <a href="https://eideldev.setmore.com/" target="_blank"> <!-- Setmore -->
-      <img src="../../img/Pullreq.png" class="pull-shot">
-    </a>
+  <div class="container pull-request anchor" id="connect">
+    <h2>Connect</h2>
+    <section class="details">
+      <div class="setmore">
+        <iframe class="embedded-stuff" src="https://eideldev.setmore.com/"></iframe>
+      </div>
+      <div class="map">
+        <iframe class="embedded-stuff" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50467.62937235769!2d-122.52168292333297!3d37.76127907976191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085877753edc3d1%3A0xbb5fa0834d5b5e2d!2sJudah+St+%26+28th+Ave%2C+San+Francisco%2C+CA+94122!5e0!3m2!1sen!2sus!4v1500874027663" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
   </div><!-- End Contact -->
   <!-- Footer -->
   <footer>

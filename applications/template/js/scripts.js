@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with {{ Company }}\n\nI am passionate about making information more enticing and accessible, from my first dynamic `hello, {{ name }}!` to this data-bound markdown editor.\n\n___\n\n***If you want to play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, {{ name }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with {{ Company }}\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,14 +24,13 @@ new Vue({
   data: {
     reviews: [
       {
-        link: 'https://www.glassdoor.com/Reviews/Employee-Review-Gigster-RVW11621962.htm',
-        title: 'Unencumbered Innovation',
-        employee: 'Joe blogger',
-        city: 'San Francisco',
-        stars: 5
-      },
-      {
-        title: 'sausage'
+        link:     'https://',
+        title:    '',
+        employee: '',
+        city:     '',
+        stars:    5,
+        intro:    '',
+        pros:     ''
       }
     ]
   }
@@ -227,7 +226,7 @@ var workFlow = new Vue({
         name:  'Vim'
       },
       {
-        class: 'devicon-atom-plain atom-colored',
+        class: 'devicon-atom-plain colored',
         link:  'https://en.wikipedia.org/wiki/Atom_(text_editor)',
         name:  'Atom'
       },
@@ -237,12 +236,12 @@ var workFlow = new Vue({
         name:  'Git'
       },
       {
-        class: 'devicon-github-plain github-colored',
+        class: 'devicon-github-plain colored',
         link:  'https://en.wikipedia.org/wiki/GitHub',
         name:  'GitHub'
       },
       {
-        class: 'devicon-slack-plain slack-colored',
+        class: 'devicon-slack-plain colored',
         link:  'https://en.wikipedia.org/wiki/Slack_(software)',
         name:  'Slack'
       }
