@@ -516,17 +516,21 @@ input {
   justify-content: center;
 }
 .map {
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact-info {
-  flex: 1;
-}
 .embedded-stuff {
-  width: 50vw;
+  width: 100%;
   height: 50vw;
+}
+.quote {
+  width: 46vw;
+  margin: 0 auto;
+}
+#wittgenstein {
+  margin-bottom: 20px;
 }
 /*Footer*/
 
