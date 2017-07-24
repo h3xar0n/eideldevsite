@@ -58,7 +58,7 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#intro">Intro</a></li>
+          <li><a href="#readme">Readme</a></li>
           <li><a href="#culture">Culture</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#traits">Traits</a></li>
@@ -157,116 +157,64 @@
   </div><!-- End Landing -->
   <!-- README demo -->
   <div class="container readme anchor" id="readme">
-    <h2>README Markdown Editor</h2>
-    <p class="col-sm-6 col-sm-offset-3 text-center">
-       READMEs are essential for developers to share their work with others, but
-       documentation is often overlooked if it is perceived as a hassel to
-       create.
-       <br/>
-       <br/>
-       To encourage more engagement in writing strong, useful READMEs,
-       we can include prompts for ideas about what to include. We can also show
-       the user what their README will actually look like before they commit.
-    </p>
-    <div id="editor" class="col-sm-12">
-      <textarea class="col-sm-4 col-sm-offset-1" :value="input" @input="update"></textarea>
-      <div class="col-sm-2 col-sm-offset-1" v-html="compiledMarkdown"></div>
-      <div class="col-sm-1"></div>
-    </div>
-    <img src="https://guides.github.com/activities/hello-world/branching.png"
-         class="branch-visual">
-    <h3 class="text-center">Visualization</h3>
-    <p class="col-sm-8 col-sm-offset-2 text-center">
-      <br/>
-      Many of the ways GitHub can improve its reach center around visualization,
-      making tools more intuitive and concrete.
-      <br/>
-      <br/>
-      The Desktop app was instrumental in helping me better
-      understand how git commits and branches work, and the README editor follows that trend.
-      <br/>
-    </p>
-  </div>
-  <div class="container hyper-atom anchor" id="subatomic">
-    <h2>Subatomic</h2>
-    <div class="row text-center">
-      <div class="center">
-        <img src="../../img/subatomic.png" class="subsample center">
+    <p id="instructions">Type in this box, it really works</p>
+    <div id="editor">
+      <div id="editor-input">
+        <textarea :value="input"
+                  @input="update">
+        </textarea>
       </div>
-      <div class="col-sm-12 text-center">
-        <p>
-          We can put Hyper inside of Atom so that we can manipulate files, fire up a server, and commit our changes--all in one place.
-        <br/>
-        <br/>
+      <div id="editor-output"
+           v-html="compiledMarkdown">
+      </div>
+    </div>
+  </div>
+  <div class="container culture anchor" id="culture">
+    <h2>Culture</h2>
+    <h3>
+      "There is nothing in nature more beneficial to us
+      <br/>
+      than a reasonable person." - Spinoza
+    </h3>
+    <section id="culture-content">
+      <section id="personal-values">
+        <h4>I value evidence over opinion</h4>
+        <p>Being considered 'right' is not as important as eventually getting it
+          right. Through years of experience in a variety of roles, I have found
+          that I work much better in an open, collaborative environment than in
+          a competitive one where 'thumbs-up' or 'thumbs-down' trumps thoughtful
+          decision-making. I work well with people who are reasonably
+          open-minded and who value group success over their egos, because a
+          great idea can come from anyone.
         </p>
-        <div class="col-sm-12 text-center">
-          <div class="col-xs-4">
-            <i class="fa fa-bolt" aria-hidden="true"></i>
-          </div>
-          <div class="col-xs-4">
-            <i class="devicon-atom-original colored"></i>
-          </div>
-          <div class="col-xs-4">
-            <i class="devicon-git-plain colored"></i>
-          </div>
+      </section>
+      <section id="glassdoor-list">
+        <h4>My favorite reviews for you on
+          <img id="glassdoor-logo"
+               src="img/glassdoor.png"
+               alt="Glassdoor logo">
+        </h4>
+        <div v-for="review in reviews">
+          <article>
+            <img src="img/logo.png" class="review-logo">
+            <div class="review-body">
+              <a v-bind:href="review.link"
+                 target="_blank">
+                <h5 class="review-title">"{{ review.title }}"</h5>
+              </a>
+              <span v-for="star in review.stars">
+                <img src="img/star.png" class="score-star"/>
+              </span>
+              <span class="author-info">{{ review.employee }} in {{ review.city }}</span>
+              <article>
+
+              </article>
+            </div>
+            <br class="seperator" />
+          <article>
         </div>
-      </div>
-
-    </div>
-    <div class="row text-center">
-
-    </div>
-  </div>
-  <!-- Dark demo -->
-  <div class="container lightsite anchor" id="light">
-    <div class="col-sm-6 col-sm-offset-3">
-      <h2>The Light Site<br/></h2>
-      <p>
-        With a great text-editor like Atom and many programmers preferring a
-        dark-style environment to read code, it seems that GitHub would greatly
-        benefit from offering an alternative to the standard white.
-        <br/>
-        <br/>
-        White and blue may be good for meeting the maximum accessibility
-        standards, but it doesn't have to be the only option.
-      </p>
-    </div>
-  </div>
-  <div class="container dark anchor">
-  </div>
-  <div class="container dark2 anchor" id="dark">
-  </div>
-  <div class="container darksite anchor">
-    <div class="col-sm-8 col-sm-offset-2">
-      <h2>The Dark Site<br/></h2>
-      <p>
-        <br/>
-        Some forms of colorblindness benefit more from dark backgrounds
-        because <span class="redone">syntax highlighting</span> is more <span
-        class="greenone">distinct</span>. It is also easier to
-        read at night or after staring at white pages all day long.
-        <br/>
-        <br/>
-        When Google Chrome's developer tools introduced a dark theme, people
-        went wild. I created this by simply altering the CSS in dev tools,
-        and it could easily be implemented with a switch at the top of the page
-        or in settings. Using JavaScript, we could alter the classes of elements
-        across the site to use dark backgrounds and pastel text.
-        <br/>
-        <br/>
-        A tiny feature like this could bring a wave of new interest and engagement.
-      </p>
-    </div>
-  </div>
-  <!-- Wittgenstein -->
-  <div class="container half-page">
-    <p class="limits">"The limits of my language</p>
-  </div>
-  <div class="container anchor lighter">
-    <p class="world">mean the limits of my world."</p>
-    <p class="world">
-      -Wittgenstein
-    </p>
+      </section>
+    </section>
   </div>
   <!-- Work -->
   <div class="container work anchor" id="work-sec">

@@ -27,13 +27,11 @@
 .nav-logo {
   display: inline-block;
 }
-
 .nav-logo>img {
   width: 40px;
   height: 40px;
   margin-top: -25px;
 }
-
 .nav-logo>i {
   font-size: 40px;
 }
@@ -63,7 +61,6 @@ body {
   border-radius: 15px;
 }
 p, a {
-  color: #969696;
   font-size: 16px;
 }
 h1 {
@@ -113,7 +110,6 @@ a:hover, a:focus {
 .logo-title-center>img {
   width: 10vw;
 }
-
 .hex-port img {
   width: 100%;
   max-width: 200px;
@@ -177,138 +173,110 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/*README*/
-
-#readme {
-  background-color: #FFFFFF;
-}
+/*readme*/
 
 #readme h1, #readme h2, #readme h3, #readme h4, #readme h5, #readme h6,
 #readme p {
   color: black;
 }
-
+p#instructions {
+  color: white;
+  margin-left: 20px;
+  margin-top: 30px;
+}
 #editor h1, #editor h2 {
   text-align: left;
 }
-
 #editor {
   margin: 0;
-  margin-top: 50px;
-  height: 100%;
+  margin-top: 10px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #333;
+  display: flex;
+}
+#editor-input {
+  flex: 1;
+}
+#editor-output {
+  flex: 2;
+  background-color: white;
+}
+#editor-output>* {
+  padding: 1vw 10vw;
 }
 textarea, #editor div {
   display: inline-block;
-  width: 49%;
-  height: 100%;
   vertical-align: top;
   box-sizing: border-box;
   padding: 0 20px;
 }
-
 textarea {
+  background-color: #24292e;
+  color: #f2c193;
   border: none;
-  border-right: 1px solid #ccc;
   resize: none;
   outline: none;
-  background-color: #f6f6f6;
   font-size: 14px;
   font-family: 'Monaco', courier, monospace;
   padding: 20px;
-  height: 80vh;
-}
-
-code {
-  color: #f66;
-}
-
-.branch-visual {
   width: 100%;
-  margin-top: 10vh;
+  height: 100%;
+}
+input {
+  color: #f2c193;
 }
 
-/*Subatom*/
-
-.hyper-atom {
-  background-color: #FFFFFF;
-}
-
-.hyper-atom h2 {
-  color: black;
-}
-
-.hyper-atom p {
-  color: black;
-}
-
-.hyper-atom i {
-  font-size: 5vw;
-}
-
-.subsample {
-  width: 50%;
-  margin: 3vw;
-}
-
-/*Dark*/
-.dark {
-  height: 50vh;
-  background: url(../img/light.png) no-repeat center center fixed;
-}
-
-.lightsite {
+/*Culture*/
+#culture {
   background-color: white;
-  padding: 10vh 10vw;
-  border-bottom: #f1f8ff solid 20px;
 }
-
-.lightsite p, .lightsite h2 {
-  color: black;
+#culture h2, #culture h4 {
+  color: #24292e;
+  text-align: center;
 }
-
-.darksite {
-  background-color: #2b3137;
-  padding: 10vh 10vw;
-  border-top: #3f4448 solid 20px;
+#culture h3 {
+  text-align: center;
 }
-
-.darksite p {
-  color: lightgray;
+#culture-content {
+  display: flex;
 }
-
-.redone {
-  color: #f96868;
+#culture-content>section {
+  margin: 5vw;
 }
-
-.greenone {
-  color: wheat;
+#personal-values {
+  flex: 1;
+  width: 50vw;
 }
-
-.dark2 {
-  height: 48vh;
-  background: url(../img/dark.png) no-repeat center center fixed;
+#glassdoor-list{
+  flex: 1;
+  width: 50vw;
 }
-
-.half-page {
-  height: 20vw;
+#glassdoor-logo{
+  width: 130px;
+  margin-top: -5px;
 }
-
-.limits {
-  margin-top: 5vw;
-  font-size: 5vw;
+.review-logo {
+  width: 60px;
+  float: left;
+  border: rgb(64, 64, 64) solid 1px;
 }
-
-.world {
-  margin-top: 1vw;
-  font-size: 5vw;
-  text-align: right;
-  padding-right: 5vw;
+.review-body {
+  padding-left: 80px;
 }
-.lighter {
-  background-color: #ffffff;
-  height: auto;
+.seperator {
+  clear: both;
+}
+.review-title {
+  color: rgb(24, 97, 191);
+  font-size: 20px;
+  font-weight: bold;
+}
+.score-star {
+  width: 15px;
+}
+.author-info {
+  color: rgb(127, 127, 127);
+  margin-left: 20px;
 }
 /*Work*/
 
@@ -835,12 +803,6 @@ footer i:hover {
   display: block;
   width: 100%;
   height: auto;
-}
-
-input, textarea {
-  padding: 10px;
-  border: none;
-  color: black;
 }
 
 .btn-center {
