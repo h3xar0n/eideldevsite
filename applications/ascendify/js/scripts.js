@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Matt!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with Ascendify.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\nI also have a background in building a high-volume recruiting app, and would be very excited to approach a similar challenge from a new angle.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,22 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/Ascendify-Reviews-E400753.htm',
+        title:    "Good opportunity to grow professionally and be a part of a quickly growing startup",
+        employee: 'Web Developer',
+        city:     'San Francisco, CA',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I worked at Ascendify full-time (Less than a year)',
+        pros:     'You get to work with very high profile, Fortune 500 companies.\n\nOpportunities to expand beyond your prescribed responsibilities due to the small size of the company.\n\nHuge effort to research and integrate the newest technologies across the full stack.\n\nTransparent business: the management makes a great effort to make sure they communicate the state of the company and the progress (for better or for worse)…'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/Ascendify-Reviews-E400753.htm',
+        title:    "Solid StartUp! Awesome Career Opportunity.",
+        employee: 'Anonymous Contractor',
+        city:     'Unknown',
+        stars:    5,
+        intro:    'I have been working at Ascendify as a contractor',
+        pros:     'Management Team with experience taking a Company from $0-$100M. Extremely disruptive product that\'s easy to implement and use. Tremendous growth opportunity and career path. Great equity and benefits'
       }
     ]
   }

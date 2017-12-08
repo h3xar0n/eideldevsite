@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Katie!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with CreativeLive.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,22 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/CreativeLive-Reviews-E663433.htm',
+        title:    "Outstanding, passionate company with so much to learn from.",
+        employee: 'Content Management',
+        city:     'Seattle, WA',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I worked at CreativeLive full-time (More than 3 years)',
+        pros:     'Fantastic people, exciting vision with a ton of support and encouragement to find your own path and explore new ideas. Learned a ton and felt invested in at every step of the way.'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/CreativeLive-Reviews-E663433.htm',
+        title:    "Dynamic startup in the ed-tech space on the upswing",
+        employee: 'Anonymous Employee',
+        city:     'Unknown',
+        stars:    5,
+        intro:    'I worked at CreativeLive full-time',
+        pros:     '* The targeted focus on creatives clarifies and concentrates company vision and execution. * Best-in-class live production team and capabilities create gorgeous original content. * Dynamic classes are built-out by an excellent content development team working in concert with leading instructors and authorities. * Awesome, high-functioning product/engineering org. Works across exciting open-source frontend and backend technologies. Innovates on broadcast workflows, content and media management and delivery, personalization and relevant search, web, iOS, Apple TV, etc. - tons of opportunity for professional and personal learning and growth!'
       }
     ]
   }

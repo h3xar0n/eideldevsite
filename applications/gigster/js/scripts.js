@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Maura!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with Gigster.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,31 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Overview/Working-at-Gigster-EI_IE1168400.11,18.htm',
+        title:    "Unencumbered Innovation",
+        employee: 'Software Engineer',
+        city:     'San Francisco, CA',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I worked at Gigster (More than a year)',
+        pros:     '* As a software engineer on the core team, you are given a high degree of autonomy to innovate within the software automation space.\n\n* Along with autonomy, engineers also have many opportunities to work with/get support from some of the best engineers and data scientists in the valley.\n\n* Strong, engineer-centric company culture built around innovation and metrics\n\n* Weekly opportunities to hack up new tools … '
+      },
+      {
+        link:     'https://www.glassdoor.com/Overview/Working-at-Gigster-EI_IE1168400.11,18.htm',
+        title:    "Changing how software is made",
+        employee: 'Product Manager',
+        city:     'San Francisco, CA',
+        stars:    5,
+        intro:    'I have been working at Gigster full-time (Less than a year)',
+        pros:     'Most if not all of my coworkers have tried their hand at their own startup. Very bright and fun culture.'
+      },
+      {
+        link:     'https://www.glassdoor.com/Overview/Working-at-Gigster-EI_IE1168400.11,18.htm',
+        title:    "Customer Success Representative",
+        employee: 'Customer Success Representative',
+        city:     'Seattle, WA',
+        stars:    5,
+        intro:    'I have been working at Gigster (Less than a year)',
+        pros:     'Highly skilled and experienced people. The community is very supportive and wants to provide the best possible product.'
       }
     ]
   }

@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Dropbox!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,31 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/Dropbox-Reviews-E415350.htm',
+        title:    "Amazing place to learn & grow",
+        employee: 'Product Analyst',
+        city:     'San Francisco, CA',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I have been working at Dropbox full-time',
+        pros:     '* People are honest, thoughtful, and interested in building great products over climbing the corporate ladder * Great focus on learning, with lots of awesome opportunities available for early-career employees * Still feels like a small company in many ways (friendly, casual)'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/Dropbox-Reviews-E415350.htm',
+        title:    "People, people, people",
+        employee: 'Software Engineer',
+        city:     'San Francisco, CA',
+        stars:    5,
+        intro:    'I have been working at Dropbox full-time',
+        pros:     'Passionate co-workers, transparent culture, delicious food.'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/Dropbox-Reviews-E415350.htm',
+        title:    "Hyper-Growth, Strong Leadership and Lots of Runway",
+        employee: 'Anonymous Employee',
+        city:     'Unknown',
+        stars:    5,
+        intro:    'I have been working at Dropbox full-time',
+        pros:     'Amazing opportunities, strong leadership across most functions, strong business value proposition and operations and lots of runway for building teams and innovative processes using leading technology.'
       }
     ]
   }

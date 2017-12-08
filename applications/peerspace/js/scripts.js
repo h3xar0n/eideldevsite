@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Peerspace!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,22 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/Peerspace-Reviews-E1304957.htm',
+        title:    "I <3 Peerspace",
+        employee: 'Engineer',
+        city:     'San Francisco, CA',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I have been working at Peerspace full-time (More than 3 years)',
+        pros:     'Growing a platform that enables creativity and inspiration for tons of people! Overall company structure, management, and process is a work in progress as we grow which means that there is a lot of opportunity to be part of shaping a young organization. On the Engineering team specifically, we have a great leadership with a preference for new technology. Every day I get to work on cool stuff! Friday lunches, coffee walks, occasional happy hours, quarterly off-sites - we invest a lot of time into nurturing our teams. It\'s a great group of people to work with every day.'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/Peerspace-Reviews-E1304957.htm',
+        title:    "Fantastic Team",
+        employee: 'Anonymous Employee',
+        city:     'Unknown',
+        stars:    5,
+        intro:    'I have been working at Peerspace full-time',
+        pros:     'Great team. Everyone is willing to wear many hats and get work done. No big egos. Balanced gender ratio and a diverse group of people. The concept and the mission of the company are good and inspiring. The product is getting better every day but there is also a lot of work to get done which makes it an exciting place to work at. There is a good opportunity for employees to help define a lot of the processes and features that will help define and improve the product even more. Company culture is not super defined yet but everyone enjoys spending time with colleagues in and outside the office. You get to meet very interesting people and spaces. Good work is recognized.'
       }
     ]
   }

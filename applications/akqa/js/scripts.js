@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Simon.\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with AKQA.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,13 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/AKQA-Reviews-E23381.htm',
+        title:    "Unbeatable opportunities and an empowering platform",
+        employee: 'Strategist',
+        city:     'New York, NY',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I have been working at AKQA full-time (More than a year)',
+        pros:     'AKQA is an organization that\'s constantly evolving, striving to set the pace together with great brands. But it also stays true to the values and philosophy set forth by Ajaz and team from day one. This relentless commitment to AKQA\'s DNA has proven successful, especially when coupled with a vision hungry for growth and evolution. Fundamentally, it\'s this mentality, in addition to an opportunity-rich environment filled with seriously talented, unique, and kind people that drew me into the company.\n\nLike any firm, AKQA goes through ups and downs, but it\'s carried forward by a fighting spirit that translates into constant innovation, unbeatable thought, and intense creativity. Total belief in the work has helped the company, as well as the people that share that belief, thrive. I can confidently say that AKQA offers strong opportunities for growth (the next chapter is always being defined), diverse connections and engagements globally, as well as an environment filled with brilliant people – both as professionals and individuals.\n\nWhether you\'re in it for the long haul or not, AKQA is a company that sets you up for success, agnostic of your industry of choice, because the values and activities the company is involved with are universally applicable (and highly regarded).'
       }
     ]
   }

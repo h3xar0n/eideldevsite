@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hi, Thomas!\n\nIt was great meeting you last night and learning more about Sauce Labs. Thank you for taking the time to visit this site. I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,22 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/Sauce-Labs-Reviews-E853079.htm',
+        title:    "Great Culture and Company Transparency",
+        employee: 'Anonymous Employee',
+        city:     'Unknown',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I have been working at Sauce Labs full-time',
+        pros:     'Love the people and culture. It\'s not often you find colleagues who truly care about your professional and personal well being. There\'s plenty of opportunities to collaborate and learn from one another across departments, regardless if you\'re in IT, Sales, HR, or Marketing. The benefits (medical, dental, vision) are great compared to the market standard (fully paid, great coverage and options). There\'s also other perks (gym re-imbursement, commuter benefits, 401k, dog friendly office, lunch 3 times a week, and a fully stocked kitchen) that make it worthwhile'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/Sauce-Labs-Reviews-E853079.htm',
+        title:    "Great Place to grow",
+        employee: 'Anonymous Employee',
+        city:     'San Francisco',
+        stars:    5,
+        intro:    'I have been working at Sauce Labs full-time (More than a year)',
+        pros:     'The company is the leading company in the space. They are growing very fast and with that have much opportunity for contribution and personal growth. They have a great dynamic culture and a fantastic CEO whom is a driven executor, without losing site of empathy for all.'
       }
     ]
   }

@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
+    input: '## README\n\n### Hello, Kelly!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with Tank Design.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -24,13 +24,22 @@ new Vue({
   data: {
     reviews: [
       {
-        link:     'https://',
-        title:    '',
-        employee: '',
-        city:     '',
+        link:     'https://www.glassdoor.com/Reviews/Tank-Design-Reviews-E269471.htm',
+        title:    "Amazing work. Amazing people. Amazing atmosphere.",
+        employee: 'Anonymous Employee',
+        city:     'Unknown',
         stars:    5,
-        intro:    '',
-        pros:     ''
+        intro:    'I have been working at Tank Design full-time (More than 3 years)',
+        pros:     'A collaborative environment to work in, where everyone has a voice, and where all work is appreciated. They hire some of the best, and every employee is great to work with. Also have an impressive client roster that keeps growing. Management is very supportive and considering of their employees. A sink or swim environment.'
+      },
+      {
+        link:     'https://www.glassdoor.com/Reviews/Tank-Design-Reviews-E269471.htm',
+        title:    "Phenomenal people who are passionate, positive and genuine.",
+        employee: 'Anonymous Employee',
+        city:     'Unknown',
+        stars:    5,
+        intro:    'I have been working at Tank Design full-time',
+        pros:     'Everyone is collaborative and team-oriented -- there isn\'t any toxic competitiveness. Upper management cares a lot about the employees\' well-being and makes an effort to listen to what people want. Salaries are relatively fair although differ a lot between departments.'
       }
     ]
   }
