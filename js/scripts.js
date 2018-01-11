@@ -416,12 +416,12 @@ $(document).ready(function(){
 // to load before Maps API; see HTML.
 var map;
 
-var myLatLng = {lat: 37.7612791, lng: -122.4888527};
+var myLatLng = {lat: 37.788491, lng: -122.4155174};
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    zoom: 11
+    zoom: 13
   });
 
 var marker = new google.maps.Marker({
