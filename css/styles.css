@@ -18,7 +18,7 @@
 }
 
 .navbar-inverse {
-  background: rgba(240, 240, 240, 0.9);
+  background: rgba(240, 240, 240, 0.99);
 }
 
 .navbar-brand {
@@ -30,12 +30,11 @@
 }
 
 .nav-logo {
-  width: 2em;
   height: 2em;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: black;
+  color: rgb(5, 15, 44);
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -44,12 +43,12 @@
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-  background-color: #2b3137;
+  background-color: rgb(5, 15, 44);
   transition: 0.3s;
 }
 
 .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: #2b3137;
+  background-color: rgb(5, 15, 44);
 }
 
 /*Site Wide Font*/
@@ -197,8 +196,20 @@ canvas {
   }
 }
 
+select.role-dropdown {
+  background: none;
+  border-radius: 11px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+select.role-dropdown option {
+  background: rgba(240, 240, 240, 0.5);
+  color: rgb(5, 15, 44);
+}
+
 .logo-landing img {
-  max-width: 40vw;
+  max-width: 30vw;
 }
 
 .landing-btns {
@@ -207,7 +218,7 @@ canvas {
 
 .btn-main {
   background-color: #F2C193;
-  color: black;
+  color: #050F2C;
   font-weight: 600;
   font-size: 1.2em;
   letter-spacing: 1.3px;
@@ -219,8 +230,8 @@ canvas {
 }
 
 .btn-main:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #050F2C;
   text-decoration: none;
   cursor: pointer;
   transition: .1s;
@@ -234,11 +245,11 @@ canvas {
 
 /* Development */
 
-#development {
+#developer {
   background-color: white;
 }
 
-#development h2 {
+#developer h2 {
   color: black;
 }
 
@@ -1086,9 +1097,6 @@ footer i:hover {
   .logo-landing {
     width: 100%;
   }
-  .logo-landing img {
-    margin-top: 15vh;
-  }
   .logo-title {
     margin-top: 5vh;
   }
@@ -1135,7 +1143,8 @@ footer i:hover {
     height: 20px;
   }
   .landing-title {
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 100px;
   }
   .landing-btns {
     margin-top: 25px;

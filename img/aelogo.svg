@@ -1,0 +1,20 @@
+<svg width="157" height="185" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="187" width="159" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="1" x="1" height="400" width="580"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path filter="url(#svg_1_blur)" stroke="#f2c193" fill-opacity="0" transform="rotate(90 78.75,92.06393432617189) " id="svg_1" d="m-4.75,92.06393l35.78572,-72.49999l95.42857,0l35.78571,72.49999l-35.78571,72.49999l-95.42857,0l-35.78572,-72.49999z" stroke-width="12" fill="#f2c193"/>
+  <text stroke="#000" transform="matrix(1.335710327665039,0,0,1.2691837609287515,-148.2602537797584,-130.46567236334195) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="84" id="svg_2" y="205.471144" x="126.728749" stroke-opacity="null" stroke-width="0" fill="#f2c193">Æ</text>
+ </g>
+</svg>
