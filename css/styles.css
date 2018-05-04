@@ -883,56 +883,6 @@ select.role-dropdown option {
   text-shadow: 0 0 10px white;
 }
 
-/*Skill Icons*/
-
-.skills-pan div {
-  text-align: center;
-}
-
-.skills-pan .col-xs-4 {
-  margin: 30px 0;
-}
-
-.skills-pan i {
-  font-size: 50px;
-}
-
-@media (min-width: 768px) {
-  .skills-pan i {
-    font-size: 8vw;
-    transition: .5s;
-  }
-}
-
-.panel-body div {
-  margin-bottom: 10px;
-}
-
-.skills-pan i:hover {
-  text-shadow: 0 0 10px white;
-  transition: .5s;
-  color: black;
-}
-
-.skills-pan p {
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.dark-light {
-  background: url("../img/hexyback.jpg") no-repeat center center fixed;
-}
-
-.dark-light img {
-  min-width: 25vw;
-}
-
-.dark-light h2,
-.dark-light p {
-  color: white;
-  padding: 20px;
-}
-
 /*Contact*/
 
 .contact {
