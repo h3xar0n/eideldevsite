@@ -20,9 +20,68 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
+
+  <!-- Landing -->
+  <section class="container-fluid logo-landing" id="landing">
+    <div id="particles-js"></div>
+    <div class="container-fluid" id="over-particles">
+      <div class="landing-title">
+        <!-- Titles and Desktop Logo -->
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 hex-wrap">
+            <div class="hexagon" id="developer-hex">
+              <p>
+                <i class="fas fa-code"></i>
+              </p>
+            </div>
+            <br>
+            <a class="btn-main" href="#developer">Software Engineer</a>
+          </div>
+          <div class="col-xs-6 col-sm-3 hex-wrap">
+            <div class="hexagon" id="writer-hex">
+              <p>
+                <i class="fas fa-lightbulb"></i>
+              </p>
+            </div>
+            <br>
+            <a class="btn-main" href="#product">Product Manager</a>
+          </div>
+          <div class="col-xs-6 col-sm-3 hex-wrap">
+            <div class="hexagon" id="mentor-hex">
+              <p>
+                <i class="fas fa-users"></i>
+              </p>
+
+            </div>
+            <br>
+            <a class="btn-main" href="#mentor">Coding Mentor</a>
+          </div>
+          <div class="col-xs-6 col-sm-3 hex-wrap">
+            <div class="hexagon">
+              <p class="name-logo">Æ</p>
+
+            </div>
+            <br>
+            <a class="btn-main" href="#about">Aron Eidelman</a>
+          </div>
+        </div>
+      </div>
+      <!-- Logo Row -->
+      <div class="row landing-btns text-center center">
+        <div class="col-sm-12 btm-but">
+
+        </div>
+      </div>
+      <!-- End Logo Row -->
+    </div>
+    <!-- End Overlay -->
+  </section>
+  <!-- End Landing -->
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid nav-bar-desktop">
@@ -34,7 +93,7 @@
           <span class="icon-bar"></span>
         </button>
         <div class="workName navbar-brand">
-          <a class="navbar-brand" href="#land-sec">
+          <a class="navbar-brand" href="#landing">
             <!-- Nav Logo -->
             <img src="img/aelogo.svg" class="nav-logo" alt="A small version of Aron's hexagon logo">
           </a>
@@ -66,52 +125,12 @@
     <!-- end nav container-->
   </nav>
   <!-- End Navigation-->
-  <!-- Landing -->
-  <section class="container-fluid logo-landing anchor" id="land-sec">
-    <div id="particles-js"></div>
-    <div class="container-fluid" id="over-particles">
-      <div class="center landing-title ">
-        <!-- Titles and Desktop Logo -->
-        <div class="row">
-          <div class="hidden-xs col-sm-1"></div>
-          <div class="col-xs-12 col-sm-4">
-            <h1>Aron Eidelman</h1>
-          </div>
-          <div class="col-xs-12 col-sm-2 logo-title-center">
-            <img src="img/aelogo.svg" alt="">
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <h1>
-              <select class="role-dropdown">
-                <option>
-                  <a href="#developer">Developer</a>
-                </option>
-                <option>Mentor</option>
-                <option>Writer</option>
-              </select>
-            </h1>
-
-          </div>
-          <div class="hidden-xs col-sm-1"></div>
-        </div>
-      </div>
-      <!-- Logo Row -->
-      <div class="row landing-btns text-center center">
-        <div class="col-sm-12 btm-but">
-          <a class="btn-main" href="#contact-sec">Contact Me</a>
-        </div>
-      </div>
-      <!-- End Logo Row -->
-    </div>
-    <!-- End Overlay -->
-  </section>
-  <!-- End Landing -->
   <!-- New Work -->
   <section class="container anchor" id="developer">
     <h2>Development</h2>
     <div id="interface">
       <div id="main-row" class="row">
-        <div id="monitor" class="col-xs-12 col-sm-8">
+        <div id="monitor" class="col-xs-4 col-sm-6">
           <article class="code-container gradient-right fill-deep-cove block row">
             <header class="fill-bunting cf">
               <div class="col-xs-6">
@@ -127,63 +146,63 @@
           </article>
         </div>
         <div id="skillset" class="col-xs-4 col-sm-12">
-          <article class="row skill-panel ">
-            <div class="col-xs-4 single-skill">
+          <article class="row skill-panel">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-javascript-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-html5-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-css3-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-vuejs-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-react-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-angularjs-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-bootstrap-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-sass-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-jquery-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-d3js-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-jasmine-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-mocha-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-nodejs-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-typescript-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-python-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-ruby-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-rails-plain colored"></i>
             </div>
-            <div class="col-xs-4 single-skill">
+            <div class="col-xs-2 col-sm-1 single-skill">
               <i class="devicon-csharp-plain colored"></i>
             </div>
           </article>
-        </div>      
+        </div>
       </div>
     </div>
 

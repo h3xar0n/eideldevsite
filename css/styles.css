@@ -12,13 +12,25 @@
 
 /*Navigation and Site-Wide*/
 
+
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-fixed-top {
+  position: sticky;
+}
+
 .navbar-inverse {
-  background: rgba(240, 240, 240, 0.99);
+  background: white;
+  opacity: 0.9;
+  border: none;
 }
 
 .navbar-brand {
@@ -34,7 +46,7 @@
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: rgb(5, 15, 44);
+  color: #050f2c;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -43,19 +55,19 @@
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-  background-color: rgb(5, 15, 44);
+  background-color: #050f2c;
   transition: 0.3s;
 }
 
 .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: rgb(5, 15, 44);
+  background-color: #050f2c;
 }
 
 /*Site Wide Font*/
 
-body {
-  background-color: rgb(5, 15, 44);
-}
+/* body {
+  background-color: #E3BDD7;
+} */
 
 * {
   font-family: 'Agane-45', sans-serif;
@@ -106,11 +118,103 @@ a:focus {
 }
 
 .row {
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 /*Landing*/
+
+#landing {
+  z-index: 10;
+}
+
+.hex-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  margin: 43.30px 0;
+  border-left: solid 10px #2dde98;
+  border-right: solid 10px #2dde98;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 11.9670px;
+}
+
+.hexagon:before {
+  top: -53.0330px;
+  border-top: solid 14.1421px #2dde98;
+  border-right: solid 14.1421px #2dde98;
+}
+
+.hexagon:after {
+  bottom: -53.0330px;
+  border-bottom: solid 14.1421px #2dde98;
+  border-left: solid 14.1421px #2dde98;
+}
+
+.hexagon h3 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.hexagon p {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #2dde98;
+}
+
+#developer-hex, 
+#developer-hex:before, 
+#developer-hex:after, 
+#developer-hex p {
+  border-color: #F9656B;
+  color: #F9656B;
+}
+
+#mentor-hex,
+#mentor-hex:before,
+#mentor-hex:after,
+#mentor-hex p {
+  border-color: #fe9e64;
+  color: #fe9e64
+}
+
+#writer-hex,
+#writer-hex:before,
+#writer-hex:after,
+#writer-hex p {
+  border-color: #E3BDD7;
+  color: #E3BDD7;
+}
+
+.name-logo {
+  font-weight: 900;
+}
 
 .logo-landing {
   min-height: 100vh;
@@ -162,11 +266,16 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(5, 15, 44);
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  background: #ce7dc5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #050f2c, #6a4af1, #98D8FE);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #050f2c, #6a4af1, #98D8FE);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #050f2c, #6a4af1, #98D8FE);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce7dc5', endColorstr='#a474d3', GradientType=1);
+  /* IE6-9 */
 }
 
 #over-particles {
@@ -205,7 +314,7 @@ select.role-dropdown {
 
 select.role-dropdown option {
   background: rgba(240, 240, 240, 0.5);
-  color: rgb(5, 15, 44);
+  color: #050f2c;
 }
 
 .logo-landing img {
@@ -217,12 +326,12 @@ select.role-dropdown option {
 }
 
 .btn-main {
-  background-color: #F2C193;
-  color: #050F2C;
+  color: #fff;
+  background-image: linear-gradient(284deg, #1cc7d0, #2dde98);
   font-weight: 600;
   font-size: 1.2em;
   letter-spacing: 1.3px;
-  padding: 16px 40px;
+  padding: 16px;
   text-decoration: none;
   text-transform: uppercase;
   transition: .5s;
@@ -230,8 +339,7 @@ select.role-dropdown option {
 }
 
 .btn-main:hover {
-  background-color: white;
-  color: #050F2C;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   transition: .1s;
@@ -260,7 +368,6 @@ select.role-dropdown option {
 }
 
 .skill-panel {
-  background-color: rgb(5, 15, 44);
   border-radius: 6px;
   padding: 1vw;
 }
@@ -272,13 +379,13 @@ select.role-dropdown option {
 
 .single-skill:hover i {
   cursor: pointer;
-  color:white;
+  color: #050f2c;
   text-shadow: 0 0 10px white;
   transition: .3s;
 }
 
 .code-container {
-  background-color: rgb(5, 15, 44);
+  background-color: #050f2c;
   border-radius: 6px;
   box-sizing: border-box;
   color: rgb(62, 57, 107);
@@ -1013,7 +1120,6 @@ footer i:hover {
 }
 
 .anchor {
-  padding: 51px 0;
   width: 100%;
   background-size: cover;
   position: relative;
