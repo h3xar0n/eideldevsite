@@ -171,9 +171,9 @@ a:focus {
   border-left: solid 14.1421px #2dde98;
 }
 
-.hexagon h3 {
+.hex-wrap h3 {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   padding-top: 16px;
 }
@@ -1130,13 +1130,15 @@ footer i:hover {
 @media (min-width: 768px) {
   .nav-bar-desktop {
     margin: 0 auto;
-    width: 80%;
+    max-width: 1000px;
+    box-sizing: border-box
   }
 }
 
 /*Tablet*/
 
 @media (max-width: 769px) {
+  
   h1 {
     font-size: 1.7em;
   }
@@ -1334,16 +1336,21 @@ li {
   font-size: 4vw;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .skills-used i {
     font-size: 8vw;
   }
+  
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .bottom-row {
     display: flex;
   }
+  .navbar-right {
+    float: right!important;
+    margin-right: 0px;
+}
 }
 
 .work-button {
