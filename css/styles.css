@@ -12,8 +12,6 @@
 
 /*Navigation and Site-Wide*/
 
-
-
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -33,6 +31,17 @@
   border: none;
 }
 
+#brand-name,
+#brand-name:hover,
+#brand-name:active,
+#brand-name:focus {
+  color: #2adaa1;
+  text-transform: uppercase;
+  font-size: 21px;
+  padding-top: 7px;
+  font-weight: 600;
+}
+
 .navbar-brand {
   padding: .2em .7em;
 }
@@ -49,18 +58,19 @@
   color: #050f2c;
 }
 
+.navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
-  background-color: #F2C193;
+  background-color: #e1e1e1;
+  color: #050f2c;
   transition: 0.3s;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
-  background-color: #050f2c;
-  transition: 0.3s;
-}
-
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: #050f2c;
+  background-color: #e1e1e1;
+  color: #050f2c;
+  transition: 0.3s;
 }
 
 /*Site Wide Font*/
@@ -138,7 +148,7 @@ a:focus {
 
 .hexagon {
   position: relative;
-  width: 150px; 
+  width: 150px;
   height: 86.60px;
   margin: 43.30px 0;
   border-left: solid 10px #2dde98;
@@ -191,10 +201,10 @@ a:focus {
   color: #2dde98;
 }
 
-#developer-hex, 
-#developer-hex:before, 
-#developer-hex:after, 
-#developer-hex p {
+#engineer-hex,
+#engineer-hex:before,
+#engineer-hex:after,
+#engineer-hex p {
   border-color: #F9656B;
   color: #F9656B;
 }
@@ -358,11 +368,11 @@ select.role-dropdown option {
 
 /* Development */
 
-#developer {
+#engineer {
   background-color: white;
 }
 
-#developer h2 {
+#engineer h2 {
   color: black;
 }
 
@@ -378,8 +388,14 @@ select.role-dropdown option {
 }
 
 .single-skill {
-  font-size: 3vw;
+  font-size: 40px;
   text-align: center;
+}
+
+@media (max-width:776px) {
+  .single-skill {
+    font-size: 30px;
+  }
 }
 
 .single-skill:hover i {
@@ -389,17 +405,152 @@ select.role-dropdown option {
   transition: .3s;
 }
 
+.sample-screen {
+  height: 250px;
+  min-height: 250px;
+}
+
+.code-panel {
+  background-color: rgb(62, 57, 107);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(137, 148, 198);
+  display: block;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 29px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.balance-top {
+  padding-top: 2px;
+}
+
+.m-l-mini {
+  box-sizing: border-box;
+  color: rgb(137, 148, 198);
+  display: block;
+  float: left;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-feature-settings: "pnum";
+  font-size: 15px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: -5px;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  width: 277.5px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fill-radical-red {
+  background-color: rgb(255, 79, 129);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(137, 148, 198);
+  display: inline-block;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-feature-settings: "pnum";
+  font-size: 15px;
+  height: 6px;
+  line-height: 24px;
+  margin-left: 5px;
+  margin-top: 11px;
+  margin-right: 4px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-rendering: optimizeLegibility;
+  width: 6px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fill-koromiko {
+  background-color: rgb(255, 193, 104);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(137, 148, 198);
+  display: inline-block;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-feature-settings: "pnum";
+  font-size: 15px;
+  height: 6px;
+  line-height: 24px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-rendering: optimizeLegibility;
+  width: 6px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fill-algolia-blue {
+  background-color: rgb(0, 174, 255);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(137, 148, 198);
+  display: inline-block;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-feature-settings: "pnum";
+  font-size: 15px;
+  height: 6px;
+  line-height: 24px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-rendering: optimizeLegibility;
+  width: 6px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.git-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.git-repo {
+  height: 78px;
+  width: 48%;
+  margin: 0 1% 2% 1%;
+  box-sizing: border-box;
+  border: rgb(209, 213, 218) solid 1px;
+}
+
 .code-container {
-  background-color: #050f2c;
+  background: linear-gradient(to right, #050f2c, #3A3466); 
   border-radius: 6px;
   box-sizing: border-box;
   color: rgb(62, 57, 107);
   display: block;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 15px;
-  height: 300px;
   line-height: 24px;
-  min-height: 300px;
   position: relative;
   text-rendering: optimizeLegibility;
   will-change: height;
@@ -1144,7 +1295,6 @@ footer i:hover {
 /*Tablet*/
 
 @media (max-width: 769px) {
-  
   h1 {
     font-size: 1.7em;
   }
@@ -1346,17 +1496,19 @@ li {
   .skills-used i {
     font-size: 8vw;
   }
-  
 }
 
 @media (min-width: 768px) {
   .bottom-row {
     display: flex;
   }
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
   .navbar-right {
-    float: right!important;
+    float: right !important;
     margin-right: 0px;
-}
+  }
 }
 
 .work-button {
