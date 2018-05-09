@@ -298,46 +298,11 @@ canvas {
 
 /*Landing Logo and Buttons*/
 
-.center {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .landing-title {
   margin-top: 15vh;
 }
 
-.landing-title h1 {
-  font-size: 4vw;
-}
-
 /*Fix Heading from Jumping over Logo*/
-
-@media (min-width: 900px) {
-  .landing-title h1 {
-    padding-top: 2.5vw;
-  }
-}
-
-select.role-dropdown {
-  background: none;
-  border-radius: 11px;
-  padding: 0 20px;
-  cursor: pointer;
-}
-
-select.role-dropdown option {
-  background: rgba(240, 240, 240, 0.5);
-  color: #050f2c;
-}
-
-.logo-landing img {
-  max-width: 30vw;
-}
-
-.landing-btns {
-  margin-top: 35vh;
-}
 
 .btn-main {
   color: #fff;
@@ -1278,7 +1243,7 @@ footer i:hover {
 
 .anchor {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 100px;
   background-size: cover;
   position: relative;
 }
@@ -1305,15 +1270,8 @@ footer i:hover {
   .center {
     width: 100%;
   }
-  .landing-bottom {
-    display: none;
-  }
-  /*Remove Parallax by Recalling Image, Not Fixed */
-  .logo-landing {
-    width: 100%;
-  }
-  .logo-title {
-    margin-top: 5vh;
+  .hex-wrap {
+    transform: scale(0.7);
   }
   .about {
     width: 100%;
@@ -1352,14 +1310,6 @@ footer i:hover {
   .landing-title .row {
     margin-right: 0;
     margin-left: 0;
-  }
-  .landing-title h1 {
-    font-size: 20px;
-    height: 20px;
-  }
-  .landing-title {
-    margin-top: 0px;
-    margin-bottom: 100px;
   }
   .landing-btns {
     margin-top: 25px;
