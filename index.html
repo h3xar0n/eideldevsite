@@ -111,22 +111,72 @@
   <!-- End Navigation-->
   <!-- New Work -->
   <section class="container anchor" id="engineer">
+    <article class="row skill-panel">
+        <!-- Top row -->
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Node'"
+            class="devicon-nodejs-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Mocha'"
+            class="devicon-mocha-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Python'"
+            class="devicon-python-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Ruby'"
+            class="devicon-ruby-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'C#'"
+            class="devicon-csharp-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'SQL'"
+            class="fa fa-database"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'JavaScript'"
+            class="devicon-javascript-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Vue'" 
+            class="devicon-vuejs-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'React'"
+            class="devicon-react-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Angular'"
+            class="devicon-angularjs-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'D3'" 
+            class="devicon-d3js-plain colored"></i>
+      </div>
+      <div class="col-xs-2 single-skill">
+        <i v-on:click="skill = 'Sass'" 
+            class="devicon-sass-plain colored"></i>
+      </div>
+    </article>
     <div id="interface">
       <div id="main-row" class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div id="monitor" class="col-xs-12">
-            <article class="code-container row">
-              <header class="code-panel">
-                <div class="col-xs-6 m-l-n-mini">
-                  <span class="no-padding inline dot m-l-mini fill-radical-red"></span>
-                  <span class="no-padding inline dot fill-koromiko"></span>
-                  <span class="no-padding inline dot fill-algolia-blue"></span>
-                </div>
-                <div class="col-xs-6 text-right balance-top">
-                  <span class="">{{ skill }}</span>
-                </div>
-              </header>
-              <main>
+        <div id="monitor" class="col-md-6">
+          <article class="code-container row">
+            <header class="code-panel">
+              <div class="col-xs-6 m-l-n-mini">
+                <span class="no-padding inline dot m-l-mini fill-radical-red"></span>
+                <span class="no-padding inline dot fill-koromiko"></span>
+                <span class="no-padding inline dot fill-algolia-blue"></span>
+              </div>
+              <div class="col-xs-6 text-right balance-top">
+                <span class="">{{ skill }}</span>
+              </div>
+            </header>
+            <main>
 <!-- Node -->
 <transition name="fade" mode="out-in">
 <pre v-if="skill === 'Node'">
@@ -296,79 +346,13 @@
 </code>
 </pre>
 </transition>
-              </main>
-            </article>
-          </div>
-          <br>
-          <div id="skillset-back" class="col-xs-12">
-            <article class="row skill-panel">
-              <!-- Top row -->
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Node'"
-                   class="devicon-nodejs-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Mocha'"
-                   class="devicon-mocha-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Python'"
-                   class="devicon-python-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Ruby'"
-                   class="devicon-ruby-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'C#'"
-                   class="devicon-csharp-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'SQL'"
-                   class="fa fa-database"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'JavaScript'"
-                   class="devicon-javascript-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Vue'" 
-                   class="devicon-vuejs-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'React'"
-                   class="devicon-react-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Angular'"
-                   class="devicon-angularjs-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'D3'" 
-                   class="devicon-d3js-plain colored"></i>
-              </div>
-              <div class="col-xs-2 single-skill">
-                <i v-on:click="skill = 'Sass'" 
-                   class="devicon-sass-plain colored"></i>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <article class="git-list">
-            <div class="git-repo">1</div>
-            <div class="git-repo">2</div>
-            <div class="git-repo">3</div>
-            <div class="git-repo">4</div>
-            <div class="git-repo">5</div>
-            <div class="git-repo">6</div>
+            </main>
           </article>
         </div>
-
+        <div class="col-md-6">
+        <!-- SAMPLES GO HERE -->
+        </div>
       </div>
-    </div>
-
-    </div>
     </div>
   </section>
   <!-- End Work -->

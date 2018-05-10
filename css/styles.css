@@ -325,6 +325,7 @@ canvas {
 
 #engineer {
   background-color: white;
+  max-width: 970px;
 }
 
 #engineer h2 {
@@ -505,19 +506,6 @@ pre {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.git-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.git-repo {
-  height: 120px;
-  width: 48%;
-  margin: 0 1% 2% 1%;
-  box-sizing: border-box;
-  border: rgb(209, 213, 218) solid 1px;
-}
-
 .code-container {
   background: linear-gradient(to right, #050f2c, #3A3466); 
   border-radius: 6px;
@@ -604,10 +592,6 @@ main pre {
 
 .slack-colored {
   color: #4B6BC6;
-}
-
-.github-colored {
-  color: white;
 }
 
 #skill-list {
@@ -1276,7 +1260,7 @@ footer i:hover {
 
 .anchor {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 60px;
   background-size: cover;
   position: relative;
 }
