@@ -257,16 +257,6 @@ a:focus {
   max-width: 200px;
 }
 
-.important-elements {
-  -webkit-filter: drop-shadow(0px 0px 5px white);
-  filter: drop-shadow(0px 0px 5px white);
-}
-
-.less-important-elements {
-  -webkit-filter: drop-shadow(0px 0px 1px white);
-  filter: drop-shadow(0px 0px 1px white);
-}
-
 /*Particles*/
 
 canvas {
@@ -347,6 +337,33 @@ canvas {
   margin: 5px;
 }
 
+code span {
+  font-family: monospace;
+}
+
+pre {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.key {
+  color: #00aeff;
+}
+
+.var {
+  color: #44fa90;
+}
+
+.val {
+  color: #FCA3BC;
+}
+
+.fa-database {
+  transform: scale(0.9);
+  color: gray;
+}
+
 .skill-panel {
   border-radius: 6px;
   padding: 1vw;
@@ -368,10 +385,6 @@ canvas {
   color: #050f2c;
   text-shadow: 0 0 10px white;
   transition: .3s;
-}
-
-.sample-screen {
-
 }
 
 .code-panel {
@@ -412,7 +425,6 @@ canvas {
   padding-right: 15px;
   position: relative;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
   width: 277.5px;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -520,8 +532,29 @@ canvas {
   will-change: height;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  height: 250px;
   min-height: 250px;
+  min-width: 440px;
+}
+
+main pre {
+  position: absolute;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+@media (max-width: 500px) {
+  .code-container {
+    min-height: 161px;
+    min-width: 100px;
+  }
+  pre {
+    font-size: 7px;
+  }
 }
 
 /*Work*/

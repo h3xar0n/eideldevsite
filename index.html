@@ -123,51 +123,233 @@
                   <span class="no-padding inline dot fill-algolia-blue"></span>
                 </div>
                 <div class="col-xs-6 text-right balance-top">
-                  <span class=""> Javascript</span>
+                  <span class="">{{ skill }}</span>
                 </div>
               </header>
-              <main></main>
+              <main>
+<!-- Node -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Node'">
+<code><span class="key">const</span> myIndex = <span class="var">apiClient</span>.initIndex(<span class="val">'contacts'</span>);
+<span class="var">myIndex</span>
+  .<span class="var">addObject</span>({
+    <span class="var">firstname</span>: <span class="val">'James'</span>,
+    <span class="var">lastname</span>: <span class="val">'Raynor'</span>,
+    <span class="var">company</span>: <span class="val">'Jimmy & Sarah's Cafe'</span>
+  })
+  .<span class="key">then</span>(content <span class="key">=></span> console.<span class="key">log</span>(<span class="var">content</span>))
+  .<span class="key">catch</span>(err <span class="key">=></span> console.<span class="key">error</span>(err));
+</code>
+</pre>
+</transition>
+<!-- Mocha -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Mocha'">
+<code><span class="key">describe</span>(<span class="var">'When there are no videos'</span>, () <span class="key">=></span> {
+  <span class="key">it</span>(<span class="var">'the videos container should be empty'</span>, () <span class="key">=></span> {
+    browser.<span class="val">url</span>(<span class="var">'/'</span>);
+    assert.<span class="val">equal</span>(browser.<span class="val">getText</span>(<span class="var">'#vid-wrapper'</span>), <span class="var">''</span>);
+  });
+});
+</code>
+</pre>
+</transition>
+<!-- Python -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Python'">
+<code><span class="var">myIndex</span> = apiClient.<span class="key">init_index</span>(<span class="val">"contacts"</span>)
+<span class="var">myIndex</span>.<span class="key">add_object</span>({<span class="var">"firstname"</span>: <span class="var">"James"</span>,
+                    <span class="var">"lastname"</span>: <span class="var">"Raynor"</span>,
+                    <span class="var">"company"</span>: <span class="var">"Jimmy & Sarah's Cafe"</span>})
+</code>
+</pre>
+</transition>
+<!-- Ruby -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Ruby'">
+<code><span class="var">my_index</span> = Searchgem::Index.<span class="key">new</span>(<span class="val">'contacts'</span>)
+<span class="var">my_index</span>.<span class="key">add_object</span> <span class="var">:firstname</span> => <span class="val">"James"</span>,
+                    <span class="var">:lastname</span> => <span class="val">"Raynor"</span>,
+                    <span class="var">:company</span> => <span class="val">"Jimmy & Sarah's Cafe"</span>
+</code>
+</pre>
+</transition>
+<!-- C Sharp -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'C#'">
+<code>Index myIndex = apiClient.<span class="val">InitIndex</span>(<span class="var">"contacts"</span>);
+    <span class="key">var</span> jsonObject = <span class="key">new</span> <span class="var">JObject()</span>;
+    jsonObject.<span class="val">Add</span>(<span class="var">"firstname"</span>, <span class="var">"James"</span>);
+    jsonObject.<span class="val">Add</span>(<span class="var">"lastname"</span>, <span class="var">"Raynor"</span>);
+    jsonObject.<span class="val">Add</span>(<span class="var">"company"</span>, <span class="var">"California Paint"</span>);
+    myIndex.<span class="val">AddObject</span>(jsonObject);
+</code>
+</pre>
+</transition>
+<!-- SQL -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'SQL'">
+<code>daily_players <span class="key">AS</span> ( 
+  <span class="key">SELECT</span> 
+    date(created_at) <span class="key">AS</span> dt, 
+    count(<span class="key">DISTINCT</span> user_id) <span class="key">AS</span> players 
+  <span class="key">FROM</span> gameplays 
+  <span class="key">GROUP BY</span> 1 
+)
+
+</code>
+</pre>
+</transition>
+<!-- Javascript -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'JavaScript'">
+<code v-pre><span class="val">&ltdiv</span> <span class="key">id</span>=<span class="var">"search"</span><span class="val">>&lt/div></span>
+<span class="val">&ltdiv</span> <span class="key">id</span>=<span class="var">"hits"</span><span class="val">>&lt/div></span>
+
+<span class="val">&ltscript></span>
+  <span class="key">const</span> { <span class="var">searchBox</span>, <span class="var">hits</span> } = instantsearch.<span class="var">widgets</span>;
+  search.<span class="var">addWidget</span>(<span class="var">searchBox</span>({ container: <span class="var">"#search"</span> }));
+  search.<span class="var">addWidget</span>(<span class="var">hits</span>({ container: <span class="var">"#hits"</span> }));
+  search.<span class="var">start</span>();
+<span class="val">&lt/script></span>
+</code>
+</pre>
+</transition>
+<!-- Vue -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Vue'">
+<code v-pre><span class="val">&ltais-index&gt
+  &ltais-search-box /&gt
+  &ltais-results&gt
+    &lttemplate</span> <span class="key">scope</span>=<span class="var">"&#123; result &#125;"</span><span class="val">&gt
+      &lth2&gt</span>&#123;&#123; result.name &#125;&#125;<span class="val">&lt/h2&gt
+      &ltp&gt</span>&#123;&#123; result.description &#125;&#125;<span class="val">&lt/p&gt
+    &lt/template&gt
+  &lt/ais-results&gt
+  &ltais-refinement-list</span> <span class="key">attributeName</span>=<span class="var">"company"</span> <span class="val">/&gt
+  &ltais-pagination /&gt
+&lt/ais-index&gt</span>
+</code>
+</pre>
+</transition>
+<!-- React -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'React'">
+<code v-pre><span class="key">const</span> <span class="var">App</span> = (
+  <span class="val">&ltInstantSearch>
+    &ltSearchBox />
+    &ltResults />
+    &ltPagination />
+    &ltRefinementList
+      <span class="key">attribute</span>=<span class="var">"company"</span>
+    />
+  &lt/InstantSearch></span>
+);
+</code>
+</pre>
+</transition>
+<!-- Angular -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Angular'">
+<code v-pre>@<span class="var">Component</span>({
+  <span class="key">selector</span>: <span class="var">'search-ui'</span>,
+  <span class="key">template</span>: `
+    <span class="val">&ltinput</span> <span class="key">type</span>=<span class="var">"search"</span> (<span class="key">input</span>)=<span class="var">"search()"</span><span class="val">>
+    &ltdiv</span> <span class="key">*ngFor</span>=<span class="var">"let result of results"</span><span class="val">></span>
+      {{result.title | highlight}}
+    <span class="val">&lt/div></span>
+    `
+})
+<span class="key">export</span> <span class="var">mysearch</span>(App);
+</code>
+</pre>
+</transition>
+<!-- D3 -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'D3'">
+<code v-pre><span class="val">&ltdiv</span> <span class="key">id</span>=<span class="var">"chart"</span><span class="val">>&lt/div></span>
+
+<span class="val">&ltscript></span>
+  <span class="key">d3</span>.select(<span class="var">'#chart'</span>)
+    .selectAll(<span class="var">"div"</span>)
+    .data([<span class="val">1</span>, <span class="val">4</span>, <span class="val">8</span>, <span class="val">14</span>, <span class="val">15</span>, <span class="val">38</span>, <span class="val">42</span>])
+    .enter()
+    .append(<span class="var">"div"</span>)
+    .style(<span class="var">"height"</span>, (<span class="var">d</span>) <span class="key">=></span> <span class="var">d</span> + <span class="var">"px"</span>)
+<span class="val">&lt/script></span>
+</code>
+</pre>
+</transition>
+<!-- Sass -->
+<transition name="fade" mode="out-in">
+<pre v-if="skill === 'Sass'">
+<code v-pre><span class="val">$total</span>: <span class="val">10</span>;
+<span class="val">$step</span>: <span class="val">360deg / $total</span>;
+<span class="var">.ray</span> {
+  height: <span class="val">30px</span>;
+}
+<span class="key">@for <span class="val">$i</span> from <span class="val">1</span> through</span> <span class="val">$total</span> {
+  <span class="var">.ray</span>:<span class="val">nth-child</span>(#{<span class="val">$i</span>}) {
+    background: <span class="val">adjust-hue</span>(<span class="key">blue</span>, <span class="val">$i</span> * <span class="val">$step</span>);
+  }
+}
+</code>
+</pre>
+</transition>
+              </main>
             </article>
           </div>
-
+          <br>
           <div id="skillset-back" class="col-xs-12">
             <article class="row skill-panel">
               <!-- Top row -->
               <div class="col-xs-2 single-skill">
-                <i class="devicon-nodejs-plain colored"></i>
-              </div>
-              <!-- <div class="col-xs-2 single-skill">
-                <i class="devicon-mocha-plain colored"></i>
-              </div> -->
-              <!-- <div class="col-xs-2 single-skill">
-                <i class="devicon-csharp-plain colored"></i>
-              </div> -->
-              <!-- <div class="col-xs-2 single-skill">
-                <i class="devicon-python-plain colored"></i>
-              </div> -->
-              <div class="col-xs-2 single-skill">
-                <i class="devicon-ruby-plain colored"></i>
-              </div>
-              <!-- <div class="col-xs-2 single-skill">
-                <i class="devicon-rails-plain colored"></i>
-              </div> -->
-              <!-- <div class="col-xs-2 single-skill">
-                <i class="devicon-javascript-plain colored"></i>
-              </div> -->
-              <div class="col-xs-2 single-skill">
-                <i class="devicon-vuejs-plain colored"></i>
+                <i v-on:click="skill = 'Node'"
+                   class="devicon-nodejs-plain colored"></i>
               </div>
               <div class="col-xs-2 single-skill">
-                <i class="devicon-react-plain colored"></i>
+                <i v-on:click="skill = 'Mocha'"
+                   class="devicon-mocha-plain colored"></i>
               </div>
               <div class="col-xs-2 single-skill">
-                <i class="devicon-angularjs-plain colored"></i>
+                <i v-on:click="skill = 'Python'"
+                   class="devicon-python-plain colored"></i>
               </div>
-              <!-- <div class="col-xs-2 single-skill">
-                <i class="devicon-d3js-plain colored"></i>
-              </div> -->
               <div class="col-xs-2 single-skill">
-                <i class="devicon-jquery-plain colored"></i>
+                <i v-on:click="skill = 'Ruby'"
+                   class="devicon-ruby-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'C#'"
+                   class="devicon-csharp-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'SQL'"
+                   class="fa fa-database"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'JavaScript'"
+                   class="devicon-javascript-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'Vue'" 
+                   class="devicon-vuejs-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'React'"
+                   class="devicon-react-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'Angular'"
+                   class="devicon-angularjs-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'D3'" 
+                   class="devicon-d3js-plain colored"></i>
+              </div>
+              <div class="col-xs-2 single-skill">
+                <i v-on:click="skill = 'Sass'" 
+                   class="devicon-sass-plain colored"></i>
               </div>
             </article>
           </div>
