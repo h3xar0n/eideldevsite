@@ -163,8 +163,9 @@
       </div>
     </article>
     <div id="interface">
-      <div id="main-row" class="row">
-        <div id="monitor" class="col-md-6">
+      <div id="main-row" class="flex-row">
+        
+        <div id="monitor" class="skill-window">
           <article class="code-container row">
             <header class="code-panel">
               <div class="col-xs-6 m-l-n-mini">
@@ -349,8 +350,37 @@
             </main>
           </article>
         </div>
-        <div class="col-md-6">
-        <!-- SAMPLES GO HERE -->
+        <div class="skill-window">
+            <transition name="fade" mode="out-in">
+              <article v-if="skill === 'Node'" id="node-sample" class="sample-inlet">
+                <li>
+                  <span>The Scoop</span>
+                  <a class="btn btn-main" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                    Site
+                 </a>
+                 <a class="btn btn-main" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                   Code
+                 </a>
+                </li>
+                
+              </article>
+            </transition>
+            <transition name="fade" mode="out-in">
+              <article v-if="skill === 'Mocha'" id="mocha-sample" class="sample-inlet"></article>
+            </transition>
+            <transition name="fade" mode="out-in">
+              <article v-if="skill === 'Python'" id="python-sample" class="sample-inlet"></article>
+            </transition>
+            <article v-if="skill === 'Ruby'" id="ruby-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'C#'" id="c-sharp-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'SQL'" id="sql-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'JavaScript'" id="javascript-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'Vue'" id="vue-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'React'" id="react-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'Angular'" id="angular-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'D3'" id="d3-sample" class="sample-inlet"></article>
+            <article v-if="skill === 'Sass'" id="sass-sample" class="sample-inlet"></article>
+          
         </div>
       </div>
     </div>

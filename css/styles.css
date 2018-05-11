@@ -524,6 +524,87 @@ pre {
   min-width: 440px;
 }
 
+.sample-inlet {
+  min-width: 440px;
+  min-height: 250px;
+  background-color: #5840ce;
+  border-radius: 6px;
+  position: absolute;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between
+}
+
+.skill-window {
+  min-width: 440px;
+  min-height: 250px;
+}
+
+@media (max-width: 927px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .skill-window {
+    min-width: 10px;
+    min-height: 10px;
+  }
+  .sample-inlet {
+    margin-top: 20px;
+    min-width: 10px;
+    width: 100%;
+  }
+}
+
+#node-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
+
+#mocha-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+#python-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+}
+
+#ruby-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+#c-sharp-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
+
+#sql-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/old-mathematics.png");
+}
+
+#javascript-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+}
+
+#vue-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/grid.png");
+}
+
+#react-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+}
+
+#angular-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-grunge.png");
+}
+
+#d3-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/old-wall.png");
+}
+
+#sass-sample {
+  background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.png");
+}
+
 main pre {
   position: absolute;
 }
@@ -543,6 +624,13 @@ main pre {
   pre {
     font-size: 7px;
   }
+}
+
+@media (max-width: 1000px) {
+  #interface {
+    height: 600px;
+  }
+
 }
 
 /*Work*/
@@ -1260,9 +1348,10 @@ footer i:hover {
 
 .anchor {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 70px;
   background-size: cover;
   position: relative;
+  min-height: 90vh;
 }
 
 /*Desktop*/
@@ -1288,7 +1377,7 @@ footer i:hover {
     width: 100%;
   }
   .hex-wrap {
-    transform: scale(0.7);
+    transform: scale(0.65);
   }
   .about {
     width: 100%;
