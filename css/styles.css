@@ -321,6 +321,12 @@ canvas {
   text-decoration: none;
 }
 
+/* Quotes */
+
+.big-quote {
+  color: #050f2c;
+}
+
 /* Development */
 
 #engineer {
@@ -532,6 +538,10 @@ pre {
   position: absolute;
 }
 
+.sample-inlet table {
+  margin: 5%;
+}
+
 .flex-row {
   display: flex;
   justify-content: space-between
@@ -540,6 +550,32 @@ pre {
 .skill-window {
   min-width: 440px;
   min-height: 250px;
+}
+
+.button-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sample-title {
+  width: 50%;
+}
+
+.sample-link,
+.sample-link:focus,
+.sample-link:visited,
+.sample-link:active,
+.sample-title {
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+  padding-right: 40px;
+}
+
+.sample-link:hover {
+  color: #2dde98;
+  transition: 0.5s;
 }
 
 @media (max-width: 927px) {

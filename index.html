@@ -107,8 +107,19 @@
     <!-- End Overlay -->
   </section>
   <!-- End Landing -->
-
-  <!-- End Navigation-->
+  <section class="container">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2 class="big-quote">"The limits of my language 
+      <br>mean the limits of my world" 
+      <br>- Wittgenstein
+    </h2>
+    <br>
+    <hr>
+  </section>
   <!-- New Work -->
   <section class="container anchor" id="engineer">
     <article class="row skill-panel">
@@ -353,16 +364,23 @@
         <div class="skill-window">
             <transition name="fade" mode="out-in">
               <article v-if="skill === 'Node'" id="node-sample" class="sample-inlet">
-                <li>
-                  <span>The Scoop</span>
-                  <a class="btn btn-main" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
-                    Site
-                 </a>
-                 <a class="btn btn-main" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
-                   Code
-                 </a>
-                </li>
-                
+                <table>
+                  <tr>
+                    <td class="sample-title">
+                      The Scoop
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </article>
             </transition>
             <transition name="fade" mode="out-in">
