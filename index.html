@@ -79,7 +79,8 @@
                 <i class="fas fa-code"></i>
               </p>
             </div>
-            <h3>Software <br class="visible-xs visible-sm">engineer</h3>
+            <h3>Software
+              <br class="visible-xs visible-sm">engineer</h3>
           </div>
           <div class="col-xs-4 hex-wrap">
             <div class="hexagon" id="writer-hex">
@@ -87,7 +88,8 @@
                 <i class="fas fa-lightbulb"></i>
               </p>
             </div>
-            <h3>Product <br class="visible-xs visible-sm">Manager</h3>
+            <h3>Product
+              <br class="visible-xs visible-sm">Manager</h3>
           </div>
           <div class="col-xs-4 hex-wrap">
             <div class="hexagon" id="mentor-hex">
@@ -95,7 +97,8 @@
                 <i class="fas fa-users"></i>
               </p>
             </div>
-            <h3>Coding <br class="visible-xs visible-sm">Mentor</h3>
+            <h3>Coding
+              <br class="visible-xs visible-sm">Mentor</h3>
           </div>
           <div class="col-xs-12 learn-more-wrapper">
             <a href="#about" class="btn btn-main">Learn More</a>
@@ -113,8 +116,8 @@
     <br>
     <hr>
     <br>
-    <h2 class="big-quote">"The limits of my language 
-      <br>mean the limits of my world" 
+    <h2 class="big-quote">"The limits of my language
+      <br>mean the limits of my world"
       <br>- Wittgenstein
     </h2>
     <br>
@@ -123,59 +126,47 @@
   <!-- New Work -->
   <section class="container anchor" id="engineer">
     <article class="row skill-panel">
-        <!-- Top row -->
+      <!-- Top row -->
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Node'"
-            class="devicon-nodejs-plain colored"></i>
+        <i v-on:click="skill = 'Node'" class="devicon-nodejs-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Mocha'"
-            class="devicon-mocha-plain colored"></i>
+        <i v-on:click="skill = 'Mocha'" class="devicon-mocha-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Python'"
-            class="devicon-python-plain colored"></i>
+        <i v-on:click="skill = 'Python'" class="devicon-python-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Ruby'"
-            class="devicon-ruby-plain colored"></i>
+        <i v-on:click="skill = 'Ruby'" class="devicon-ruby-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'C#'"
-            class="devicon-csharp-plain colored"></i>
+        <i v-on:click="skill = 'C#'" class="devicon-csharp-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'SQL'"
-            class="fa fa-database"></i>
+        <i v-on:click="skill = 'SQL'" class="fa fa-database"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'JavaScript'"
-            class="devicon-javascript-plain colored"></i>
+        <i v-on:click="skill = 'JavaScript'" class="devicon-javascript-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Vue'" 
-            class="devicon-vuejs-plain colored"></i>
+        <i v-on:click="skill = 'Vue'" class="devicon-vuejs-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'React'"
-            class="devicon-react-plain colored"></i>
+        <i v-on:click="skill = 'React'" class="devicon-react-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Angular'"
-            class="devicon-angularjs-plain colored"></i>
+        <i v-on:click="skill = 'Angular'" class="devicon-angularjs-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'D3'" 
-            class="devicon-d3js-plain colored"></i>
+        <i v-on:click="skill = 'D3'" class="devicon-d3js-plain colored"></i>
       </div>
       <div class="col-xs-2 single-skill">
-        <i v-on:click="skill = 'Sass'" 
-            class="devicon-sass-plain colored"></i>
+        <i v-on:click="skill = 'Sass'" class="devicon-sass-plain colored"></i>
       </div>
     </article>
     <div id="interface">
       <div id="main-row" class="flex-row">
-        
+
         <div id="monitor" class="skill-window">
           <article class="code-container row">
             <header class="code-panel">
@@ -189,9 +180,9 @@
               </div>
             </header>
             <main>
-<!-- Node -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Node'">
+              <!-- Node -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Node'">
 <code><span class="key">const</span> myIndex = <span class="var">apiClient</span>.initIndex(<span class="val">'contacts'</span>);
 <span class="var">myIndex</span>
   .<span class="var">addObject</span>({
@@ -203,10 +194,10 @@
   .<span class="key">catch</span>(err <span class="key">=></span> console.<span class="key">error</span>(err));
 </code>
 </pre>
-</transition>
-<!-- Mocha -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Mocha'">
+              </transition>
+              <!-- Mocha -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Mocha'">
 <code><span class="key">describe</span>(<span class="var">'When there are no videos'</span>, () <span class="key">=></span> {
   <span class="key">it</span>(<span class="var">'the videos container should be empty'</span>, () <span class="key">=></span> {
     browser.<span class="val">url</span>(<span class="var">'/'</span>);
@@ -215,30 +206,30 @@
 });
 </code>
 </pre>
-</transition>
-<!-- Python -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Python'">
+              </transition>
+              <!-- Python -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Python'">
 <code><span class="var">myIndex</span> = apiClient.<span class="key">init_index</span>(<span class="val">"contacts"</span>)
 <span class="var">myIndex</span>.<span class="key">add_object</span>({<span class="var">"firstname"</span>: <span class="var">"James"</span>,
                     <span class="var">"lastname"</span>: <span class="var">"Raynor"</span>,
                     <span class="var">"company"</span>: <span class="var">"Jimmy & Sarah's Cafe"</span>})
 </code>
 </pre>
-</transition>
-<!-- Ruby -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Ruby'">
+              </transition>
+              <!-- Ruby -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Ruby'">
 <code><span class="var">my_index</span> = Searchgem::Index.<span class="key">new</span>(<span class="val">'contacts'</span>)
 <span class="var">my_index</span>.<span class="key">add_object</span> <span class="var">:firstname</span> => <span class="val">"James"</span>,
                     <span class="var">:lastname</span> => <span class="val">"Raynor"</span>,
                     <span class="var">:company</span> => <span class="val">"Jimmy & Sarah's Cafe"</span>
 </code>
 </pre>
-</transition>
-<!-- C Sharp -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'C#'">
+              </transition>
+              <!-- C Sharp -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'C#'">
 <code>Index myIndex = apiClient.<span class="val">InitIndex</span>(<span class="var">"contacts"</span>);
     <span class="key">var</span> jsonObject = <span class="key">new</span> <span class="var">JObject()</span>;
     jsonObject.<span class="val">Add</span>(<span class="var">"firstname"</span>, <span class="var">"James"</span>);
@@ -247,10 +238,10 @@
     myIndex.<span class="val">AddObject</span>(jsonObject);
 </code>
 </pre>
-</transition>
-<!-- SQL -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'SQL'">
+              </transition>
+              <!-- SQL -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'SQL'">
 <code>daily_players <span class="key">AS</span> ( 
   <span class="key">SELECT</span> 
     date(created_at) <span class="key">AS</span> dt, 
@@ -261,10 +252,10 @@
 
 </code>
 </pre>
-</transition>
-<!-- Javascript -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'JavaScript'">
+              </transition>
+              <!-- Javascript -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'JavaScript'">
 <code v-pre><span class="val">&ltdiv</span> <span class="key">id</span>=<span class="var">"search"</span><span class="val">>&lt/div></span>
 <span class="val">&ltdiv</span> <span class="key">id</span>=<span class="var">"hits"</span><span class="val">>&lt/div></span>
 
@@ -276,10 +267,10 @@
 <span class="val">&lt/script></span>
 </code>
 </pre>
-</transition>
-<!-- Vue -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Vue'">
+              </transition>
+              <!-- Vue -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Vue'">
 <code v-pre><span class="val">&ltais-index&gt
   &ltais-search-box /&gt
   &ltais-results&gt
@@ -293,10 +284,10 @@
 &lt/ais-index&gt</span>
 </code>
 </pre>
-</transition>
-<!-- React -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'React'">
+              </transition>
+              <!-- React -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'React'">
 <code v-pre><span class="key">const</span> <span class="var">App</span> = (
   <span class="val">&ltInstantSearch>
     &ltSearchBox />
@@ -309,10 +300,10 @@
 );
 </code>
 </pre>
-</transition>
-<!-- Angular -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Angular'">
+              </transition>
+              <!-- Angular -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Angular'">
 <code v-pre>@<span class="var">Component</span>({
   <span class="key">selector</span>: <span class="var">'search-ui'</span>,
   <span class="key">template</span>: `
@@ -325,10 +316,10 @@
 <span class="key">export</span> <span class="var">mysearch</span>(App);
 </code>
 </pre>
-</transition>
-<!-- D3 -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'D3'">
+              </transition>
+              <!-- D3 -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'D3'">
 <code v-pre><span class="val">&ltdiv</span> <span class="key">id</span>=<span class="var">"chart"</span><span class="val">>&lt/div></span>
 
 <span class="val">&ltscript></span>
@@ -341,10 +332,10 @@
 <span class="val">&lt/script></span>
 </code>
 </pre>
-</transition>
-<!-- Sass -->
-<transition name="fade" mode="out-in">
-<pre v-if="skill === 'Sass'">
+              </transition>
+              <!-- Sass -->
+              <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Sass'">
 <code v-pre><span class="val">$total</span>: <span class="val">10</span>;
 <span class="val">$step</span>: <span class="val">360deg / $total</span>;
 <span class="var">.ray</span> {
@@ -357,14 +348,90 @@
 }
 </code>
 </pre>
-</transition>
+              </transition>
             </main>
           </article>
         </div>
         <div class="skill-window">
-            <transition name="fade" mode="out-in">
-              <article v-if="skill === 'Node'" id="node-sample" class="sample-inlet">
-                <table>
+          <transition name="fade" mode="out-in">
+            <article v-if="skill === 'Node'" id="node-sample" class="sample-inlet">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="sample-title">
+                      Expresso
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      X-Press Publishing
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Code Strips
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Gold Metal Metrics
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Boss Machine
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
                   <tr>
                     <td class="sample-title">
                       The Scoop
@@ -380,25 +447,627 @@
                       </a>
                     </td>
                   </tr>
-                </table>
-              </article>
-            </transition>
-            <transition name="fade" mode="out-in">
-              <article v-if="skill === 'Mocha'" id="mocha-sample" class="sample-inlet"></article>
-            </transition>
-            <transition name="fade" mode="out-in">
-              <article v-if="skill === 'Python'" id="python-sample" class="sample-inlet"></article>
-            </transition>
-            <article v-if="skill === 'Ruby'" id="ruby-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'C#'" id="c-sharp-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'SQL'" id="sql-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'JavaScript'" id="javascript-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'Vue'" id="vue-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'React'" id="react-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'Angular'" id="angular-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'D3'" id="d3-sample" class="sample-inlet"></article>
-            <article v-if="skill === 'Sass'" id="sass-sample" class="sample-inlet"></article>
-          
+                  <tr>
+                    <td class="sample-title">
+                      Beat Mix
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Rock Paper Scissors x99
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </transition>
+          <transition name="fade" mode="out-in">
+            <article v-if="skill === 'Mocha'" id="mocha-sample" class="sample-inlet">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="sample-title">
+                      Vidbits
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Gather
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Expresso
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      X-Press Publishing
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Code Strips
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Gold Metal Metrics
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Boss Machine
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      The Scoop
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </transition>
+          <transition name="fade" mode="out-in">
+            <article v-if="skill === 'Python'" id="python-sample" class="sample-inlet">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="sample-title">
+                      TomeRater
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Murder Mystery
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Cryptochain
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Phone and Email Scraper
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Beautiful Soup
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Selenium
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Email Checker
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Mouse + Keyboard Automaton
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </transition>
+          <transition name="fade" mode="out-in">
+            <article v-if="skill === 'Ruby'" id="ruby-sample" class="sample-inlet">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="sample-title">
+                      A2 Accessories
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Tvitzar
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      RabbitList
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      PROMGMT
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Moviepedia
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Jocknerd
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      HipTime
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Suddengram
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </transition>
+          <transition name="fade" mode="out-in">
+            <article v-if="skill === 'C#'" id="c-sharp-sample" class="sample-inlet">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="sample-title">
+                      TileVania
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Ahoy Matey
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Twin Sticks
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Zombie Runner
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Bowlmaster
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Glitch Garder
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Laser Defender
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Block Breaker
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </transition>
+          <transition name="fade" mode="out-in">
+            <article v-if="skill === 'SQL'" id="sql-sample" class="sample-inlet">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="sample-title">
+                      Expresso
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      X-Press Publishing
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Code Strips
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="sample-title">
+                      Gold Metal Metrics
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a class="sample-link" href="https://www.linkedin.com/in/aroneidelman/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </transition>
+          <article v-if="skill === 'JavaScript'" id="javascript-sample" class="sample-inlet"></article>
+          <article v-if="skill === 'Vue'" id="vue-sample" class="sample-inlet"></article>
+          <article v-if="skill === 'React'" id="react-sample" class="sample-inlet"></article>
+          <article v-if="skill === 'Angular'" id="angular-sample" class="sample-inlet"></article>
+          <article v-if="skill === 'D3'" id="d3-sample" class="sample-inlet"></article>
+          <article v-if="skill === 'Sass'" id="sass-sample" class="sample-inlet"></article>
+
         </div>
       </div>
     </div>

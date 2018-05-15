@@ -540,6 +540,7 @@ pre {
 
 .sample-inlet table {
   margin: 5%;
+  width: 90%
 }
 
 .flex-row {
@@ -550,6 +551,7 @@ pre {
 .skill-window {
   min-width: 440px;
   min-height: 250px;
+  background-color: #5840ce;
 }
 
 .button-row {
@@ -557,10 +559,10 @@ pre {
   display: flex;
   justify-content: flex-end;
 }
-
+/* 
 .sample-title {
   width: 50%;
-}
+} */
 
 .sample-link,
 .sample-link:focus,
@@ -568,9 +570,13 @@ pre {
 .sample-link:active,
 .sample-title {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.5s;
   padding-right: 40px;
+}
+
+.sample-title {
+  width: 75%;
 }
 
 .sample-link:hover {
