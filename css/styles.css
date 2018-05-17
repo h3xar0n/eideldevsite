@@ -331,7 +331,7 @@ canvas {
 
 #engineer {
   background-color: white;
-  max-width: 970px;
+  max-width: 484px;
 }
 
 #engineer h2 {
@@ -390,6 +390,12 @@ pre {
 @media (max-width:776px) {
   .single-skill {
     font-size: 30px;
+  }
+  .single-skill svg {
+    width: 30px;
+  }
+  .big-quote {
+    font-size: 20px;
   }
 }
 
@@ -552,16 +558,15 @@ pre {
   background-color: #5840ce;
   border-radius: 6px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sample-inlet table {
-  margin: 5%;
-  width: 90%
-}
 
 .flex-row {
   display: flex;
-  justify-content: space-between
+  justify-content: center;
 }
 
 /* .skill-window {
@@ -576,29 +581,27 @@ pre {
   /* margin-left: 2vw; */
 }
 
+.work-in-progress {
+  cursor: not-allowed;
+}
+
+.work-in-progress a.sample-link {
+  pointer-events: none;
+}
+
 .button-row {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-/* 
-.sample-title {
-  width: 50%;
-} */
 
 .sample-link,
 .sample-link:focus,
 .sample-link:visited,
-.sample-link:active,
-.sample-title {
+.sample-link:active {
   color: white;
-  font-size: 18px;
+  font-size: 26px;
   transition: 0.5s;
-  padding-right: 40px;
-}
-
-.sample-title {
-  width: 75%;
 }
 
 .sample-link:hover {
@@ -637,28 +640,28 @@ pre {
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
 }
 
-#sql-sample {
+#graphql-sample {
   background-image: url("https://www.transparenttextures.com/patterns/old-mathematics.png");
 }
 
 #javascript-sample {
-  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 #vue-sample {
-  background-image: url("https://www.transparenttextures.com/patterns/grid.png");
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
 
 #react-sample {
-  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
 }
 
 #angular-sample {
-  background-image: url("https://www.transparenttextures.com/patterns/subtle-grunge.png");
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
 }
 
 #d3-sample {
-  background-image: url("https://www.transparenttextures.com/patterns/old-wall.png");
+  background-image: url("https://www.transparenttextures.com/patterns/old-mathematics.png");
 }
 
 #sass-sample {
@@ -915,7 +918,8 @@ main pre {
 }
 
 .about-action i {
-  font-size: 10vw;
+  font-size: 110px;
+  color: #373262;
 }
 
 /*Space History Background*/
@@ -1004,6 +1008,7 @@ main pre {
   margin: 0 auto;
   overflow: auto;
   padding: 2%;
+  background: linear-gradient(to bottom, #050F31, #353161, #353161, #6a4af1);
 }
 
 .right-content,
