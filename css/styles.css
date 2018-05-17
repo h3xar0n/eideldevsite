@@ -571,8 +571,9 @@ pre {
 
 #skill-wrapper {
   background-color: #5840ce;
-  margin-top: 20px;
   border-radius: 6px;
+  min-width: 440px;
+  /* margin-left: 2vw; */
 }
 
 .button-row {
