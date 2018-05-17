@@ -1008,7 +1008,7 @@ main pre {
   margin: 0 auto;
   overflow: auto;
   padding: 2%;
-  background: linear-gradient(to bottom, #050F31, #353161, #353161, #6a4af1);
+  background: linear-gradient(to bottom, #050F31, #050F31, #353161, #5341a1, #6a4af1);
 }
 
 .right-content,
@@ -1285,8 +1285,10 @@ main pre {
 /*Contact*/
 
 .contact {
-  background-color: #2b3137;
-  min-height: 85vh
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #353161, #050F31);
 }
 
 .contact-col {
