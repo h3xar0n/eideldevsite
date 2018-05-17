@@ -381,6 +381,12 @@ pre {
   text-align: center;
 }
 
+.single-skill svg {
+  width: 40px;
+  margin-top: -12px;
+  cursor: pointer;
+}
+
 @media (max-width:776px) {
   .single-skill {
     font-size: 30px;
@@ -389,9 +395,19 @@ pre {
 
 .single-skill:hover i {
   cursor: pointer;
-  color: #050f2c;
-  text-shadow: 0 0 10px white;
+  color: white;
+  text-shadow: 0 0 10px rgb(62, 57, 107);
   transition: .3s;
+}
+
+.single-skill:hover svg {
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px rgb(62, 57, 107));
+  transition: .3s;
+}
+
+.single-skill:hover svg * {
+  fill: white;
 }
 
 .code-panel {
@@ -548,10 +564,15 @@ pre {
   justify-content: space-between
 }
 
-.skill-window {
+/* .skill-window {
   min-width: 440px;
   min-height: 250px;
+} */
+
+#skill-wrapper {
   background-color: #5840ce;
+  margin-top: 20px;
+  border-radius: 6px;
 }
 
 .button-row {
@@ -587,10 +608,6 @@ pre {
 @media (max-width: 927px) {
   .flex-row {
     flex-direction: column;
-  }
-  .skill-window {
-    min-width: 10px;
-    min-height: 10px;
   }
   .sample-inlet {
     margin-top: 20px;
