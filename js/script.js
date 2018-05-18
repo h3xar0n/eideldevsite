@@ -122,7 +122,7 @@ new Vue({
 $(document).ready(function(){
   // Smooth Scrolling
   var $root = $('html, body');
-  $('.navbar-nav a, .workName a, .btm-but a').click(function() {
+  $('.navbar-nav a, .workName a, .btm-but a, .btn-main').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
         scrollTop: $(href).offset().top
@@ -135,40 +135,6 @@ $(document).ready(function(){
   $('.navbar-nav li a').click(function(event) {
     if (!$(this).parent().hasClass('dropdown'))
     $('.navbar-collapse').collapse('hide');
-  });
-  // Work: Portfolio Effect
-  $('#skills-used i').mouseenter(function() {
-    var skill = $(this).attr('class')
-    if (skill == 'devicon-vuejs-plain colored') {
-      $('.sample-title').html('Vue');
-      $('.portfolio-sample').addClass('shadow-sample');
-      $('.vue-sample').addClass('select-sample');
-    } else if (skill == 'devicon-rails-plain colored') {
-      $('.sample-title').html('Rails');
-      $('.portfolio-sample').addClass('shadow-sample');
-      $('.rails-sample').addClass('select-sample');
-    } else if (skill == 'devicon-react-plain colored') {
-      $('.sample-title').html('React');
-      $('.portfolio-sample').addClass('shadow-sample');
-      $('.react-sample').addClass('select-sample');
-    } else if (skill == 'devicon-sass-plain colored') {
-      $('.sample-title').html('Sass');
-      $('.portfolio-sample').addClass('shadow-sample');
-      $('.sass-sample').addClass('select-sample');
-    } else if (skill == 'devicon-angularjs-plain colored') {
-      $('.sample-title').html('Angular');
-      $('.portfolio-sample').addClass('shadow-sample');
-      $('.angular-sample').addClass('select-sample');
-    } else if (skill == 'devicon-bootstrap-plain colored') {
-      $('.sample-title').html('Bootstrap');
-      $('.portfolio-sample').addClass('shadow-sample');
-      $('.bootstrap-sample').addClass('select-sample');
-    }
-  });
-  $('#skills-used i').mouseleave(function() {
-    $('.portfolio-sample').removeClass('shadow-sample');
-    $('.portfolio-sample').removeClass('select-sample');
-    $('.sample-title').html('Work');
   });
   // History Image Slide-In
   $(window).scroll(function(){
