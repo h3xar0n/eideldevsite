@@ -292,6 +292,12 @@ canvas {
   margin-top: 15vh;
 }
 
+@media (max-width: 767px) {
+  .landing-title {
+    margin-top: 5vh;
+  }
+}
+
 /*Fix Heading from Jumping over Logo*/
 
 .btn-main {
