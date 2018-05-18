@@ -681,21 +681,13 @@ main pre {
 
 @media (max-width: 500px) {
   .code-container {
-    min-height: 161px;
     min-width: 100px;
+    min-height: 208px;
   }
   pre {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
-
-@media (max-width: 1000px) {
-  #interface {
-    height: 600px;
-  }
-
-}
-
 /*Work*/
 
 .work {
@@ -1418,7 +1410,6 @@ footer i:hover {
   padding-top: 70px;
   background-size: cover;
   position: relative;
-  min-height: 90vh;
 }
 
 /*Desktop*/
@@ -1471,9 +1462,6 @@ footer i:hover {
   }
   .contact {
     width: 100%;
-  }
-  .anchor {
-    min-height: 100vh;
   }
   .container-fluid>.navbar-header {
     margin-right: 0;
