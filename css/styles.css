@@ -354,7 +354,7 @@ canvas {
 
 #engineer {
   background-color: white;
-  max-width: 484px;
+  max-width: 630px
 }
 
 #engineer h2 {
@@ -402,24 +402,13 @@ pre {
 .single-skill {
   font-size: 40px;
   text-align: center;
+  transform: scale(1.3);
+  margin-bottom: 18px;
 }
-
 .single-skill svg {
   width: 40px;
   margin-top: -12px;
   cursor: pointer;
-}
-
-@media (max-width:776px) {
-  .single-skill {
-    font-size: 30px;
-  }
-  .single-skill svg {
-    width: 30px;
-  }
-  .big-quote {
-    font-size: 20px;
-  }
 }
 
 .single-skill:hover i {
@@ -441,6 +430,30 @@ pre {
 
 #Unity_Logo {
   height: 37px;
+}
+
+#interface {
+  transform: scale(1.5);
+  margin: 60px 0;
+}
+
+@media (max-width: 962px) {
+  #interface {
+    transform: scale(1);
+    margin: 0;
+  }
+}
+
+@media (max-width:776px) {
+  .single-skill {
+    font-size: 30px;
+  }
+  .single-skill svg {
+    width: 30px;
+  }
+  .big-quote {
+    font-size: 20px;
+  }
 }
 
 .code-panel {
