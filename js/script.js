@@ -152,12 +152,6 @@ $(document).ready(function(){
     });
   });
 
-  //Contact Form
-  $("#input-message").css({
-    "background-color": "white",
-    "color": "black"
-  });
-
   $("#input-message").on("keyup", function() {
     var charCount = $("#input-message").val().length;
     console.log(charCount);

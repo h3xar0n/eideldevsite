@@ -73,6 +73,23 @@
   transition: 0.3s;
 }
 
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #050f2c;
+  transition: 0.3s;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #050f2c;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #050f2c;
+}
+
+.navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
+  background-color: white;
+  transition: 0.3s;
+}
 /*Site Wide Font*/
 
 /* body {
