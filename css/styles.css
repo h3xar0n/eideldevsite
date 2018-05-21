@@ -360,6 +360,10 @@ canvas {
   color: black;
 }
 
+#monitor { 
+  overflow: hidden;
+}
+
 #skillset h3 {
   font-size: 12px;
   padding: 0;
