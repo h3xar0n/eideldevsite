@@ -354,7 +354,6 @@ canvas {
 
 #engineer {
   background-color: white;
-  max-width: 630px
 }
 
 #engineer h2 {
@@ -374,7 +373,9 @@ code span {
 pre {
   background: none;
   border: none;
-  color: white;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 18px;
 }
 
 .key {
@@ -389,14 +390,11 @@ pre {
   color: #FCA3BC;
 }
 
-.fa-database {
-  transform: scale(0.9);
-  color: gray;
-}
-
 .skill-panel {
   border-radius: 6px;
   padding: 1vw;
+  overflow: hidden;
+  max-width: 676px;
 }
 
 .single-skill {
@@ -428,20 +426,52 @@ pre {
   fill: white;
 }
 
+main.links {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: rgb(62, 57, 107);
+}
+
+article.example-card {
+  border: 1px solid #1cc7d0;
+  border-radius: 5px;
+  margin: 10px auto;
+  transition: 0.3s;
+}
+
+article.example-card:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 1px 1px #6670a3;
+  transition: 0.3s;
+}
+
+header.project-heading {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.project-heading img {
+  max-width: 200px;
+}
+
+#genuine-people {
+  background: #F7F7F7
+}
+
+#glam-by-adelina {
+  background: #44166a;
+}
+
+#sirota-lab {
+  background: #EFEFEF;
+}
+
 #Unity_Logo {
   height: 37px;
-}
-
-#interface {
-  transform: scale(1.5);
-  margin: 60px 0;
-}
-
-@media (max-width: 962px) {
-  #interface {
-    transform: scale(1);
-    margin: 0;
-  }
 }
 
 @media (max-width:776px) {
@@ -575,7 +605,7 @@ pre {
 }
 
 .code-container {
-  background: linear-gradient(to right, #050f2c, #3A3466); 
+  background: linear-gradient(to right, #050f2c, #3A3466);
   border-radius: 6px;
   box-sizing: border-box;
   color: rgb(62, 57, 107);
@@ -588,8 +618,8 @@ pre {
   will-change: height;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  min-height: 250px;
-  min-width: 440px;
+  min-height: 326px;
+  min-width: 630px;
 }
 
 .sample-inlet {
