@@ -211,7 +211,7 @@
               <!-- GraphQL -->
               <transition name="fade" mode="out-in">
 <pre v-if="skill === 'GraphQL'">
-<code>query Hero(<span class="val">$episode</span>: <span class="var">Episode</span>, <span class="val">$withFriends</span>: <span class="var">Boolean!</span>) {
+<code v-pre>query Hero(<span class="val">$episode</span>: <span class="var">Episode</span>, <span class="val">$withFriends</span>: <span class="var">Boolean!</span>) {
   <span class="key">hero</span>(episode: <span class="val">$episode</span>) {
     <span class="key">name</span>
     <span class="key">friends</span> <span class="var">@include</span>(if: <span class="val">$withFriends</span>) {
@@ -237,6 +237,23 @@
 </code>
 </pre>
               </transition>
+              <!-- Unity -->
+            <transition name="fade" mode="out-in">
+                <pre v-if="skill === 'Unity'">
+<code v-pre><span class="key">using</span> UnityEngine;
+<span class="key">public class</span> DestroyBasic : MonoBehaviour
+{
+  <span class="key">void</span> Update()
+  {
+    <span class="var">if</span>(<span class="val">Input</span>.GetKey(<span class="val">KeyCode</span>.Space))
+    {
+      Destroy(gameObject);
+    }
+  }
+}
+</code>
+            </pre>
+            </transition>
               <!-- Vue -->
               <transition name="fade" mode="out-in">
                 <pre v-if="skill === 'Vue'">
@@ -1086,7 +1103,6 @@
           <g>
             <g>
               <g>
-
                 <rect x="122" y="-0.4" transform="matrix(-0.866 -0.5 0.5 -0.866 163.3196 363.3136)" fill="#E535AB" width="16.6" height="320.3"
                 />
               </g>
@@ -1159,8 +1175,15 @@
       <div class="col-xs-2 single-skill">
         <i v-on:click="skill = 'Ruby'" class="devicon-ruby-plain colored"></i>
       </div>
-      <div class="col-xs-2 single-skill">
+      <!-- <div class="col-xs-2 single-skill">
         <i v-on:click="skill = 'JavaScript'" class="devicon-javascript-plain colored"></i>
+      </div> -->
+      <div class="col-xs-2 single-skill">
+        <svg v-on:click="skill = 'Unity'" id="Unity_Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="263" viewBox="0 0 256 263" version="1.1" preserveAspectRatio="xMidYMid">
+          <g fill="#222C37">
+            <path d="M166.87 131.24L212.78 51.96 234.97 131.24 212.78 210.49 166.87 131.24 166.87 131.24ZM144.5 144.11L190.41 223.37 110.45 202.89 52.68 144.11 144.5 144.11 144.5 144.11ZM190.4 39.08L144.5 118.35 52.68 118.35 110.45 59.57 190.4 39.08 190.4 39.08ZM255.94 104.26L227.93 0.06 123.39 27.99 107.92 55.19 76.52 54.97 0 131.24 76.52 207.5 76.52 207.5 107.91 207.27 123.4 234.48 227.93 262.4 255.94 158.22 240.04 131.24 255.94 104.26 255.94 104.26Z"/>
+          </g>
+        </svg>
       </div>
       <div class="col-xs-2 single-skill">
         <i v-on:click="skill = 'Vue'" class="devicon-vuejs-plain colored"></i>

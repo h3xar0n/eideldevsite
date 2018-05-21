@@ -439,6 +439,10 @@ pre {
   fill: white;
 }
 
+#Unity_Logo {
+  height: 37px;
+}
+
 .code-panel {
   background-color: rgb(62, 57, 107);
   border-bottom-left-radius: 0px;
