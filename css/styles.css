@@ -153,6 +153,7 @@ a:focus {
 
 #landing {
   z-index: 10;
+  overflow: hidden;
 }
 
 .hex-wrap {
@@ -161,6 +162,12 @@ a:focus {
   justify-content: center;
   align-items: center;
   height: 300px;
+  transition: 0.3s;
+}
+
+.hex-wrap:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .hexagon {
@@ -170,14 +177,14 @@ a:focus {
   margin: 43.30px 0;
   border-left: solid 10px #2dde98;
   border-right: solid 10px #2dde98;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .hexagon:before,
 .hexagon:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   width: 106.07px;
   height: 106.07px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
@@ -246,7 +253,7 @@ a:focus {
 .learn-more-wrapper {
   margin-top: 20vh;
   text-align: center;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .logo-landing {
@@ -282,7 +289,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 #particles-js {
@@ -1326,6 +1333,9 @@ footer i:hover {
   }
   .hex-wrap {
     transform: scale(0.65);
+  }
+  .hex-wrap:hover {
+    transform: scale(0.68);
   }
   .about {
     width: 100%;
