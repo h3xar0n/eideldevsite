@@ -1166,9 +1166,10 @@ main pre {
 /*Contact*/
 
 .contact {
-  min-height: 85vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, #353161, #050F31);
 }
 
