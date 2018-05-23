@@ -19,7 +19,7 @@ particlesJS("particles-js", {
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
@@ -70,21 +70,21 @@ particlesJS("particles-js", {
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 200,
         "line_linked": {
           "opacity": 1
         }
@@ -165,22 +165,3 @@ $(document).ready(function(){
     }
   });
 });
-
-// Google Maps must be outside the $(document).ready function in order
-// to load before Maps API; see HTML.
-var map;
-
-var myLatLng = {lat: 37.788491, lng: -122.4155174};
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatLng,
-    zoom: 13
-  });
-
-var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'You Can Find Me in the Bay'
-  });
-}
