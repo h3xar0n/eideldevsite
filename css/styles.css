@@ -1224,6 +1224,10 @@ main pre {
 
 /*Contact Form*/
 
+/* Make height of text area 30vh */
+/* Make height of inputs 45px */
+/* Increase size of all input placeholders to 22px */
+
 .contact-heading {
   margin-top: 0;
   text-align: center;
