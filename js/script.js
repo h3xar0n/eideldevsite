@@ -116,6 +116,13 @@ new Vue({
   data: {
     skill: 'Node'
   }
+});
+
+new Vue({
+  el: '#product-portfolio',
+  data: {
+    selection: 'game'
+  }
 })
 
 // jQuery

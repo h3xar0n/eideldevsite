@@ -98,8 +98,11 @@
                   <i class="fas fa-lightbulb"></i>
                 </p>
               </div>
-              <h3>Product
-                <br class="visible-xs visible-sm">Manager</h3>
+              <h3>
+                Product
+                <br class="visible-xs visible-sm">
+                Manager
+              </h3>
             </div>
           </a>
           <a href="#collaboration">
@@ -109,8 +112,11 @@
                   <i class="fas fa-users"></i>
                 </p>
               </div>
-              <h3>Community
-                <br class="visible-xs visible-sm">Collaborator</h3>
+              <h3>
+                Community
+                <br class="visible-xs visible-sm">
+                Collaborator
+              </h3>
             </div>
           </a>
           <div class="col-xs-12 learn-more-wrapper">
@@ -133,7 +139,6 @@
   </section>
   <!-- Engineering -->
   <section class="container anchor" id="engineer">
-    
     <div id="interface">
       <div class="flex-row">
         <div id="monitor" class="skill-window">
@@ -530,8 +535,40 @@
     <br>
   </section>
   <!-- End Engineering -->
+  <!-- Transition -->
+  <div class="white-to-blue">
+    <!-- Some quote -->
+  </div>
   <!-- Product -->
   <section class="container product anchor" id="product">
+    <article id="product-portfolio">
+      <div class="selectors">
+        <div v-on:click="selection = 'game'">
+          Gameplan
+        </div>
+        <div v-on:click="selection = 'glam'">
+          Beauty by Adelina
+        </div>
+        <div v-on:click="selection = 'genuine'">
+          Genuine People
+        </div>
+      </div>
+      <div class="selection">
+        <transition name="fade" mode="out-in">
+          <div v-show="selection === 'game'">
+            <h1>Gameplan</h1>
+          </div>
+        </transition>
+        <transition name="fade" mode="out-in">
+          <div v-show="selection === 'glam'">
+            <h1>Glam</h1>
+          </div>
+      </transition>
+        <div v-show="selection === 'genuine'">
+          <h1>Genuine</h1>
+        </div>
+      </div>
+    </article>
   </section>
   <!-- End Product -->
   <!-- Collaboration -->

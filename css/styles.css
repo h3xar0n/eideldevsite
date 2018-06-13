@@ -770,15 +770,68 @@ main pre {
   }
 }
 
-/*Product*/
+/* Transition */
 
-#product {
-  display: flex;
-  justify-content: center;
+.white-to-blue {
+  min-height: 200px;
+  background: linear-gradient(to bottom, #fff, #6a4af1);
 }
 
-#life-cycle {
-  flex-basis: 1000px;
+/*Product*/
+
+.product {
+  background-color: #6a4af1;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+#product-portfolio {
+  width: 80%;
+  background-color: none;
+  border-radius: 6px;
+}
+
+.selectors {
+  display: flex;
+}
+
+.selectors div {
+  flex: 1;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #6a4af1;
+  background-color: #f7f6fb;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.selectors div:hover {
+  color: #2dde98;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+.selection {
+  position: relative;
+}
+
+.selection>* {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  #product-portfolio {
+    width: 95%;
+  }
+  .selectors {
+    flex-direction: column;
+  }
 }
 
 /* About */
