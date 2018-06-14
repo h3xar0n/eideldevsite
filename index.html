@@ -536,9 +536,8 @@
   </section>
   <!-- End Engineering -->
   <!-- Transition -->
-  <div class="white-to-blue">
-    <!-- Some quote -->
-  </div>
+  <!-- <div class="white-to-blue">
+  </div> -->
   <!-- Product -->
   <section class="container product anchor" id="product">
     <article id="product-portfolio">
@@ -554,25 +553,33 @@
         </div>
       </div>
       <div class="selection">
-        <h3>{{ products[selection].name }}</h3>
-        <h4>Problems</h4>
-        <ul>
-          <li v-for="problem in products[selection].problems">
-            {{ problem }}
-          </li>
-        </ul>
-        <h4>Solutions</h4>
-        <ul>
-          <li v-for="solution in products[selection].solutions">
-            {{ solution }}
-          </li>
-        </ul>
-        <h4>Results</h4>
-        <ul>
-          <li v-for="result in products[selection].results">
-            {{ result }}
-          </li>
-        </ul>
+        <article class="text">
+          <h3>{{ products[selection].name }}</h3>
+          <h4>Problems</h4>
+          <ul>
+            <li v-for="problem in products[selection].problems">
+              {{ problem }}
+            </li>
+          </ul>
+          <h4>Solutions</h4>
+          <ul>
+            <li v-for="solution in products[selection].solutions">
+              {{ solution }}
+            </li>
+          </ul>
+          <h4>Results</h4>
+          <ul>
+            <li v-for="result in products[selection].results">
+              {{ result }}
+            </li>
+          </ul>
+        </article>
+        <article class="visuals">
+          <div class="video">
+              <iframe v-show="selection === 'game'" src="https://www.youtube.com/embed/f3ZYYMcJG2s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+            
+        </article>
       </div>
     </article>
   </section>

@@ -772,15 +772,10 @@ main pre {
 
 /* Transition */
 
-.white-to-blue {
-  min-height: 200px;
-  background: linear-gradient(to bottom, #fff, #6a4af1);
-}
-
 /*Product*/
 
 .product {
-  background-color: #6a4af1;
+  background: linear-gradient(to bottom, #fff, #6a4af1);
   min-height: 80vh;
   display: flex;
   justify-content: center;
@@ -788,8 +783,9 @@ main pre {
 }
 
 #product-portfolio {
-  max-width: 700px;
-  background-color: #f7f6fb;
+  max-width: 970px;
+  border: 1px solid #6a4af1;
+  background-color: #f7f6fbd9;
   border-radius: 6px;
 }
 
@@ -805,7 +801,6 @@ main pre {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  border: 1px solid #6a4af1;
   background-color: #f7f6fb;
   font-size: 16px;
   transition: 0.5s;
@@ -815,6 +810,41 @@ main pre {
   color: #2dde98;
   background-color: #ffffff;
   transition: 0.5s;
+}
+
+.selection {
+  padding: 20px 0;
+  display: flex;
+}
+
+.text {
+  flex: 1;
+  padding: 0 5%;
+}
+
+.visuals {
+  flex: 1;
+  padding: 5% 5% 0 0;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+@media (max-width: 875px) {
+  
 }
 
 @media (max-width: 768px) {
