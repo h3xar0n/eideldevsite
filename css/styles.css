@@ -827,11 +827,14 @@ main pre {
   padding: 5% 5% 0 0;
 }
 
+.visuals>* {
+  margin-bottom: 5%;
+}
+
 .video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  
 }
 
 .video iframe {
@@ -843,8 +846,19 @@ main pre {
   border-radius: 6px;
 }
 
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 @media (max-width: 875px) {
-  
+  .selection {
+    flex-direction: column;
+  }
+  .visuals {
+    padding-left: 5%;
+  }
 }
 
 @media (max-width: 768px) {

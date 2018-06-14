@@ -575,10 +575,21 @@
           </ul>
         </article>
         <article class="visuals">
-          <div class="video">
-              <iframe v-show="selection === 'game'" src="https://www.youtube.com/embed/f3ZYYMcJG2s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- Gameplan -->
+          <div class="video"
+               v-show="selection === 'game'">
+            <iframe src="https://www.youtube.com/embed/f3ZYYMcJG2s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-            
+          <!-- Glam by Adelina -->
+          <img class="product-image" v-show="selection === 'game'" src="./img/gameplanflow.png" alt="">
+          <div class="video"
+               v-show="selection === 'glam'">
+            <iframe src="https://www.youtube.com/embed/fRvYmnMXdkk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <img class="product-image" v-show="selection === 'glam'" src="./img/glamcontact.png" alt="">
+          <!-- Genuine People -->
+          <img class="product-image" v-show="selection === 'genuine'" src="./img/genshoes.png" alt="">
+          <img class="product-image" v-show="selection === 'genuine'" src="./img/faster.png" alt="">
         </article>
       </div>
     </article>
