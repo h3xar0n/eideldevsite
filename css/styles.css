@@ -1555,6 +1555,7 @@ textarea {
 
 textarea {
   resize: none;
+  height: 30vh;
 }
 
 /*404*/
