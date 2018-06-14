@@ -788,8 +788,8 @@ main pre {
 }
 
 #product-portfolio {
-  width: 80%;
-  background-color: none;
+  max-width: 700px;
+  background-color: #f7f6fb;
   border-radius: 6px;
 }
 
@@ -800,14 +800,14 @@ main pre {
 .selectors div {
   flex: 1;
   cursor: pointer;
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 6px;
   border: 1px solid #6a4af1;
   background-color: #f7f6fb;
-  font-size: 20px;
+  font-size: 16px;
   transition: 0.5s;
 }
 
@@ -815,14 +815,6 @@ main pre {
   color: #2dde98;
   background-color: #ffffff;
   transition: 0.5s;
-}
-
-.selection {
-  position: relative;
-}
-
-.selection>* {
-  position: absolute;
 }
 
 @media (max-width: 768px) {

@@ -554,25 +554,44 @@
         </div>
       </div>
       <div class="selection">
-        <transition name="fade" mode="out-in">
-          <div v-show="selection === 'game'">
-            <h1>Gameplan</h1>
-          </div>
-        </transition>
-        <transition name="fade" mode="out-in">
-          <div v-show="selection === 'glam'">
-            <h1>Glam</h1>
-          </div>
-      </transition>
-        <div v-show="selection === 'genuine'">
-          <h1>Genuine</h1>
-        </div>
+        <h3>{{ products[selection].name }}</h3>
+        <h4>Problems</h4>
+        <ul>
+          <li v-for="problem in products[selection].problems">
+            {{ problem }}
+          </li>
+        </ul>
+        <h4>Solutions</h4>
+        <ul>
+          <li v-for="solution in products[selection].solutions">
+            {{ solution }}
+          </li>
+        </ul>
+        <h4>Results</h4>
+        <ul>
+          <li v-for="result in products[selection].results">
+            {{ result }}
+          </li>
+        </ul>
       </div>
     </article>
   </section>
   <!-- End Product -->
   <!-- Collaboration -->
   <section class="container collaboration anchor" id="collaboration">
+    <div class="row">
+      <div>
+        <h2>Mentorship</h2>
+      </div>
+      <div>
+        <h2>Meetup Organization</h2>
+        <p>One of the creators and lead organizers for San Francisco's new Vue.js meetup, Point of Vue</p>
+      </div>
+      <div>
+        <h2>Open-Source Contribution</h2>
+        <p>Strongly devoted to the principles of OSS, and working to help other developers and companies succeed. Recently working on Employbl.</p>
+      </div>
+    </div>
   </section>
   <!-- End Collaboration -->
   <!-- About -->

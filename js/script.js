@@ -121,15 +121,37 @@ new Vue({
 new Vue({
   el: '#product-portfolio',
   data: {
-    selection: 'game'
+    selection: 'game',
+    products: {
+      game: {
+        name: 'Gameplan Jobs',
+        problems: ['Needs for internal and B2B features that exceeded the budget', 'Extensive backlog, urgent requirements, and 100%+ utlized engineering team', 'University interested in purchasing entire company wanted to see meaningful results for 10,000 students despite only having a prototype'],
+        solutions: ['Combined product with multiple external APIs', 'Wrote documentation for 64 JSON API requests and responses', 'Created UI prototype for new user type using ReactJS, HTML, and Sass so that engineers could focus on main product', ' Prioritized project backlog with JIRA as product owner on SCRUM team by writing 37 user stories and performing manual QA on a weekly basis with development teams around the world', 'Developed process for prioritizing bugs, improvements, and features', 'Processed results from A/B testing with 10,000 students to also find job placements before engineers shipped product, saving duplicate efforts'],
+        results: ['Saved company $100,000 it would cost to develop internal solutions from scratch', 'Enabled 5 engineers to devote time exclusively to their greatest strenghts by taking over prototyping, documentation, and communication with non-technical stakeholders', 'University purchased bootstrapped company for $200,000']
+      },
+      glam: {
+        name: 'Beauty by Adelina',
+        problems: ['Makeup artist was losing leads and unable to gain access to industry benefits without professional website', 'Templates in WordPress and Adobe Muse did not match creative needs', 'Needed improved way of communicating with leads other than social media and email'],
+        solutions: ['Designed and developed portfolio page with contact form for Beauty by Adelina using JavaScript, VueJS, HTML5, and CSS3', 'Performed competitive analysis on 40 other makeup and hair artists in similar skill range, analyzing the time they took to respond to leads, the process of receiving a price, their willingness to negotiate prices, and which times of the year had the highest demand', 'A/B tested and developed booking segment to Makeup and Hair by Adelina using JavaScript, VueJS and Firebase, and chat feature using Node and Socket.IO'],
+        results: ['Improved lead generation by 500% and conversion by 40%', 'Increased prices (while maintaining conversion rate) by 130%', 'Reduced time spent on scheduling and other non-revenue-gerating activing by 9 hours per week, enabling artist to earn an extra $7000 per month']
+      },
+      genuine: {
+        name: 'Genuine People',
+        problems: ['Adding new products was incredibly tedious, as was repitive image editing', 'Long load times and convoluted checkout process were causing poor conversion', 'Excellent design team unable to execute certain features without technical help'],
+        solutions: ['Designed new process and routing for adding new products', 'Automatically restyled all images, allowing many different sizes without an effect on performance or display', 'Performed customer validation interviews to correctly prioritize improvements and features, focusing on maximum ROI for costs of development'],
+        results: ['Reduced the time required to add new products by 50%, saving the team 308 hours in one quarter', 'All 3700+ image variations no longer required any resizing', 'Increased conversions by 30% due to reduced 1-second loading times and 2-step checkout process']
+      }
+    }
   }
 })
+
+
 
 // jQuery
 $(document).ready(function(){
   // Smooth Scrolling
   var $root = $('html, body');
-  $('.navbar-nav a, .workName a, .btm-but a, .btn-main').click(function() {
+  $('.navbar-nav a, .workName a, .btn-main, .landing-title .row a').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
         scrollTop: $(href).offset().top
