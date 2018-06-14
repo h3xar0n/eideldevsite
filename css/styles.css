@@ -880,6 +880,24 @@ main pre {
   color: #555;
 }
 
+.about-description img {
+  float: left;
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  margin: 10%;
+}
+
+.about-description p {
+  float: right;
+}
+
+@media (max-width: 979px) {
+  .about-description img {
+    clear: both;
+  }
+}
+
 .about-desktop p {
   color: #555;
   font-size: 1em;
@@ -1653,8 +1671,14 @@ li {
   padding-bottom: 20px;
 }
 
-.about-para {
-  padding: 5px 0px;
+.me-image {
+  margin-bottom: 20px;
+  border-radius: 5%;
+}
+
+#me-text {
+  color: #21234b;
+  font-size: 18px;
 }
 
 #legal {
