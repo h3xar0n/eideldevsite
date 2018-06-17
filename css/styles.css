@@ -1000,9 +1000,22 @@ main pre {
 .history {
   width: 100%;
   margin: 0 auto;
-  overflow: auto;
   padding: 2%;
-  background: linear-gradient(to bottom, #050F31, #050F31, #353161, #5341a1, #6a4af1);
+  background: linear-gradient(to bottom, #050F31, #353161);
+  overflow: hidden;
+}
+
+.philosophy {
+  color: #eae3a5;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.left-content h2,
+.left-content h3,
+.right-content h2,
+.right-content h3 {
+  margin-bottom: 100px;
 }
 
 .right-content,
@@ -1034,7 +1047,7 @@ main pre {
 .right-content p {
   padding-right: 10vw;
 }
-
+/* 
 .left-content p:nth-child(1) {
   margin: 75px 0 0;
 }
@@ -1115,7 +1128,7 @@ main pre {
 
 .left-content h3:nth-child(23) {
   margin: 210px 0 0;
-}
+} */
 
 .history-icon {
   font-size: 8vw;
@@ -1134,18 +1147,18 @@ main pre {
   font-weight: bold;
 }
 
-.right-content p:nth-child(1) {
+/* .right-content p:nth-child(1) {
   margin: 2vw 0 0;
-}
+} */
 
-.right-content p:nth-child(2) {
+/* .right-content p:nth-child(2) {
   margin: 300px 0 0;
-}
+} */
 
-.right-content p:nth-child(3) {
+/* .right-content p:nth-child(3) {
   margin: 1vw 0 0;
-}
-
+} */
+/* 
 .right-content h2:nth-child(4) {
   margin: 80px 0 0;
 }
@@ -1155,7 +1168,7 @@ main pre {
 }
 
 .right-content p:nth-child(6) {
-  margin: 190px 0 0;
+  margin: 129px 0 0;
 }
 
 .right-content h2:nth-child(8) {
@@ -1204,7 +1217,7 @@ main pre {
 
 .right-content h2:nth-child(19) {
   margin: 80px 0 0;
-}
+} */
 
 .container p {
   font-size: 1.5em;
@@ -1238,6 +1251,11 @@ main pre {
 
 #baku {
   max-width: 120px;
+}
+
+#html5 i {
+  color: #ba6d6d;
+  margin-top: 20px;
 }
 
 /*Skills*/
